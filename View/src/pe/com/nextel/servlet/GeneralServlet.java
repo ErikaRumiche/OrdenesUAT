@@ -476,10 +476,18 @@ public class GeneralServlet extends HttpServlet
         return listTemp;
     }
 
+    public void doPost(HttpServletRequest request,
+                       HttpServletResponse response) throws ServletException, IOException {
+
+        response.setContentType(CONTENT_TYPE);
+        System.out.println("[GeneralServlet]Inicio - doPost");
+        doGet(request, response);
+    }
+
     /*PBI000000042016*/
     public void validarNuevoRespPago(HttpServletRequest request,
                                      HttpServletResponse response) throws Exception {
-
+        System.out.println("[GeneralServlet]Inicio - validarNuevoRespPago");
         SiteService siteService = new SiteService();
         Long orderId = Long.parseLong((String)request.getParameter("ordenId"));
         Long siteId = null;
@@ -495,18 +503,24 @@ public class GeneralServlet extends HttpServlet
     public void validarEspecResPago(HttpServletRequest request,
                                      HttpServletResponse response) throws Exception {
 
+        System.out.println("[GeneralServlet]Inicio - validarEspecResPago");
         String especificacionId = (String)request.getParameter("especificacionId");
+        
+        System.out.println("especificacionId: " + especificacionId);
         GeneralService objGeneralService = new GeneralService();
         HashMap mapEspecificacionResPago = objGeneralService.getTableList("SINC_RESP_SPEC", "a");
         ArrayList <HashMap> arrEspecificacionResPago = (ArrayList <HashMap>)mapEspecificacionResPago.get("arrTableList");
         int contador=0;
         if (arrEspecificacionResPago!=null){
             for(HashMap config: arrEspecificacionResPago){
-                if(especificacionId.equals(config.get("wv_npValue"))){
+                System.out.println("especificacion configurada: " + (String)config.get("wv_npValue"));
+                if(especificacionId.equals((String)config.get("wv_npValue"))){
                     contador++;
                 }
             }
         }
+        System.out.println("contador " + contador);
+        response.setContentType("text/xml");
         response.getWriter().print(contador);
     }
 }

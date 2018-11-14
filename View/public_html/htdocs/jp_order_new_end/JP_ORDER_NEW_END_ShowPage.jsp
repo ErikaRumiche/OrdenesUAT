@@ -249,8 +249,8 @@
             v_form.hdnFlagMigration.value = "N";
         }
         //FIN EFLORES TDECONV003-3
-       <!-- [TDECONV003] KOTINIANO-->	
-	
+       <!-- [TDECONV003] KOTINIANO-->
+
      if(!fxValidateOrderGeneral())
        return false;
      if(!fxValidateOrderVolume())
@@ -259,7 +259,7 @@
        return false;
      if(!fxValidateItemVolume())
        return false;
-    
+
        <!-- JCASTILLO  CPUF-->
        if(!fxValidateCpuf()){
            return false;
@@ -307,7 +307,7 @@
 
    }
         }
-   
+
 // INI PRY-1002 AMATEOM
 	if (form.cmbFormaPago.value == "<%=Constante.PAYFORM_CARGO_EN_RECIBO%>"){
         if (form.cmbSubCategoria.value == '<%=Constante.SPEC_CAMBIO_MODELO%>' || form.cmbSubCategoria.value == '<%=Constante.SPEC_CAMBIO_MODELO_ENTRE_TECNOLOGIAS%>') {
@@ -317,21 +317,21 @@
    }
 	}
         // FIN PRY-1002 AMATEOM
-        
+
     // MMONTOYA [ADT-RCT-092 Roaming con corte]
     // Validacion del servicio roaming recurrente.
     if (!validateAllRecurrentRoamingService(form.cmbSubCategoria.value, 0)) {
         return;
     }
-     
+
     // FBERNALES [PM0011240 Portabilidad]
-    if (form.cmbSubCategoria.value=="<%=Constante.SPEC_PREPAGO_PORTA%>" || form.cmbSubCategoria.value=="<%=Constante.SPEC_POSTPAGO_PORTA%>"){            
+    if (form.cmbSubCategoria.value=="<%=Constante.SPEC_PREPAGO_PORTA%>" || form.cmbSubCategoria.value=="<%=Constante.SPEC_POSTPAGO_PORTA%>"){
         if (!fxValidateDocument(trim(form.txtDocumento.value),form.txtDocumento.value,form.cmbDocumento.value)) {
           return false;
         }
     }
-     
-     
+
+
     try{
       var wn_decrip_long = form.txtDetalle.value.length;
     if ( wn_decrip_long > 4000) {
@@ -347,6 +347,11 @@
         var subCategoria = $("select[name=cmbSubCategoria]").val();
         var ordenId = $("input[name=hdnNumeroOrder]").val();
         var esflat = codBscs.indexOf("1.");
+
+        alert("codBscs " + codBscs);
+        alert("subCategoria " + subCategoria);
+        alert("ordenId " + ordenId);
+        alert("esflat " + esflat);
 
         //Si devuelve -1 el cliente es LARGE
         if(esflat == -1) {
@@ -372,10 +377,12 @@
         var params = 'metodo=validarEspecResPago&'+dataString;
         $.ajax({
             url: url_server,
-            type: 'GET',
-            dataType: 'text',
+            async: false,
+            type: 'POST',
+            dataType: 'text/xml',
             data: params,
             success: function(data){
+                alert("validarEspecResPago "+ data);
                 if(data != "0"){
                     return true;
                 }
@@ -393,10 +400,12 @@
         var params = 'metodo=validarNuevoRespPago&'+dataString;
         $.ajax({
             url: url_server,
-            type: 'GET',
+            async: false,
+            type: 'POST',
             dataType: 'text',
             data: params,
             success: function(data){
+                alert("validarNuevoResPago "+ data);
                 if(data != "0"){
                     return true;
                 }
