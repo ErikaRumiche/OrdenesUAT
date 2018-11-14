@@ -3789,7 +3789,6 @@ public void getInsertLogValidateAddress(HttpServletRequest request,
     /*PBI000000042016*/
     public void validarNuevoRespPago(HttpServletRequest request,
                                      HttpServletResponse response) throws ServletException, IOException {
-        System.out.println("[GeneralServlet]Inicio - validarNuevoRespPago");
         SiteService siteService = new SiteService();
         Long orderId = Long.parseLong((String)request.getParameter("ordenId"));
         Long siteId = null;
@@ -3798,6 +3797,7 @@ public void getInsertLogValidateAddress(HttpServletRequest request,
             siteId = 0L;
         }
 
+        response.setContentType("text/xml");
         response.getWriter().print(siteId);
         response.getWriter().flush();
     }
@@ -3806,23 +3806,19 @@ public void getInsertLogValidateAddress(HttpServletRequest request,
     public void  validarEspecResPago(HttpServletRequest request,
                                      HttpServletResponse response) throws ServletException, IOException {
 
-        System.out.println("[GeneralServlet]Inicio - validarEspecResPago");
         String especificacionId = (String)request.getParameter("especificacionId");
 
-        System.out.println("especificacionId: " + especificacionId);
         GeneralService objGeneralService = new GeneralService();
         HashMap mapEspecificacionResPago = objGeneralService.getTableList("SINC_RESP_SPEC", "a");
         ArrayList <HashMap> arrEspecificacionResPago = (ArrayList <HashMap>)mapEspecificacionResPago.get("arrTableList");
         int contador=0;
         if (arrEspecificacionResPago!=null){
             for(HashMap config: arrEspecificacionResPago){
-                System.out.println("especificacion configurada: " + (String)config.get("wv_npValue"));
                 if(especificacionId.equals((String)config.get("wv_npValue"))){
                     contador++;
                 }
             }
         }
-        System.out.println("contador " + contador);
         response.setContentType("text/xml");
         response.getWriter().print(contador);
         response.getWriter().flush();

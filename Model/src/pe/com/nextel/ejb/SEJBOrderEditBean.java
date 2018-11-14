@@ -631,14 +631,13 @@ public class SEJBOrderEditBean implements SessionBean {
 
             //PBI000000042016
             String especId   = (request.get("hdnSpecification")==null?"":(String)request.get("hdnSpecification"));
-            Long longEspecId  = MiUtil.parseLong(especId);
 
             HashMap mapEspecificacionResPago = objGeneralDAO.getTableList("SINC_RESP_SPEC", "a");
             ArrayList <HashMap> arrEspecificacionResPago = (ArrayList <HashMap>)mapEspecificacionResPago.get("arrTableList");
 
             if(arrEspecificacionResPago != null && arrEspecificacionResPago.size()>0) {
               for (int i = 0; i < arrEspecificacionResPago.size(); i++) {
-                  if (arrEspecificacionResPago.get(i).get("wv_npValue") == longEspecId) {
+                  if (((String)arrEspecificacionResPago.get(i).get("wv_npValue")).equals(especId)){
                       logger.info("PBI000000042016 del site de la Orden");
                       updEditSiteOrdenVep(request, conn);
                   }

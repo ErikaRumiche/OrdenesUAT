@@ -36,8 +36,6 @@
 
  String strRutaContext=request.getContextPath(); 
  String strURLOrderServlet =strRutaContext+"/editordersevlet";
- //PBI000000042016
- String strOrderServlet =strRutaContext+"/orderservlet";
   
   System.out.println("Sesi�n capturada despu�s del resuest : " + strSessionIdOrderEnd );
 	PortalSessionBean portalSessionBean4 = (PortalSessionBean)SessionService.getUserSession(strSessionIdOrderEnd);
@@ -348,18 +346,11 @@
         var ordenId = $("input[name=hdnNumeroOrder]").val();
         var esflat = codBscs.indexOf("1.");
 
-        alert("codBscs " + codBscs);
-        alert("subCategoria " + subCategoria);
-        alert("ordenId " + ordenId);
-        alert("esflat " + esflat);
-
         //Si devuelve -1 el cliente es LARGE
         if(esflat == -1) {
             if(validarEspecResPago(subCategoria)){
                 var resPagoOpts = $("select[name=cmbResponsablePago] option");
                 var respPagoSelected = $("select[name=cmbResponsablePago]").val();
-                alert("resPagoOpts " + resPagoOpts);
-                alert("respPagoSelected " + respPagoSelected);
 
                 if(!validarNuevoResPago(ordenId)){
                     if ((resPagoOpts.length - 1) > 0 && respPagoSelected == "") {
@@ -377,6 +368,7 @@
         var url_server = '<%=strURLOrderServlet%>';
         var dataString = "especificacionId="+ especificacionId;
         var params = 'myaction=validarEspecResPago&'+dataString;
+        var retorno = false;
         $.ajax({
             url: url_server,
             async: false,
@@ -384,22 +376,22 @@
             dataType: 'text/xml',
             data: params,
             success: function(data){
-                alert("requestValidarEspecResPago "+ data);
                 if(data != "0"){
-                    return true;
+                    retorno = true;
                 }
             },
             error:function(xhr, ajaxOptions, thrownError){
                 alert('Error inesperado: ' + xhr.responseText);
-                return false;
+                retorno = false;
             }
         });
-        return false;
+        return retorno;
     }
     function validarNuevoResPago(ordenId){
         var url_server = '<%=strURLOrderServlet%>';
         var dataString = "ordenId="+ ordenId;
         var params = 'myaction=validarNuevoRespPago&'+dataString;
+        var retorno = false;
         $.ajax({
             url: url_server,
             async: false,
@@ -407,17 +399,16 @@
             dataType: 'text/xml',
             data: params,
             success: function(data){
-                alert("requestValidarNuevoRespPago "+ data);
                 if(data != "0"){
-                    return true;
+                    retorno = true;
                 }
             },
             error:function(xhr, ajaxOptions, thrownError){
                 alert('Error inesperado: ' + xhr.responseText);
-                return false;
+                retorno = false;
             }
         });
-        return false;
+        return retorno;
     }
 
 //INICIO: PRY-1037 | KPEREZ
