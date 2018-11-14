@@ -1,0 +1,17 @@
+<wls:weblogic-web-app xmlns:wls="http://xmlns.oracle.com/weblogic/weblogic-web-app"
+                      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                      xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd http://xmlns.oracle.com/weblogic/weblogic-web-app http://xmlns.oracle.com/weblogic/weblogic-web-app/1.2/weblogic-web-app.xsd">
+    <wls:weblogic-version>10.3.6</wls:weblogic-version>
+    <wls:context-root>apporderweb</wls:context-root>
+    <wls:library-ref>
+        <wls:library-name>oracle.portlet-producer.jpdk</wls:library-name>
+        <wls:specification-version>11.1.1</wls:specification-version>
+        <wls:implementation-version>11.1.1</wls:implementation-version>
+        <wls:exact-match>false</wls:exact-match>
+    </wls:library-ref>
+    <wls:container-descriptor>
+        <wls:show-archived-real-path-enabled>
+            true
+        </wls:show-archived-real-path-enabled>
+    </wls:container-descriptor>
+</wls:weblogic-web-app>

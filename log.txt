@@ -1,0 +1,81 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] orders-ee
+[INFO] orders-ejb
+[INFO] orders-web
+[INFO] orders-ear
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building orders-ee 1.0.0-BUILD-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ orders-ee ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building orders-ejb 1.0.0-BUILD-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[WARNING] The POM for pe.com.nextel.gestionbolsasroaming:wsp_gestionbolsasroaming:jar:1.5 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ orders-ejb ---
+[INFO] Deleting C:\Work\ordenes\branches\ADT-BCL-083\APPORDERALL\Model\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ orders-ejb ---
+[INFO] Using 'ISO-8859-1' encoding to copy filtered resources.
+[INFO] Copying 2 resources to META-INF
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ orders-ejb ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 229 source files to C:\Work\ordenes\branches\ADT-BCL-083\APPORDERALL\Model\target\classes
+[INFO] -------------------------------------------------------------
+[WARNING] COMPILATION WARNING : 
+[INFO] -------------------------------------------------------------
+[WARNING] /C:/Work/ordenes/branches/ADT-BCL-083/APPORDERALL/Model/src/pe/com/nextel/dao/OrderDAO.java: Some input files use unchecked or unsafe operations.
+[WARNING] /C:/Work/ordenes/branches/ADT-BCL-083/APPORDERALL/Model/src/pe/com/nextel/dao/OrderDAO.java: Recompile with -Xlint:unchecked for details.
+[INFO] 2 warnings 
+[INFO] -------------------------------------------------------------
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/Work/ordenes/branches/ADT-BCL-083/APPORDERALL/Model/src/pe/com/nextel/section/sectionItem/SectionItemEvents.java:[705,7] cannot find symbol
+  symbol:   variable pv_item_original_productid_Val
+  location: class pe.com.nextel.section.sectionItem.SectionItemEvents
+[ERROR] /C:/Work/ordenes/branches/ADT-BCL-083/APPORDERALL/Model/src/pe/com/nextel/section/sectionItem/SectionItemEvents.java:[881,82] cannot find symbol
+  symbol:   variable pv_item_original_productid_Val
+  location: class pe.com.nextel.section.sectionItem.SectionItemEvents
+[INFO] 2 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] orders-ee .......................................... SUCCESS [  0.125 s]
+[INFO] orders-ejb ......................................... FAILURE [  3.999 s]
+[INFO] orders-web ......................................... SKIPPED
+[INFO] orders-ear ......................................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4.250 s
+[INFO] Finished at: 2015-11-12T13:19:50-05:00
+[INFO] Final Memory: 14M/105M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project orders-ejb: Compilation failure: Compilation failure:
+[ERROR] /C:/Work/ordenes/branches/ADT-BCL-083/APPORDERALL/Model/src/pe/com/nextel/section/sectionItem/SectionItemEvents.java:[705,7] cannot find symbol
+[ERROR] symbol:   variable pv_item_original_productid_Val
+[ERROR] location: class pe.com.nextel.section.sectionItem.SectionItemEvents
+[ERROR] /C:/Work/ordenes/branches/ADT-BCL-083/APPORDERALL/Model/src/pe/com/nextel/section/sectionItem/SectionItemEvents.java:[881,82] cannot find symbol
+[ERROR] symbol:   variable pv_item_original_productid_Val
+[ERROR] location: class pe.com.nextel.section.sectionItem.SectionItemEvents
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :orders-ejb
+
+

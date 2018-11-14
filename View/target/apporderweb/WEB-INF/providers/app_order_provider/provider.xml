@@ -1,0 +1,1415 @@
+<?xml version = '1.0' encoding='UTF-8'?>
+<?providerDefinition version="3.1"?>
+<provider class="oracle.portal.provider.v2.DefaultProviderDefinition">
+   <session>true</session>
+   <passAllUrlParams>true</passAllUrlParams>
+   <portlet class="oracle.portal.provider.v2.DefaultPortletDefinition">
+      <id>1</id>
+      <name>JP_SESSION</name>
+      <title>JP_SESSION</title>
+      <description>JP_SESSION</description>
+      <timeout>40</timeout>
+      <showEditToPublic>false</showEditToPublic>
+      <hasAbout>false</hasAbout>
+      <showEdit>false</showEdit>
+      <hasHelp>false</hasHelp>
+      <showEditDefault>false</showEditDefault>
+      <showDetails>false</showDetails>
+      <inputParameter class="oracle.portal.provider.v2.DefaultParameterDefinition">
+         <name>an_rolid</name>
+         <displayName>an_rolid</displayName>
+         <description>desc0</description>
+      </inputParameter>
+      <renderer class="oracle.portal.provider.v2.render.RenderManager">
+         <renderContainer>true</renderContainer>
+         <renderCustomize>true</renderCustomize>
+         <autoRedirect>true</autoRedirect>
+         <contentType>text/html</contentType>
+         <showPage class="oracle.portal.provider.v2.render.http.ResourceRenderer">
+            <resourcePath>/htdocs/jp_session/JP_SESSION_ShowPage.jsp</resourcePath>
+         </showPage>
+      </renderer>
+      <securityManager class="oracle.portal.provider.v2.security.AuthLevelSecurityManager">
+         <securityLevel>weak</securityLevel>
+      </securityManager>
+   </portlet>
+   <portlet class="oracle.portal.provider.v2.DefaultPortletDefinition">
+      <id>5</id>
+      <name>JP_ORDER_NEW_START</name>
+      <title>JP_ORDER_NEW_START</title>
+      <description>JP_ORDER_NEW_START</description>
+      <timeout>40</timeout>
+      <showEditToPublic>false</showEditToPublic>
+      <hasAbout>false</hasAbout>
+      <showEdit>false</showEdit>
+      <hasHelp>false</hasHelp>
+      <showEditDefault>false</showEditDefault>
+      <showDetails>false</showDetails>
+      <renderer class="oracle.portal.provider.v2.render.RenderManager">
+         <renderContainer>true</renderContainer>
+         <renderCustomize>true</renderCustomize>
+         <autoRedirect>true</autoRedirect>
+         <contentType>text/html</contentType>
+         <showPage class="oracle.portal.provider.v2.render.http.ResourceRenderer">
+            <resourcePath>/htdocs/jp_order_new_star/JP_ORDER_NEW_STAR_ShowPage.jsp</resourcePath>
+         </showPage>
+      </renderer>
+      <securityManager class="oracle.portal.provider.v2.security.AuthLevelSecurityManager">
+         <securityLevel>weak</securityLevel>
+      </securityManager>
+   </portlet>
+   <portlet class="oracle.portal.provider.v2.DefaultPortletDefinition">
+      <id>6</id>
+      <name>JP_ORDER_NEW_COMPANIA</name>
+      <title>JP_ORDER_NEW_COMPANIA</title>
+      <description>JP_ORDER_NEW_COMPANIA</description>
+      <timeout>40</timeout>
+      <showEditToPublic>false</showEditToPublic>
+      <hasAbout>false</hasAbout>
+      <showEdit>false</showEdit>
+      <hasHelp>false</hasHelp>
+      <showEditDefault>false</showEditDefault>
+      <showDetails>false</showDetails>
+      <renderer class="oracle.portal.provider.v2.render.RenderManager">
+         <renderContainer>true</renderContainer>
+         <renderCustomize>true</renderCustomize>
+         <autoRedirect>true</autoRedirect>
+         <contentType>text/html</contentType>
+         <showPage class="oracle.portal.provider.v2.render.http.ResourceRenderer">
+            <resourcePath>/htdocs/jp_order_new_compania/JP_ORDER_NEW_COMPANIA_ShowPage.jsp</resourcePath>
+         </showPage>
+      </renderer>
+      <securityManager class="oracle.portal.provider.v2.security.AuthLevelSecurityManager">
+         <securityLevel>weak</securityLevel>
+      </securityManager>
+   </portlet>
+   <portlet class="oracle.portal.provider.v2.DefaultPortletDefinition">
+      <id>7</id>
+      <name>JP_ORDER_NEW_ORDER</name>
+      <title>JP_ORDER_NEW_ORDER</title>
+      <description>JP_ORDER_NEW_ORDER</description>
+      <timeout>40</timeout>
+      <showEditToPublic>false</showEditToPublic>
+      <hasAbout>false</hasAbout>
+      <showEdit>false</showEdit>
+      <hasHelp>false</hasHelp>
+      <showEditDefault>false</showEditDefault>
+      <showDetails>false</showDetails>
+      <renderer class="oracle.portal.provider.v2.render.RenderManager">
+         <renderContainer>true</renderContainer>
+         <renderCustomize>true</renderCustomize>
+         <autoRedirect>true</autoRedirect>
+         <contentType>text/html</contentType>
+         <showPage class="oracle.portal.provider.v2.render.http.ResourceRenderer">
+            <resourcePath>/htdocs/jp_order_new_order/JP_ORDER_NEW_ORDER_ShowPage.jsp</resourcePath>
+         </showPage>
+      </renderer>
+      <securityManager class="oracle.portal.provider.v2.security.AuthLevelSecurityManager">
+         <securityLevel>weak</securityLevel>
+      </securityManager>
+   </portlet>
+   <portlet class="oracle.portal.provider.v2.DefaultPortletDefinition">
+      <id>9</id>
+      <name>JP_ORDER_NEW_END</name>
+      <title>JP_ORDER_NEW_END</title>
+      <description>JP_ORDER_NEW_END</description>
+      <timeout>40</timeout>
+      <showEditToPublic>false</showEditToPublic>
+      <hasAbout>false</hasAbout>
+      <showEdit>false</showEdit>
+      <hasHelp>false</hasHelp>
+      <showEditDefault>false</showEditDefault>
+      <showDetails>false</showDetails>
+      <renderer class="oracle.portal.provider.v2.render.RenderManager">
+         <renderContainer>true</renderContainer>
+         <renderCustomize>true</renderCustomize>
+         <autoRedirect>true</autoRedirect>
+         <contentType>text/html</contentType>
+         <showPage class="oracle.portal.provider.v2.render.http.ResourceRenderer">
+            <resourcePath>/htdocs/jp_order_new_end/JP_ORDER_NEW_END_ShowPage.jsp</resourcePath>
+         </showPage>
+      </renderer>
+      <securityManager class="oracle.portal.provider.v2.security.AuthLevelSecurityManager">
+         <securityLevel>weak</securityLevel>
+      </securityManager>
+   </portlet>
+   <portlet class="oracle.portal.provider.v2.DefaultPortletDefinition">
+      <id>10</id>
+      <name>JP_ORDER_RETAIL</name>
+      <title>Ordenes - Retail</title>
+      <description>Java Portlet de Retail</description>
+      <timeout>40</timeout>
+      <showEditToPublic>false</showEditToPublic>
+      <hasAbout>false</hasAbout>
+      <showEdit>false</showEdit>
+      <hasHelp>false</hasHelp>
+      <showEditDefault>false</showEditDefault>
+      <showDetails>false</showDetails>
+      <inputParameter class="oracle.portal.provider.v2.DefaultParameterDefinition">
+         <name>orderId</name>
+         <displayName>orderId</displayName>
+         <description>Id de la Orden que será mostrado una vez creada la misma.</description>
+      </inputParameter>
+      <inputParameter class="oracle.portal.provider.v2.DefaultParameterDefinition">
+         <name>statusExecution</name>
+         <displayName>statusExecution</displayName>
+         <description>Muestra el estado de ejecución del Procedure de Creación de Orden por Retail</description>
+      </inputParameter>
+      <renderer class="oracle.portal.provider.v2.render.RenderManager">
+         <renderContainer>true</renderContainer>
+         <renderCustomize>true</renderCustomize>
+         <autoRedirect>true</autoRedirect>
+         <contentType>text/html</contentType>
+         <showPage class="oracle.portal.provider.v2.render.http.ResourceRenderer">
+            <resourcePath>/htdocs/jp_order_retail/JP_ORDER_RETAIL_ShowPage.jsp</resourcePath>
+         </showPage>
+      </renderer>
+      <securityManager class="oracle.portal.provider.v2.security.AuthLevelSecurityManager">
+         <securityLevel>weak</securityLevel>
+      </securityManager>
+   </portlet>
+   <portlet class="oracle.portal.provider.v2.DefaultPortletDefinition">
+      <id>14</id>
+      <name>JP_DINAMIC_SECTION_NEW</name>
+      <title>JP_DINAMIC_SECTION_NEW</title>
+      <description>My Portlet Description</description>
+      <timeout>40</timeout>
+      <showEditToPublic>false</showEditToPublic>
+      <hasAbout>false</hasAbout>
+      <showEdit>false</showEdit>
+      <hasHelp>false</hasHelp>
+      <showEditDefault>false</showEditDefault>
+      <showDetails>false</showDetails>
+      <renderer class="oracle.portal.provider.v2.render.RenderManager">
+         <renderContainer>true</renderContainer>
+         <renderCustomize>true</renderCustomize>
+         <autoRedirect>true</autoRedirect>
+         <contentType>text/html</contentType>
+         <showPage class="oracle.portal.provider.v2.render.http.ResourceRenderer">
+            <resourcePath>/htdocs/jp_order_section_new/JPNewDynamicSections.jsp</resourcePath>
+         </showPage>
+      </renderer>
+      <securityManager class="oracle.portal.provider.v2.security.AuthLevelSecurityManager">
+         <securityLevel>weak</securityLevel>
+      </securityManager>
+   </portlet>
+   <portlet class="oracle.portal.provider.v2.DefaultPortletDefinition">
+      <id>15</id>
+      <name>JP_ORDER_EDIT_RESUMEN</name>
+      <title>JP_ORDER_EDIT_RESUMEN</title>
+      <description>My Portlet Description</description>
+      <timeout>40</timeout>
+      <showEditToPublic>false</showEditToPublic>
+      <hasAbout>false</hasAbout>
+      <showEdit>false</showEdit>
+      <hasHelp>false</hasHelp>
+      <showEditDefault>false</showEditDefault>
+      <showDetails>false</showDetails>
+      <inputParameter class="oracle.portal.provider.v2.DefaultParameterDefinition">
+         <name>an_nporderid</name>
+         <displayName>an_nporderid</displayName>
+         <description>an_nporderid</description>
+      </inputParameter>
+      <renderer class="oracle.portal.provider.v2.render.RenderManager">
+         <renderContainer>true</renderContainer>
+         <renderCustomize>true</renderCustomize>
+         <autoRedirect>true</autoRedirect>
+         <contentType>text/html</contentType>
+         <showPage class="oracle.portal.provider.v2.render.http.ResourceRenderer">
+            <resourcePath>/htdocs/JP_ORDER_EDIT_RESUMEN/JP_ORDER_EDIT_RESUMEN_ShowPage.jsp</resourcePath>
+         </showPage>
+      </renderer>
+      <securityManager class="oracle.portal.provider.v2.security.AuthLevelSecurityManager">
+         <securityLevel>weak</securityLevel>
+      </securityManager>
+   </portlet>
+   <portlet class="oracle.portal.provider.v2.DefaultPortletDefinition">
+      <id>16</id>
+      <name>JP_ORDER_EDIT_ORDER</name>
+      <title>JP_ORDER_EDIT_ORDER</title>
+      <description>My Portlet Description</description>
+      <timeout>40</timeout>
+      <showEditToPublic>false</showEditToPublic>
+      <hasAbout>false</hasAbout>
+      <showEdit>false</showEdit>
+      <hasHelp>false</hasHelp>
+      <showEditDefault>false</showEditDefault>
+      <showDetails>false</showDetails>
+      <inputParameter class="oracle.portal.provider.v2.DefaultParameterDefinition">
+         <name>an_nporderid</name>
+         <displayName>an_nporderid</displayName>
+         <description>an_nporderid</description>
+      </inputParameter>
+      <renderer class="oracle.portal.provider.v2.render.RenderManager">
+         <renderContainer>true</renderContainer>
+         <renderCustomize>true</renderCustomize>
+         <autoRedirect>true</autoRedirect>
+         <contentType>text/html</contentType>
+         <showPage class="oracle.portal.provider.v2.render.http.ResourceRenderer">
+            <resourcePath>/htdocs/JP_ORDER_EDIT_ORDER/JP_ORDER_EDIT_ORDER_ShowPage.jsp</resourcePath>
+         </showPage>
+      </renderer>
+      <securityManager class="oracle.portal.provider.v2.security.AuthLevelSecurityManager">
+         <securityLevel>weak</securityLevel>
+      </securityManager>
+   </portlet>
+   <portlet class="oracle.portal.provider.v2.DefaultPortletDefinition">
+      <id>17</id>
+      <name>JP_ORDER_EDIT_CUSTOMER</name>
+      <title>JP_ORDER_EDIT_CUSTOMER</title>
+      <description>My Portlet Description</description>
+      <timeout>40</timeout>
+      <showEditToPublic>false</showEditToPublic>
+      <hasAbout>false</hasAbout>
+      <showEdit>false</showEdit>
+      <hasHelp>false</hasHelp>
+      <showEditDefault>false</showEditDefault>
+      <showDetails>false</showDetails>
+      <inputParameter class="oracle.portal.provider.v2.DefaultParameterDefinition">
+         <name>an_nporderid</name>
+         <displayName>an_nporderid</displayName>
+         <description>an_nporderid</description>
+      </inputParameter>
+      <renderer class="oracle.portal.provider.v2.render.RenderManager">
+         <renderContainer>true</renderContainer>
+         <renderCustomize>true</renderCustomize>
+         <autoRedirect>true</autoRedirect>
+         <contentType>text/html</contentType>
+         <showPage class="oracle.portal.provider.v2.render.http.ResourceRenderer">
+            <resourcePath>/htdocs/JP_ORDER_EDIT_CUSTOMER/JP_ORDER_EDIT_CUSTOMER_ShowPage.jsp</resourcePath>
+         </showPage>
+      </renderer>
+      <securityManager class="oracle.portal.provider.v2.security.AuthLevelSecurityManager">
+         <securityLevel>weak</securityLevel>
+      </securityManager>
+   </portlet>
+   <portlet class="oracle.portal.provider.v2.DefaultPortletDefinition">
+      <id>18</id>
+      <name>JP_ORDER_EDIT_START</name>
+      <title>JP_ORDER_EDIT_START</title>
+      <description>My Portlet Description</description>
+      <timeout>40</timeout>
+      <showEditToPublic>false</showEditToPublic>
+      <hasAbout>false</hasAbout>
+      <showEdit>false</showEdit>
+      <hasHelp>false</hasHelp>
+      <showEditDefault>false</showEditDefault>
+      <showDetails>false</showDetails>
+      <renderer class="oracle.portal.provider.v2.render.RenderManager">
+         <renderContainer>true</renderContainer>
+         <renderCustomize>true</renderCustomize>
+         <autoRedirect>true</autoRedirect>
+         <contentType>text/html</contentType>
+         <showPage class="oracle.portal.provider.v2.render.http.ResourceRenderer">
+            <resourcePath>/htdocs/JP_ORDER_EDIT_STAR/JP_ORDER_EDIT_STAR_ShowPage.jsp</resourcePath>
+         </showPage>
+      </renderer>
+      <securityManager class="oracle.portal.provider.v2.security.AuthLevelSecurityManager">
+         <securityLevel>weak</securityLevel>
+      </securityManager>
+   </portlet>
+   <portlet class="oracle.portal.provider.v2.DefaultPortletDefinition">
+      <id>19</id>
+      <name>JP_ORDER_EDIT_END</name>
+      <title>JP_ORDER_EDIT_END</title>
+      <description>My Portlet Description</description>
+      <timeout>40</timeout>
+      <showEditToPublic>false</showEditToPublic>
+      <hasAbout>false</hasAbout>
+      <showEdit>false</showEdit>
+      <hasHelp>false</hasHelp>
+      <showEditDefault>false</showEditDefault>
+      <showDetails>false</showDetails>
+      <renderer class="oracle.portal.provider.v2.render.RenderManager">
+         <renderContainer>true</renderContainer>
+         <renderCustomize>true</renderCustomize>
+         <autoRedirect>true</autoRedirect>
+         <contentType>text/html</contentType>
+         <showPage class="oracle.portal.provider.v2.render.http.ResourceRenderer">
+            <resourcePath>/htdocs/JP_ORDER_EDIT_END/JP_ORDER_EDIT_END_ShowPage.jsp</resourcePath>
+         </showPage>
+      </renderer>
+      <securityManager class="oracle.portal.provider.v2.security.AuthLevelSecurityManager">
+         <securityLevel>weak</securityLevel>
+      </securityManager>
+   </portlet>
+   <portlet class="oracle.portal.provider.v2.DefaultPortletDefinition">
+      <id>20</id>
+      <name>JP_ORDER_DYNAMIC_SECTION_EDIT</name>
+      <title>JP_ORDER_DYNAMIC_SECTION_EDIT</title>
+      <description>Dinamic Section Edit</description>
+      <timeout>40</timeout>
+      <showEditToPublic>false</showEditToPublic>
+      <hasAbout>false</hasAbout>
+      <showEdit>false</showEdit>
+      <hasHelp>false</hasHelp>
+      <showEditDefault>false</showEditDefault>
+      <showDetails>false</showDetails>
+      <inputParameter class="oracle.portal.provider.v2.DefaultParameterDefinition">
+         <name>an_nporderid</name>
+         <displayName>an_nporderid</displayName>
+         <description>an_nporderid</description>
+      </inputParameter>
+      <renderer class="oracle.portal.provider.v2.render.RenderManager">
+         <renderContainer>true</renderContainer>
+         <renderCustomize>true</renderCustomize>
+         <autoRedirect>true</autoRedirect>
+         <contentType>text/html</contentType>
+         <showPage class="oracle.portal.provider.v2.render.http.ResourceRenderer">
+            <resourcePath>/htdocs/jp_order_section_edit/JPEditDynamicSectionsShowPage.jsp</resourcePath>
+         </showPage>
+      </renderer>
+      <securityManager class="oracle.portal.provider.v2.security.AuthLevelSecurityManager">
+         <securityLevel>weak</securityLevel>
+      </securityManager>
+   </portlet>
+   <portlet class="oracle.portal.provider.v2.DefaultPortletDefinition">
+      <id>21</id>
+      <name>JP_ORDER_SEARCH</name>
+      <title>Ordenes > Buscar</title>
+      <description>Java Portlet de Búsqueda de Órdenes</description>
+      <timeout>40</timeout>
+      <showEditToPublic>false</showEditToPublic>
+      <hasAbout>false</hasAbout>
+      <showEdit>false</showEdit>
+      <hasHelp>false</hasHelp>
+      <showEditDefault>false</showEditDefault>
+      <showDetails>false</showDetails>
+      <renderer class="oracle.portal.provider.v2.render.RenderManager">
+         <renderContainer>true</renderContainer>
+         <renderCustomize>true</renderCustomize>
+         <autoRedirect>true</autoRedirect>
+         <contentType>text/html</contentType>
+         <showPage class="oracle.portal.provider.v2.render.http.ResourceRenderer">
+            <resourcePath>/htdocs/jp_order_search/JP_ORDER_SEARCHShowPage.jsp</resourcePath>
+         </showPage>
+      </renderer>
+      <securityManager class="oracle.portal.provider.v2.security.AuthLevelSecurityManager">
+         <securityLevel>weak</securityLevel>
+      </securityManager>
+   </portlet>
+   <portlet class="oracle.portal.provider.v2.DefaultPortletDefinition">
+      <id>22</id>
+      <name>JP_ORDER_LIST</name>
+      <title>Ordenes > Lista</title>
+      <description>Java Portlet de Listado de Órdenes</description>
+      <timeout>40</timeout>
+      <showEditToPublic>false</showEditToPublic>
+      <hasAbout>false</hasAbout>
+      <showEdit>false</showEdit>
+      <hasHelp>false</hasHelp>
+      <showEditDefault>false</showEditDefault>
+      <showDetails>false</showDetails>
+      <renderer class="oracle.portal.provider.v2.render.RenderManager">
+         <renderContainer>true</renderContainer>
+         <renderCustomize>true</renderCustomize>
+         <autoRedirect>true</autoRedirect>
+         <contentType>text/html</contentType>
+         <showPage class="oracle.portal.provider.v2.render.http.ResourceRenderer">
+            <resourcePath>/htdocs/JP_ORDER_LIST/JP_ORDER_LISTShowPage.jsp</resourcePath>
+         </showPage>
+      </renderer>
+      <securityManager class="oracle.portal.provider.v2.security.AuthLevelSecurityManager">
+         <securityLevel>weak</securityLevel>
+      </securityManager>
+   </portlet>
+   <portlet class="oracle.portal.provider.v2.DefaultPortletDefinition">
+      <id>23</id>
+      <name>JP_ORDER_DYNAMICSECTION_DETAIL</name>
+      <title>JP_ORDER_DYNAMICSECTION_DETAIL</title>
+      <description>Java Portlet de Listado de Billing Account</description>
+      <timeout>40</timeout>
+      <showEditToPublic>false</showEditToPublic>
+      <hasAbout>false</hasAbout>
+      <showEdit>false</showEdit>
+      <hasHelp>false</hasHelp>
+      <showEditDefault>false</showEditDefault>
+      <showDetails>false</showDetails>
+      <inputParameter class="oracle.portal.provider.v2.DefaultParameterDefinition">
+         <name>an_nporderid</name>
+         <displayName>an_nporderid</displayName>
+         <description>an_nporderid</description>
+      </inputParameter>
+      <renderer class="oracle.portal.provider.v2.render.RenderManager">
+         <renderContainer>true</renderContainer>
+         <renderCustomize>true</renderCustomize>
+         <autoRedirect>true</autoRedirect>
+         <contentType>text/html</contentType>
+         <showPage class="oracle.portal.provider.v2.render.http.ResourceRenderer">
+            <resourcePath>/htdocs/jp_order_section_detail/JPDetailDynamicSectionsShowPage.jsp</resourcePath>
+         </showPage>
+      </renderer>
+      <securityManager class="oracle.portal.provider.v2.security.AuthLevelSecurityManager">
+         <securityLevel>weak</securityLevel>
+      </securityManager>
+   </portlet>
+   <portlet class="oracle.portal.provider.v2.DefaultPortletDefinition">
+      <id>24</id>
+      <name>JP_ORDER_DETAIL_RESUMEN</name>
+      <title>JP_ORDER_DETAIL_RESUMEN</title>
+      <description>My Portlet Description</description>
+      <timeout>40</timeout>
+      <showEditToPublic>false</showEditToPublic>
+      <hasAbout>false</hasAbout>
+      <showEdit>false</showEdit>
+      <hasHelp>false</hasHelp>
+      <showEditDefault>false</showEditDefault>
+      <showDetails>false</showDetails>
+      <inputParameter class="oracle.portal.provider.v2.DefaultParameterDefinition">
+         <name>an_nporderid</name>
+         <displayName>an_nporderid</displayName>
+         <description>an_nporderid</description>
+      </inputParameter>
+      <renderer class="oracle.portal.provider.v2.render.RenderManager">
+         <renderContainer>true</renderContainer>
+         <renderCustomize>true</renderCustomize>
+         <autoRedirect>true</autoRedirect>
+         <contentType>text/html</contentType>
+         <showPage class="oracle.portal.provider.v2.render.http.ResourceRenderer">
+            <resourcePath>/htdocs/JP_ORDER_DETAIL_RESUMEN/JP_ORDER_DETAIL_RESUMEN_ShowPage.jsp</resourcePath>
+         </showPage>
+      </renderer>
+      <securityManager class="oracle.portal.provider.v2.security.AuthLevelSecurityManager">
+         <securityLevel>weak</securityLevel>
+      </securityManager>
+   </portlet>
+   <portlet class="oracle.portal.provider.v2.DefaultPortletDefinition">
+      <id>25</id>
+      <name>JP_ORDER_DETAIL_ORDER</name>
+      <title>JP_ORDER_DETAIL_ORDER</title>
+      <description>My Portlet Description</description>
+      <timeout>40</timeout>
+      <showEditToPublic>false</showEditToPublic>
+      <hasAbout>false</hasAbout>
+      <showEdit>false</showEdit>
+      <hasHelp>false</hasHelp>
+      <showEditDefault>false</showEditDefault>
+      <showDetails>false</showDetails>
+      <inputParameter class="oracle.portal.provider.v2.DefaultParameterDefinition">
+         <name>an_nporderid</name>
+         <displayName>an_nporderid</displayName>
+         <description>an_nporderid</description>
+      </inputParameter>
+      <renderer class="oracle.portal.provider.v2.render.RenderManager">
+         <renderContainer>true</renderContainer>
+         <renderCustomize>true</renderCustomize>
+         <autoRedirect>true</autoRedirect>
+         <contentType>text/html</contentType>
+         <showPage class="oracle.portal.provider.v2.render.http.ResourceRenderer">
+            <resourcePath>/htdocs/JP_ORDER_DETAIL_ORDER/JP_ORDER_DETAIL_ORDER_ShowPage.jsp</resourcePath>
+         </showPage>
+      </renderer>
+      <securityManager class="oracle.portal.provider.v2.security.AuthLevelSecurityManager">
+         <securityLevel>weak</securityLevel>
+      </securityManager>
+   </portlet>
+   <portlet class="oracle.portal.provider.v2.DefaultPortletDefinition">
+      <id>26</id>
+      <name>JP_ORDER_DETAIL_CUSTOMER</name>
+      <title>JP_ORDER_DETAIL_CUSTOMER</title>
+      <description>My Portlet Description</description>
+      <timeout>40</timeout>
+      <showEditToPublic>false</showEditToPublic>
+      <hasAbout>false</hasAbout>
+      <showEdit>false</showEdit>
+      <hasHelp>false</hasHelp>
+      <showEditDefault>false</showEditDefault>
+      <showDetails>false</showDetails>
+      <inputParameter class="oracle.portal.provider.v2.DefaultParameterDefinition">
+         <name>an_nporderid</name>
+         <displayName>an_nporderid</displayName>
+         <description>an_nporderid</description>
+      </inputParameter>
+      <renderer class="oracle.portal.provider.v2.render.RenderManager">
+         <renderContainer>true</renderContainer>
+         <renderCustomize>true</renderCustomize>
+         <autoRedirect>true</autoRedirect>
+         <contentType>text/html</contentType>
+         <showPage class="oracle.portal.provider.v2.render.http.ResourceRenderer">
+            <resourcePath>/htdocs/JP_ORDER_DETAIL_CUSTOMER/JP_ORDER_DETAIL_CUSTOMER_ShowPage.jsp</resourcePath>
+         </showPage>
+      </renderer>
+      <securityManager class="oracle.portal.provider.v2.security.AuthLevelSecurityManager">
+         <securityLevel>weak</securityLevel>
+      </securityManager>
+   </portlet>
+   <portlet class="oracle.portal.provider.v2.DefaultPortletDefinition">
+      <id>27</id>
+      <name>JP_ORDER_DETAIL_START</name>
+      <title>JP_ORDER_DETAIL_START</title>
+      <description>My Portlet Description</description>
+      <timeout>40</timeout>
+      <showEditToPublic>false</showEditToPublic>
+      <hasAbout>false</hasAbout>
+      <showEdit>false</showEdit>
+      <hasHelp>false</hasHelp>
+      <showEditDefault>false</showEditDefault>
+      <showDetails>false</showDetails>
+      <renderer class="oracle.portal.provider.v2.render.RenderManager">
+         <renderContainer>true</renderContainer>
+         <renderCustomize>true</renderCustomize>
+         <autoRedirect>true</autoRedirect>
+         <contentType>text/html</contentType>
+         <showPage class="oracle.portal.provider.v2.render.http.ResourceRenderer">
+            <resourcePath>/htdocs/JP_ORDER_DETAIL_STAR/JP_ORDER_DETAIL_STAR_ShowPage.jsp</resourcePath>
+         </showPage>
+      </renderer>
+      <securityManager class="oracle.portal.provider.v2.security.AuthLevelSecurityManager">
+         <securityLevel>weak</securityLevel>
+      </securityManager>
+   </portlet>
+   <portlet class="oracle.portal.provider.v2.DefaultPortletDefinition">
+      <id>28</id>
+      <name>JP_ORDER_DETAIL_END</name>
+      <title>JP_ORDER_DETAIL_END</title>
+      <description>My Portlet Description</description>
+      <timeout>40</timeout>
+      <showEditToPublic>false</showEditToPublic>
+      <hasAbout>false</hasAbout>
+      <showEdit>false</showEdit>
+      <hasHelp>false</hasHelp>
+      <showEditDefault>false</showEditDefault>
+      <showDetails>false</showDetails>
+      <renderer class="oracle.portal.provider.v2.render.RenderManager">
+         <renderContainer>true</renderContainer>
+         <renderCustomize>true</renderCustomize>
+         <autoRedirect>true</autoRedirect>
+         <contentType>text/html</contentType>
+         <showPage class="oracle.portal.provider.v2.render.http.ResourceRenderer">
+            <resourcePath>/htdocs/JP_ORDER_DETAIL_END/JP_ORDER_DETAIL_END_ShowPage.jsp</resourcePath>
+         </showPage>
+      </renderer>
+      <securityManager class="oracle.portal.provider.v2.security.AuthLevelSecurityManager">
+         <securityLevel>weak</securityLevel>
+      </securityManager>
+   </portlet>
+   <portlet class="oracle.portal.provider.v2.DefaultPortletDefinition">
+      <id>29</id>
+      <name>JP_ORDER_REPAIR</name>
+      <title>Ordenes - Seccion Dinamica Reparaciones</title>
+      <description>Java Portlet para Reparaciones</description>
+      <timeout>40</timeout>
+      <showEditToPublic>false</showEditToPublic>
+      <hasAbout>false</hasAbout>
+      <showEdit>false</showEdit>
+      <hasHelp>false</hasHelp>
+      <showEditDefault>false</showEditDefault>
+      <showDetails>false</showDetails>
+      <inputParameter class="oracle.portal.provider.v2.DefaultParameterDefinition">
+         <name>an_nporderid</name>
+         <displayName>an_nporderid</displayName>
+         <description>Id de la Orden</description>
+      </inputParameter>
+      <renderer class="oracle.portal.provider.v2.render.RenderManager">
+         <renderContainer>true</renderContainer>
+         <renderCustomize>true</renderCustomize>
+         <autoRedirect>true</autoRedirect>
+         <contentType>text/html</contentType>
+         <showPage class="oracle.portal.provider.v2.render.http.ResourceRenderer">
+            <resourcePath>/htdocs/jp_order_repair/JP_ORDER_REPAIR_ShowPage.jsp</resourcePath>
+         </showPage>
+      </renderer>
+      <securityManager class="oracle.portal.provider.v2.security.AuthLevelSecurityManager">
+         <securityLevel>weak</securityLevel>
+      </securityManager>
+   </portlet>
+   <portlet class="oracle.portal.provider.v2.DefaultPortletDefinition">
+      <id>30</id>
+      <name>JP_HISTORY_ACTION_LIST</name>
+      <title>Ordenes - Historia de Accion</title>
+      <description>Java Portlet de Seguimiento de Órdenes</description>
+      <timeout>40</timeout>
+      <showEditToPublic>false</showEditToPublic>
+      <hasAbout>false</hasAbout>
+      <showEdit>false</showEdit>
+      <hasHelp>false</hasHelp>
+      <showEditDefault>false</showEditDefault>
+      <showDetails>false</showDetails>
+      <inputParameter class="oracle.portal.provider.v2.DefaultParameterDefinition">
+         <name>an_nporderid</name>
+         <displayName>an_nporderid</displayName>
+         <description>Id de la Orden</description>
+      </inputParameter>
+      <renderer class="oracle.portal.provider.v2.render.RenderManager">
+         <renderContainer>true</renderContainer>
+         <renderCustomize>true</renderCustomize>
+         <autoRedirect>true</autoRedirect>
+         <contentType>text/html</contentType>
+         <showPage class="oracle.portal.provider.v2.render.http.ResourceRenderer">
+            <resourcePath>/htdocs/JP_HISTORY_ACTION_LIST/JP_HISTORY_ACTION_LISTShowPage.jsp</resourcePath>
+         </showPage>
+      </renderer>
+      <securityManager class="oracle.portal.provider.v2.security.AuthLevelSecurityManager">
+         <securityLevel>weak</securityLevel>
+      </securityManager>
+   </portlet>
+   <portlet class="oracle.portal.provider.v2.DefaultPortletDefinition">
+      <id>31</id>
+      <name>JP_HISTORY_APPROVE_LIST</name>
+      <title>Ordenes - Historia de Aprobacion</title>
+      <description>Java Portlet de Historial de Aprobaciones de Órdenes</description>
+      <timeout>40</timeout>
+      <showEditToPublic>false</showEditToPublic>
+      <hasAbout>false</hasAbout>
+      <showEdit>false</showEdit>
+      <hasHelp>false</hasHelp>
+      <showEditDefault>false</showEditDefault>
+      <showDetails>false</showDetails>
+      <inputParameter class="oracle.portal.provider.v2.DefaultParameterDefinition">
+         <name>an_nporderid</name>
+         <displayName>an_nporderid</displayName>
+         <description>Id de la Orden</description>
+      </inputParameter>
+      <renderer class="oracle.portal.provider.v2.render.RenderManager">
+         <renderContainer>true</renderContainer>
+         <renderCustomize>true</renderCustomize>
+         <autoRedirect>true</autoRedirect>
+         <contentType>text/html</contentType>
+         <showPage class="oracle.portal.provider.v2.render.http.ResourceRenderer">
+            <resourcePath>/htdocs/JP_HISTORY_APPROVE_LIST/JP_HISTORY_APPROVE_LISTShowPage.jsp</resourcePath>
+         </showPage>
+      </renderer>
+      <securityManager class="oracle.portal.provider.v2.security.AuthLevelSecurityManager">
+         <securityLevel>weak</securityLevel>
+      </securityManager>
+   </portlet>
+   <portlet class="oracle.portal.provider.v2.DefaultPortletDefinition">
+      <id>32</id>
+      <name>JP_COMMENTS_LIST</name>
+      <title>Ordenes - Lista de Comentarios</title>
+      <description>Java Portlet de Lista de Comentarios de Órdenes</description>
+      <timeout>40</timeout>
+      <showEditToPublic>false</showEditToPublic>
+      <hasAbout>false</hasAbout>
+      <showEdit>false</showEdit>
+      <hasHelp>false</hasHelp>
+      <showEditDefault>false</showEditDefault>
+      <showDetails>false</showDetails>
+      <inputParameter class="oracle.portal.provider.v2.DefaultParameterDefinition">
+         <name>an_nporderid</name>
+         <displayName>an_nporderid</displayName>
+         <description>Id de la Orden</description>
+      </inputParameter>
+      <renderer class="oracle.portal.provider.v2.render.RenderManager">
+         <renderContainer>true</renderContainer>
+         <renderCustomize>true</renderCustomize>
+         <autoRedirect>true</autoRedirect>
+         <contentType>text/html</contentType>
+         <showPage class="oracle.portal.provider.v2.render.http.ResourceRenderer">
+            <resourcePath>/htdocs/JP_COMMENTS_LIST/JP_COMMENTS_LISTShowPage.jsp</resourcePath>
+         </showPage>
+      </renderer>
+      <securityManager class="oracle.portal.provider.v2.security.AuthLevelSecurityManager">
+         <securityLevel>weak</securityLevel>
+      </securityManager>
+   </portlet>
+   <portlet class="oracle.portal.provider.v2.DefaultPortletDefinition">
+      <id>33</id>
+      <name>JP_COMMENTS_NEW</name>
+      <title>Ordenes - Agregar Comentarios</title>
+      <description>Java Portlet para Agregar Comentarios de Órdenes</description>
+      <timeout>40</timeout>
+      <showEditToPublic>false</showEditToPublic>
+      <hasAbout>false</hasAbout>
+      <showEdit>false</showEdit>
+      <hasHelp>false</hasHelp>
+      <showEditDefault>false</showEditDefault>
+      <showDetails>false</showDetails>
+      <inputParameter class="oracle.portal.provider.v2.DefaultParameterDefinition">
+         <name>an_nporderid</name>
+         <displayName>an_nporderid</displayName>
+         <description>Id de la Orden</description>
+      </inputParameter>
+      <renderer class="oracle.portal.provider.v2.render.RenderManager">
+         <renderContainer>true</renderContainer>
+         <renderCustomize>true</renderCustomize>
+         <autoRedirect>true</autoRedirect>
+         <contentType>text/html</contentType>
+         <showPage class="oracle.portal.provider.v2.render.http.ResourceRenderer">
+            <resourcePath>/htdocs/JP_COMMENTS_NEW/JP_COMMENTS_NEWShowPage.jsp</resourcePath>
+         </showPage>
+      </renderer>
+      <securityManager class="oracle.portal.provider.v2.security.AuthLevelSecurityManager">
+         <securityLevel>weak</securityLevel>
+      </securityManager>
+   </portlet>
+   <portlet class="oracle.portal.provider.v2.DefaultPortletDefinition">
+      <id>34</id>
+      <name>JP_DOCS_INVENTORY</name>
+      <title>Ordenes - Inventario de Documentos y Facturas</title>
+      <description>Java Portlet para Listar Inventario de Documentos y Facturas</description>
+      <timeout>40</timeout>
+      <showEditToPublic>false</showEditToPublic>
+      <hasAbout>false</hasAbout>
+      <showEdit>false</showEdit>
+      <hasHelp>false</hasHelp>
+      <showEditDefault>false</showEditDefault>
+      <showDetails>false</showDetails>
+      <inputParameter class="oracle.portal.provider.v2.DefaultParameterDefinition">
+         <name>an_nporderid</name>
+         <displayName>an_nporderid</displayName>
+         <description>Id de la Orden</description>
+      </inputParameter>
+      <renderer class="oracle.portal.provider.v2.render.RenderManager">
+         <renderContainer>true</renderContainer>
+         <renderCustomize>true</renderCustomize>
+         <autoRedirect>true</autoRedirect>
+         <contentType>text/html</contentType>
+         <showPage class="oracle.portal.provider.v2.render.http.ResourceRenderer">
+            <resourcePath>/htdocs/JP_DOCS_INVENTORY_LIST/JP_DOCS_INVENTORY_LISTShowPage.jsp</resourcePath>
+         </showPage>
+      </renderer>
+      <securityManager class="oracle.portal.provider.v2.security.AuthLevelSecurityManager">
+         <securityLevel>weak</securityLevel>
+      </securityManager>
+   </portlet>
+   <portlet class="oracle.portal.provider.v2.DefaultPortletDefinition">
+      <id>35</id>
+      <name>JP_SESSION_SRV1</name>
+      <title>JP_SESSION_SRV1</title>
+      <description/>
+      <timeout>40</timeout>
+      <showEditToPublic>false</showEditToPublic>
+      <hasAbout>false</hasAbout>
+      <showEdit>false</showEdit>
+      <hasHelp>false</hasHelp>
+      <showEditDefault>false</showEditDefault>
+      <showDetails>false</showDetails>
+      <inputParameter class="oracle.portal.provider.v2.DefaultParameterDefinition">
+         <name>an_rolid</name>
+         <displayName>an_rolid</displayName>
+      </inputParameter>
+      <renderer class="oracle.portal.provider.v2.render.RenderManager">
+         <renderContainer>true</renderContainer>
+         <renderCustomize>true</renderCustomize>
+         <autoRedirect>true</autoRedirect>
+         <contentType>text/html</contentType>
+         <showPage>/htdocs/jp_session_srv1/JP_SESSION_SRV1_ShowPage.jsp</showPage>
+      </renderer>
+   </portlet>
+   <portlet class="oracle.portal.provider.v2.DefaultPortletDefinition">
+      <id>36</id>
+      <name>JP_SESSION_SRV2</name>
+      <title>JP_SESSION_SRV2</title>
+      <description></description>
+      <timeout>40</timeout>
+      <showEditToPublic>false</showEditToPublic>
+      <hasAbout>false</hasAbout>
+      <showEdit>false</showEdit>
+      <hasHelp>false</hasHelp>
+      <showEditDefault>false</showEditDefault>
+      <showDetails>false</showDetails>
+      <inputParameter class="oracle.portal.provider.v2.DefaultParameterDefinition">
+         <name>an_rolid</name>
+         <displayName>an_rolid</displayName>
+      </inputParameter>
+      <renderer class="oracle.portal.provider.v2.render.RenderManager">
+         <renderContainer>true</renderContainer>
+         <renderCustomize>true</renderCustomize>
+         <autoRedirect>true</autoRedirect>
+         <contentType>text/html</contentType>
+         <showPage>/htdocs/jp_session_srv2/JP_SESSION_SRV2_ShowPage.jsp</showPage>
+      </renderer>
+   </portlet>
+   
+   
+   <portlet class="oracle.portal.provider.v2.DefaultPortletDefinition">
+      <id>37</id>
+      <name>JP_ORDER_SUSPENSION_SEARCH</name>
+      <title>Reporte de Suspensiones Programadas</title>
+      <description>Portlet utilizado para mostrar un reporte de suspensiones programadas de acuerdo a una fecha</description>
+      <timeout>40</timeout>
+      <showEditToPublic>false</showEditToPublic>
+      <hasAbout>false</hasAbout>
+      <showEdit>false</showEdit>
+      <hasHelp>false</hasHelp>
+      <showEditDefault>false</showEditDefault>
+      <showDetails>false</showDetails>
+      <renderer class="oracle.portal.provider.v2.render.RenderManager">
+         <renderContainer>true</renderContainer>
+         <renderCustomize>true</renderCustomize>
+         <autoRedirect>true</autoRedirect>
+         <contentType>text/html</contentType>
+         <showPage>/htdocs/jp_order_suspension_search/JP_ORDER_SEARCHFinalSuspension.jsp</showPage>
+      </renderer>
+   </portlet>  
+   
+   <portlet class="oracle.portal.provider.v2.DefaultPortletDefinition">
+      <id>38</id>
+      <name>JP_ORDER_RET_STATS</name>
+      <title>Reporte Estadístico de Retenciones</title>
+      <description>Portlet utilizado para mostrar un reporte de las retenciones por asesor y motivo</description>
+      <timeout>40</timeout>
+      <showEditToPublic>false</showEditToPublic>
+      <hasAbout>false</hasAbout>
+      <showEdit>false</showEdit>
+      <hasHelp>false</hasHelp>
+      <showEditDefault>false</showEditDefault>
+      <showDetails>false</showDetails>
+      <renderer class="oracle.portal.provider.v2.render.RenderManager">
+         <renderContainer>true</renderContainer>
+         <renderCustomize>true</renderCustomize>
+         <autoRedirect>true</autoRedirect>
+         <contentType>text/html</contentType>
+         <showPage>/htdocs/JP_ORDER_RET_STATS/JP_ORDER_RET_STATS_ShowPage.jsp</showPage>
+      </renderer>
+   </portlet> 
+   
+   <portlet class="oracle.portal.provider.v2.DefaultPortletDefinition">
+      <id>39</id>
+      <name>JP_ORDER_PCM</name>
+      <title>Reporte de Procesos Compuestos Masivos</title>
+      <description>Portlet utilizado para mostrar un reporte de los procesos relacionados a las suspensiones</description>
+      <timeout>40</timeout>
+      <showEditToPublic>false</showEditToPublic>
+      <hasAbout>false</hasAbout>
+      <showEdit>false</showEdit>
+      <hasHelp>false</hasHelp>
+      <showEditDefault>false</showEditDefault>
+      <showDetails>false</showDetails>
+      <renderer class="oracle.portal.provider.v2.render.RenderManager">
+         <renderContainer>true</renderContainer>
+         <renderCustomize>true</renderCustomize>
+         <autoRedirect>true</autoRedirect>
+         <contentType>text/html</contentType>
+         <showPage>/htdocs/jp_order_pcm/JP_ORDER_PROC_COMP_MAS_ShowPage.jsp</showPage>
+      </renderer>
+   </portlet>
+   
+  <portlet class="oracle.portal.provider.v2.DefaultPortletDefinition">
+      <id>40</id>
+      <name>JP_ORDER_SUSP_DET_SEARCH</name>
+      <title>Reporte Detallado de Suspensiones Programadas</title>
+      <description>Portlet utilizado para mostrar un reporte de suspensiones programadas detallado por teléfonos</description>
+      <timeout>40</timeout>
+      <showEditToPublic>false</showEditToPublic>
+      <hasAbout>false</hasAbout>
+      <showEdit>false</showEdit>
+      <hasHelp>false</hasHelp>
+      <showEditDefault>false</showEditDefault>
+      <showDetails>false</showDetails>
+      <renderer class="oracle.portal.provider.v2.render.RenderManager">
+         <renderContainer>true</renderContainer>
+         <renderCustomize>true</renderCustomize>
+         <autoRedirect>true</autoRedirect>
+         <contentType>text/html</contentType>
+         <showPage>/htdocs/jp_order_suspension_searchdetail/JP_ORDER_SEARCHFinalSuspensionDetail.jsp</showPage>
+      </renderer>
+   </portlet>  
+   
+  <portlet class="oracle.portal.provider.v2.DefaultPortletDefinition">
+      <id>41</id>
+      <name>JP_ORDER_EDIT_INTERNAL_ORDERS</name>
+      <title>Listado de Órdenes Internas</title>
+      <description>Portlet utilizado para mostrar la lista de Órdenes internas de una orden principal</description>
+      <timeout>40</timeout>
+      <showEditToPublic>false</showEditToPublic>
+      <hasAbout>false</hasAbout>
+      <showEdit>false</showEdit>
+      <hasHelp>false</hasHelp>
+      <showEditDefault>false</showEditDefault>
+      <showDetails>false</showDetails>
+      <inputParameter class="oracle.portal.provider.v2.DefaultParameterDefinition">
+         <name>an_nporderid</name>
+         <displayName>an_nporderid</displayName>
+         <description>Orden principal de la que se desean listar sus Órdenes internas</description>
+      </inputParameter>
+      <renderer class="oracle.portal.provider.v2.render.RenderManager">
+         <renderContainer>true</renderContainer>
+         <renderCustomize>true</renderCustomize>
+         <autoRedirect>true</autoRedirect>
+         <contentType>text/html</contentType>
+         <showPage class="oracle.portal.provider.v2.render.http.ResourceRenderer">
+         	<resourcePath>/htdocs/JP_ORDER_EDIT_INTERNAL_ORDERS/JP_ORDER_EDIT_INTERNAL_ORDERS_ShowPage.jsp</resourcePath>
+         </showPage>
+      </renderer>
+      <securityManager class="oracle.portal.provider.v2.security.AuthLevelSecurityManager">
+         <securityLevel>weak</securityLevel>
+      </securityManager>
+   </portlet>  
+   <portlet class="oracle.portal.provider.v2.DefaultPortletDefinition">
+      <id>42</id>
+      <name>JP_ORDER_PAYMENT_SEARCH</name>
+      <title>JP_ORDER_PAYMENT_SEARCH</title>
+      <description>JP_ORDER_PAYMENT_SEARCH</description>
+      <timeout>40</timeout>
+      <showEditToPublic>false</showEditToPublic>
+      <hasAbout>false</hasAbout>
+      <showEdit>false</showEdit>
+      <hasHelp>false</hasHelp>
+      <showEditDefault>false</showEditDefault>
+      <showDetails>false</showDetails>
+      <renderer class="oracle.portal.provider.v2.render.RenderManager">
+         <renderContainer>true</renderContainer>
+         <renderCustomize>true</renderCustomize>
+         <autoRedirect>true</autoRedirect>
+         <contentType>text/html</contentType>
+         <showPage>/htdocs/JP_ORDER_PAYMENT_SEARCH/JP_ORDER_PAYMENT_TE_ShowPage.jsp</showPage>
+      </renderer>
+   </portlet>
+   <portlet class="oracle.portal.provider.v2.DefaultPortletDefinition">
+        <id>43</id>
+        <name>JP_ORDER_PRINT_LABEL</name>
+        <title>Impresión de Etiquetas</title>
+        <description>JP_ORDER_PRINT_LABEL</description>
+        <timeout>40</timeout>
+        <showEditToPublic>false</showEditToPublic>
+        <hasAbout>false</hasAbout>
+        <showEdit>false</showEdit>
+        <hasHelp>false</hasHelp>
+        <showEditDefault>false</showEditDefault>
+        <showDetails>false</showDetails>
+        <renderer class="oracle.portal.provider.v2.render.RenderManager">
+            <renderContainer>true</renderContainer>
+            <renderCustomize>true</renderCustomize>
+            <autoRedirect>true</autoRedirect>
+            <contentType>text/html</contentType>
+            <showPage>/htdocs/JP_ORDER_PRINT_LABEL/JP_ORDER_PRINT_LABEL_ShowPage.jsp</showPage>
+        </renderer>
+   </portlet>
+   <portlet class="oracle.portal.provider.v2.DefaultPortletDefinition">
+      <id>102</id>
+      <name>JP_ORDER_BC_NEW_START</name>
+      <title>JP_ORDER_BC_NEW_START</title>
+      <description>JP_ORDER_BC_NEW_START</description>
+      <timeout>40</timeout>
+      <showEditToPublic>false</showEditToPublic>
+      <hasAbout>false</hasAbout>
+      <showEdit>false</showEdit>
+      <hasHelp>false</hasHelp>
+      <showEditDefault>false</showEditDefault>
+      <showDetails>false</showDetails>
+      <renderer class="oracle.portal.provider.v2.render.RenderManager">
+         <renderContainer>true</renderContainer>
+         <renderCustomize>true</renderCustomize>
+         <autoRedirect>true</autoRedirect>
+         <contentType>text/html</contentType>
+         <showPage class="oracle.portal.provider.v2.render.http.ResourceRenderer">
+            <resourcePath>/htdocs/JP_ORDER_BC_NEW/JP_ORDER_BC_NEW_START_ShowPage.jsp</resourcePath>
+         </showPage>
+      </renderer>
+      <securityManager class="oracle.portal.provider.v2.security.AuthLevelSecurityManager">
+         <securityLevel>weak</securityLevel>
+      </securityManager>
+   </portlet>
+   <portlet class="oracle.portal.provider.v2.DefaultPortletDefinition">
+      <id>103</id>
+      <name>JP_ORDER_BC_NEW_COMPANIA</name>
+      <title>JP_ORDER_BC_NEW_COMPANIA</title>
+      <description>JP_ORDER_BC_NEW_COMPANIA</description>
+      <timeout>40</timeout>
+      <showEditToPublic>false</showEditToPublic>
+      <hasAbout>false</hasAbout>
+      <showEdit>false</showEdit>
+      <hasHelp>false</hasHelp>
+      <showEditDefault>false</showEditDefault>
+      <showDetails>false</showDetails>
+      <renderer class="oracle.portal.provider.v2.render.RenderManager">
+         <renderContainer>true</renderContainer>
+         <renderCustomize>true</renderCustomize>
+         <autoRedirect>true</autoRedirect>
+         <contentType>text/html</contentType>
+         <showPage class="oracle.portal.provider.v2.render.http.ResourceRenderer">
+            <resourcePath>/htdocs/JP_ORDER_BC_NEW/JP_ORDER_BC_NEW_COMPANIA_ShowPage.jsp</resourcePath>
+         </showPage>
+      </renderer>
+      <securityManager class="oracle.portal.provider.v2.security.AuthLevelSecurityManager">
+         <securityLevel>weak</securityLevel>
+      </securityManager>
+   </portlet>
+   <portlet class="oracle.portal.provider.v2.DefaultPortletDefinition">
+      <id>104</id>
+      <name>JP_ORDER_BC_NEW_ORDER</name>
+      <title>JP_ORDER_BC_NEW_ORDER</title>
+      <description>JP_ORDER_BC_NEW_ORDER</description>
+      <timeout>40</timeout>
+      <showEditToPublic>false</showEditToPublic>
+      <hasAbout>false</hasAbout>
+      <showEdit>false</showEdit>
+      <hasHelp>false</hasHelp>
+      <showEditDefault>false</showEditDefault>
+      <showDetails>false</showDetails>
+      <renderer class="oracle.portal.provider.v2.render.RenderManager">
+         <renderContainer>true</renderContainer>
+         <renderCustomize>true</renderCustomize>
+         <autoRedirect>true</autoRedirect>
+         <contentType>text/html</contentType>
+         <showPage class="oracle.portal.provider.v2.render.http.ResourceRenderer">
+            <resourcePath>/htdocs/JP_ORDER_BC_NEW/JP_ORDER_BC_NEW_ORDER_ShowPage.jsp</resourcePath>
+         </showPage>
+      </renderer>
+      <securityManager class="oracle.portal.provider.v2.security.AuthLevelSecurityManager">
+         <securityLevel>weak</securityLevel>
+      </securityManager>
+   </portlet>
+   <portlet class="oracle.portal.provider.v2.DefaultPortletDefinition">
+      <id>105</id>
+      <name>JP_ORDER_BC_NEW_DINAMIC_SECTION</name>
+      <title>JP_ORDER_BC_NEW_DINAMIC_SECTION</title>
+      <description>JP_ORDER_BC_NEW_DINAMIC_SECTION</description>
+      <timeout>40</timeout>
+      <showEditToPublic>false</showEditToPublic>
+      <hasAbout>false</hasAbout>
+      <showEdit>false</showEdit>
+      <hasHelp>false</hasHelp>
+      <showEditDefault>false</showEditDefault>
+      <showDetails>false</showDetails>
+      <renderer class="oracle.portal.provider.v2.render.RenderManager">
+         <renderContainer>true</renderContainer>
+         <renderCustomize>true</renderCustomize>
+         <autoRedirect>true</autoRedirect>
+         <contentType>text/html</contentType>
+         <showPage class="oracle.portal.provider.v2.render.http.ResourceRenderer">
+            <resourcePath>/htdocs/JP_ORDER_BC_NEW/JP_ORDER_BC_NEW_DINAMIC_SECTION_ShowPage.jsp</resourcePath>
+         </showPage>
+      </renderer>
+      <securityManager class="oracle.portal.provider.v2.security.AuthLevelSecurityManager">
+         <securityLevel>weak</securityLevel>
+      </securityManager>
+   </portlet>
+   <portlet class="oracle.portal.provider.v2.DefaultPortletDefinition">
+      <id>106</id>
+      <name>JP_ORDER_BC_NEW_END</name>
+      <title>JP_ORDER_BC_NEW_END</title>
+      <description>JP_ORDER_BC_NEW_END</description>
+      <timeout>40</timeout>
+      <showEditToPublic>false</showEditToPublic>
+      <hasAbout>false</hasAbout>
+      <showEdit>false</showEdit>
+      <hasHelp>false</hasHelp>
+      <showEditDefault>false</showEditDefault>
+      <showDetails>false</showDetails>
+      <renderer class="oracle.portal.provider.v2.render.RenderManager">
+         <renderContainer>true</renderContainer>
+         <renderCustomize>true</renderCustomize>
+         <autoRedirect>true</autoRedirect>
+         <contentType>text/html</contentType>
+         <showPage class="oracle.portal.provider.v2.render.http.ResourceRenderer">
+            <resourcePath>/htdocs/JP_ORDER_BC_NEW/JP_ORDER_BC_NEW_END_ShowPage.jsp</resourcePath>
+         </showPage>
+      </renderer>
+      <securityManager class="oracle.portal.provider.v2.security.AuthLevelSecurityManager">
+         <securityLevel>weak</securityLevel>
+      </securityManager>
+   </portlet>
+
+   <!-- [PM0011173]: INICIO-->
+   <portlet class="oracle.portal.provider.v2.DefaultPortletDefinition">
+      <id>112</id>
+      <name>JP_DIGITAL_DOCUMENTS_LIST</name>
+      <title>Ordenes - Documentos Digitales</title>
+      <description>Java Portlet de Documentos Digitales de Órdenes</description>
+      <timeout>40</timeout>
+      <showEditToPublic>false</showEditToPublic>
+      <hasAbout>false</hasAbout>
+      <showEdit>false</showEdit>
+      <hasHelp>false</hasHelp>
+      <showEditDefault>false</showEditDefault>
+      <showDetails>false</showDetails>
+      <inputParameter class="oracle.portal.provider.v2.DefaultParameterDefinition">
+         <name>an_nporderid</name>
+         <displayName>an_nporderid</displayName>
+         <description>Id de la Orden</description>
+      </inputParameter>
+      <renderer class="oracle.portal.provider.v2.render.RenderManager">
+         <renderContainer>true</renderContainer>
+         <renderCustomize>true</renderCustomize>
+         <autoRedirect>true</autoRedirect>
+         <contentType>text/html</contentType>
+         <showPage class="oracle.portal.provider.v2.render.http.ResourceRenderer">
+            <resourcePath>/htdocs/JP_DIGITAL_DOCUMENTS_LIST/JP_DIGITAL_DOCUMENTS_LISTShowPage.jsp</resourcePath>
+         </showPage>
+      </renderer>
+      <securityManager class="oracle.portal.provider.v2.security.AuthLevelSecurityManager">
+         <securityLevel>weak</securityLevel>
+      </securityManager>
+   </portlet>
+   <portlet class="oracle.portal.provider.v2.DefaultPortletDefinition">
+      <id>113</id>
+      <name>JP_ORDERS_DIGITAL_DOCUMENTS_LIST</name>
+      <title>Ordenes - Ordenes con Documentos Digitales</title>
+      <description>Java Portlet de Documentos Digitales de Órdenes</description>
+      <timeout>40</timeout>
+      <showEditToPublic>false</showEditToPublic>
+      <hasAbout>false</hasAbout>
+      <showEdit>false</showEdit>
+      <hasHelp>false</hasHelp>
+      <showEditDefault>false</showEditDefault>
+      <showDetails>false</showDetails>
+      <inputParameter class="oracle.portal.provider.v2.DefaultParameterDefinition">
+         <name>customerId</name>
+         <displayName>customerId</displayName>
+         <description>customer Id</description>
+      </inputParameter>
+      <renderer class="oracle.portal.provider.v2.render.RenderManager">
+         <renderContainer>true</renderContainer>
+         <renderCustomize>true</renderCustomize>
+         <autoRedirect>true</autoRedirect>
+         <contentType>text/html</contentType>
+         <showPage class="oracle.portal.provider.v2.render.http.ResourceRenderer">
+            <resourcePath>/htdocs/JP_DIGITAL_DOCUMENTS_LIST/JP_ORDERS_DIGITAL_DOCUMENTS_LISTShowPage.jsp</resourcePath>
+         </showPage>
+      </renderer>
+      <securityManager class="oracle.portal.provider.v2.security.AuthLevelSecurityManager">
+         <securityLevel>weak</securityLevel>
+      </securityManager>
+   </portlet>
+   <!-- [PM0011173]: FIN-->
+
+   <!-- [PROY-4244]IOZ12092016: INCIO-->
+   <portlet class="oracle.portal.provider.v2.DefaultPortletDefinition">
+      <id>108</id>
+      <name>JP_VERIF_IDENT_AISL</name>
+      <title>Verificacion de Identidad Aislada > Generar</title>
+      <description>Java Portlet de Verificacion de Identidad Aislada</description>
+      <timeout>40</timeout>
+      <showEditToPublic>false</showEditToPublic>
+      <hasAbout>false</hasAbout>
+      <showEdit>false</showEdit>
+      <hasHelp>false</hasHelp>
+      <showEditDefault>false</showEditDefault>
+      <showDetails>false</showDetails>
+      <renderer class="oracle.portal.provider.v2.render.RenderManager">
+         <renderContainer>true</renderContainer>
+         <renderCustomize>true</renderCustomize>
+         <autoRedirect>true</autoRedirect>
+         <contentType>text/html</contentType>
+         <showPage class="oracle.portal.provider.v2.render.http.ResourceRenderer">
+            <resourcePath>/htdocs/JP_VERIF_IDENT_AISL/VerificationBiometricaAislada.jsp</resourcePath>
+         </showPage>
+      </renderer>
+      <securityManager class="oracle.portal.provider.v2.security.AuthLevelSecurityManager">
+         <securityLevel>weak</securityLevel>
+      </securityManager>
+   </portlet>
+   <!-- [PRY-0553]PZACARIAS: INICIO-->
+   <portlet class="oracle.portal.provider.v2.DefaultPortletDefinition">
+      <id>109</id>
+      <name>JP_IDENT_VERIF_DETAIL</name>
+      <title>Verificacion de Identidad > detalle</title>
+      <description>Verificacion de Identidad > detalle</description>
+      <timeout>40</timeout>
+      <showEditToPublic>false</showEditToPublic>
+      <hasAbout>false</hasAbout>
+      <showEdit>false</showEdit>
+      <hasHelp>false</hasHelp>
+      <showEditDefault>false</showEditDefault>
+      <showDetails>false</showDetails>
+      <renderer class="oracle.portal.provider.v2.render.RenderManager">
+         <renderContainer>true</renderContainer>
+         <renderCustomize>true</renderCustomize>
+         <autoRedirect>true</autoRedirect>
+         <contentType>text/html</contentType>
+         <showPage class="oracle.portal.provider.v2.render.http.ResourceRenderer">
+            <resourcePath>/htdocs/JP_IDENT_VERIF_DETAIL/IdentityVerificationDetail.jsp</resourcePath>
+         </showPage>
+      </renderer>
+      <securityManager class="oracle.portal.provider.v2.security.AuthLevelSecurityManager">
+         <securityLevel>weak</securityLevel>
+      </securityManager>
+   </portlet>
+   <!-- [PRY-0553]PZACARIAS: FIN-->
+
+
+   <!-- [PRY-0553]MMONTOYA: INICIO-->
+   <portlet class="oracle.portal.provider.v2.DefaultPortletDefinition">
+      <id>110</id>
+      <name>JP_IDENT_VERIF_CONS</name>
+      <title>Consulta de Verificación de Identidad Aislada</title>
+      <description>Consulta de Verificación de Identidad Aislada</description>
+      <timeout>40</timeout>
+      <showEditToPublic>false</showEditToPublic>
+      <hasAbout>false</hasAbout>
+      <showEdit>false</showEdit>
+      <hasHelp>false</hasHelp>
+      <showEditDefault>false</showEditDefault>
+      <showDetails>false</showDetails>
+      <renderer class="oracle.portal.provider.v2.render.RenderManager">
+         <renderContainer>true</renderContainer>
+         <renderCustomize>true</renderCustomize>
+         <autoRedirect>true</autoRedirect>
+         <contentType>text/html</contentType>
+         <showPage class="oracle.portal.provider.v2.render.http.ResourceRenderer">
+            <resourcePath>/htdocs/JP_IDENT_VERIF_CONS/JP_IDENT_VERIF_CONS.jsp</resourcePath>
+         </showPage>
+      </renderer>
+      <securityManager class="oracle.portal.provider.v2.security.AuthLevelSecurityManager">
+         <securityLevel>weak</securityLevel>
+      </securityManager>
+   </portlet>
+   <!-- [PRY-0553]MMONTOYA: FIN-->
+   <portlet class="oracle.portal.provider.v2.DefaultPortletDefinition">
+      <id>111</id>
+      <name>JP_IDENT_VERIF_CONS_DETAIL</name>
+      <title>Detalle de la Verificación de Identidad Aislada</title>
+      <description>Detalle de la Verificación de Identidad Aislada</description>
+      <timeout>40</timeout>
+      <showEditToPublic>false</showEditToPublic>
+      <hasAbout>false</hasAbout>
+      <showEdit>false</showEdit>
+      <hasHelp>false</hasHelp>
+      <showEditDefault>false</showEditDefault>
+      <showDetails>false</showDetails>
+      <renderer class="oracle.portal.provider.v2.render.RenderManager">
+         <renderContainer>true</renderContainer>
+         <renderCustomize>true</renderCustomize>
+         <autoRedirect>true</autoRedirect>
+         <contentType>text/html</contentType>
+         <showPage class="oracle.portal.provider.v2.render.http.ResourceRenderer">
+            <resourcePath>/htdocs/JP_IDENT_VERIF_CONS/JP_IDENT_VERIF_CONS_DETAIL.jsp</resourcePath>
+         </showPage>
+      </renderer>
+   </portlet>
+
+   <!-- [PRY-0787]JCASTILLO: INICIO-->
+   <portlet class="oracle.portal.provider.v2.DefaultPortletDefinition">
+      <id>130</id>
+      <name>JP_DIGITAL_DOCUMENT_LIST_TO_GENERATE</name>
+      <title>Documentos a generar</title>
+      <description>Listado de Formatos a Digitalizar</description>
+      <timeout>40</timeout>
+      <showEditToPublic>false</showEditToPublic>
+      <hasAbout>false</hasAbout>
+      <showEdit>false</showEdit>
+      <hasHelp>false</hasHelp>
+      <showEditDefault>false</showEditDefault>
+      <showDetails>false</showDetails>
+      <renderer class="oracle.portal.provider.v2.render.RenderManager">
+         <renderContainer>true</renderContainer>
+         <renderCustomize>true</renderCustomize>
+         <autoRedirect>true</autoRedirect>
+         <contentType>text/html</contentType>
+         <showPage class="oracle.portal.provider.v2.render.http.ResourceRenderer">
+            <resourcePath>/htdocs/JP_DIGITAL_DOCUMENTS_LIST/JP_DIGITAL_DOCUMENTS_TO_GENERATE.jsp</resourcePath>
+         </showPage>
+      </renderer>
+   </portlet>
+   <!-- [PRY-0787]JCASTILLO: FIN-->
+
+    <!-- [PRY-0787]JVERGARA: INICIO-->
+    <portlet class="oracle.portal.provider.v2.DefaultPortletDefinition">
+        <id>150</id>
+        <name>JP_DIGITAL_DOCUMENT_ATTACHMENT</name>
+        <title>JP_DIGITAL_DOCUMENT_ATTACHMENT</title>
+        <description>Seccion para adjuntar documentos escaneados y mostrar documentos digitalizados 28</description>
+        <timeout>40</timeout>
+        <showEditToPublic>false</showEditToPublic>
+        <hasAbout>false</hasAbout>
+        <showEdit>false</showEdit>
+        <hasHelp>false</hasHelp>
+        <showEditDefault>false</showEditDefault>
+        <showDetails>false</showDetails>
+        <inputParameter class="oracle.portal.provider.v2.DefaultParameterDefinition">
+            <name>an_nporderid</name>
+            <displayName>an_nporderid</displayName>
+            <description>Id de la Orden</description>
+        </inputParameter>
+        <inputParameter class="oracle.portal.provider.v2.DefaultParameterDefinition">
+            <name>incidentId</name>
+            <displayName>incidentId</displayName>
+            <description>Id del Incidente</description>
+        </inputParameter>
+        <renderer class="oracle.portal.provider.v2.render.RenderManager">
+            <renderContainer>true</renderContainer>
+            <renderCustomize>true</renderCustomize>
+            <autoRedirect>true</autoRedirect>
+            <contentType>text/html</contentType>
+            <showPage class="oracle.portal.provider.v2.render.http.ResourceRenderer">
+                <resourcePath>/htdocs/JP_DIGITAL_DOCUMENT_ATTACHMENT/JP_DIGITAL_DOCUMENT_ATTACHMENT.jsp</resourcePath>
+            </showPage>
+        </renderer>
+    </portlet>
+    <!-- [PRY-0787]JVERGARA: FIN-->
+
+
+    <!-- [PRY-0787]JVERGARA: INICIO-->
+    <portlet class="oracle.portal.provider.v2.DefaultPortletDefinition">
+        <id>160</id>
+        <name>JP_DIGITAL_DOCUMENT_VIEW</name>
+        <title>JP_DIGITAL_DOCUMENT_VIEW</title>
+        <description>Seccion que lista los documentos adjuntos 28</description>
+        <timeout>50</timeout>
+        <showEditToPublic>false</showEditToPublic>
+        <hasAbout>false</hasAbout>
+        <showEdit>false</showEdit>
+        <hasHelp>false</hasHelp>
+        <showEditDefault>false</showEditDefault>
+        <showDetails>false</showDetails>
+        <inputParameter class="oracle.portal.provider.v2.DefaultParameterDefinition">
+            <name>an_nporderid</name>
+            <displayName>an_nporderid</displayName>
+            <description>Id de la Orden</description>
+        </inputParameter>
+        <inputParameter class="oracle.portal.provider.v2.DefaultParameterDefinition">
+            <name>incidentId</name>
+            <displayName>incidentId</displayName>
+            <description>Id del Incidente</description>
+        </inputParameter>
+        <renderer class="oracle.portal.provider.v2.render.RenderManager">
+            <renderContainer>true</renderContainer>
+            <renderCustomize>true</renderCustomize>
+            <autoRedirect>true</autoRedirect>
+            <contentType>text/html</contentType>
+            <showPage class="oracle.portal.provider.v2.render.http.ResourceRenderer">
+                <resourcePath>/htdocs/JP_DIGITAL_DOCUMENT_ATTACHMENT/JP_DIGITAL_DOCUMENT_VIEW.jsp</resourcePath>
+            </showPage>
+        </renderer>
+    </portlet>
+    <!-- [PRY-0787]JVERGARA: FIN-->
+
+    <!-- [PRY-0787]JCALDERON: INICIO-->
+    <portlet class="oracle.portal.provider.v2.DefaultPortletDefinition">
+        <id>170</id>
+        <name>JP_DIGITAL_INC_DOCUMENTS_LIST</name>
+        <title>JP_DIGITAL_INC_DOCUMENTS_LIST</title>
+        <description>Java Portlet de Documentos Digitales de Incidentes</description>
+        <timeout>50</timeout>
+        <showEditToPublic>false</showEditToPublic>
+        <hasAbout>false</hasAbout>
+        <showEdit>false</showEdit>
+        <hasHelp>false</hasHelp>
+        <showEditDefault>false</showEditDefault>
+        <showDetails>false</showDetails>
+        <inputParameter class="oracle.portal.provider.v2.DefaultParameterDefinition">
+            <name>incidentId</name>
+            <displayName>incidentId</displayName>
+            <description>Id del Incidente</description>
+        </inputParameter>
+        <renderer class="oracle.portal.provider.v2.render.RenderManager">
+            <renderContainer>true</renderContainer>
+            <renderCustomize>true</renderCustomize>
+            <autoRedirect>true</autoRedirect>
+            <contentType>text/html</contentType>
+            <showPage class="oracle.portal.provider.v2.render.http.ResourceRenderer">
+                <resourcePath>/htdocs/JP_DIGITAL_DOCUMENTS_LIST/JP_DIGITAL_DOCUMENTS_LISTShowPage.jsp</resourcePath>
+            </showPage>
+        </renderer>
+    </portlet>
+    <!-- [PRY-0787]JCALDERON: FIN-->
+
+   <!-- [PRY-0787]JCASTILLO: INICIO-->
+   <portlet class="oracle.portal.provider.v2.DefaultPortletDefinition">
+      <id>180</id>
+      <name>JP_CPUF_LIST</name>
+      <title>JP_CPUF_LIST</title>
+      <description>Lista de centro poblados de una orden</description>
+      <timeout>50</timeout>
+      <showEditToPublic>false</showEditToPublic>
+      <hasAbout>false</hasAbout>
+      <showEdit>false</showEdit>
+      <hasHelp>false</hasHelp>
+      <showEditDefault>false</showEditDefault>
+      <showDetails>false</showDetails>
+      <renderer class="oracle.portal.provider.v2.render.RenderManager">
+         <renderContainer>true</renderContainer>
+         <renderCustomize>true</renderCustomize>
+         <autoRedirect>true</autoRedirect>
+         <contentType>text/html</contentType>
+         <showPage class="oracle.portal.provider.v2.render.http.ResourceRenderer">
+            <resourcePath>/htdocs/JP_CPUF/JP_CPUF_LIST.jsp</resourcePath>
+         </showPage>
+      </renderer>
+   </portlet>
+   <!-- [PRY-0787]JCASTILLO: FIN-->
+
+</provider>

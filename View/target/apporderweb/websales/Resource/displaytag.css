@@ -1,0 +1,88 @@
+table.orders {
+	border: 0px;
+	width: 100%;
+	margin: 1px 0 1px 0 !important;
+	font-weight: normal;
+	font-size: 8pt;
+	color: #000000;
+	font-family: Arial, Helvetica; 
+}
+th {
+	padding: 2px 4px 2px 4px !important;
+	text-align: left;
+	vertical-align: top;
+	font-weight: bold;
+}
+thead tr {
+	background-color: #E8E4B7
+}
+tr.odd {
+	background-color: #F5F5EB
+}
+tr.even {
+	background-color: #E8E4B7
+}
+.spanPaging {
+	font-weight: normal;
+	font-size: 8pt;
+	font-family: Arial, Helvetica;
+	color: #000000;
+}
+span.pagebanner {
+	background-color: #eee;
+	border: 1px dotted #999;
+	padding: 2px 4px 2px 4px;
+	width: 79%;
+	margin-top: 10px;
+	display: block;
+	border-bottom: none;
+	font-weight: normal;
+	font-size: 8pt;
+	font-family: Arial, Helvetica;
+}
+
+div.exportlinks {
+	background-color: #eee;
+	border: 1px dotted #999;
+	padding: 2px 4px 2px 4px;
+	margin: 2px 0 10px 0;
+	width: 79%;
+	font-weight: normal;
+	font-size: 8pt;
+	font-family: Arial, Helvetica;
+	background-repeat: no-repeat;
+}
+span.export {
+	padding: 0 4px 1px 20px;
+	display: inline;
+	display: inline-block;
+	cursor: pointer;
+	font-weight: normal;
+	font-size: 8pt;
+	font-family: Arial, Helvetica;
+	background-repeat: no-repeat;
+}
+
+div.exportlinks a {
+	text-decoration: none;
+}
+
+div.exportlinks span {
+	background-repeat: no-repeat;
+}
+
+span.csv {
+	background-image: url(../images/ico_file_csv.png);
+}
+
+span.excel {
+	background-image: url(../images/ico_file_excel.png);
+}
+
+span.pdf {
+	background-image: url(../images/ico_file_pdf.png);
+}
+
+span.xml {
+	background-image: url(../images/ico_file_xml.png);
+}

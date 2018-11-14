@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.nextel</groupId>
+        <artifactId>orders-ee</artifactId>
+        <version>1.0.0-BUILD-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>orders-ear</artifactId>
+    <packaging>ear</packaging>
+    <version>1.0.0-BUILD-SNAPSHOT</version>
+
+    <properties>
+        <project.build.sourceEncoding>ISO-8859-1</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>com.nextel</groupId>
+            <artifactId>orders-web</artifactId>
+            <version>1.0.0-BUILD-SNAPSHOT</version>
+            <type>war</type>
+        </dependency>
+
+        <dependency>
+            <groupId>com.nextel</groupId>
+            <artifactId>orders-ejb</artifactId>
+            <version>1.0.0-BUILD-SNAPSHOT</version>
+            <type>ejb</type>
+        </dependency>
+
+        <dependency>
+            <groupId>pe.com.nextel.portability.proxy</groupId>
+            <artifactId>wsp_createmessage</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>pe.com.nextel.bpelworkflow.crm</groupId>
+            <artifactId>bpelworkflow</artifactId>
+            <version>1.2</version>
+        </dependency>
+
+
+
+        <dependency>
+            <groupId>pe.com.nextel.bpelworkflow</groupId>
+            <artifactId>xmlparserv2</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>pe.com.nextel.bpelworkflow</groupId>
+            <artifactId>xml</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <finalName>AppOrders</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>properties-maven-plugin</artifactId>
+                <version>1.0-alpha-2</version>
+                <executions>
+                    <!-- Associate the read-project-properties goal with the initialize phase, to read the properties file. -->
+                    <execution>
+                        <phase>initialize</phase>
+                        <goals>
+                            <goal>read-project-properties</goal>
+                        </goals>
+                        <configuration>
+                            <files>
+                                <file>${javaConfig}/${env}.properties</file>
+                            </files>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-ear-plugin</artifactId>
+                <version>2.8</version>
+
+                <!-- configuring the ear plugin -->
+                <configuration>
+                    <generateApplicationXml>false</generateApplicationXml>
+                    <version>5</version>
+                    <defaultLibBundleDir>lib</defaultLibBundleDir>
+                    <modules>
+                        <webModule>
+                            <groupId>com.nextel</groupId>
+                            <artifactId>orders-web</artifactId>
+                            <context-root>apporderweb</context-root>
+                        </webModule>
+
+                        <ejbModule>
+                            <groupId>com.nextel</groupId>
+                            <artifactId>orders-ejb</artifactId>
+                        </ejbModule>
+
+                    </modules>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>com.oracle.weblogic</groupId>
+                <artifactId>weblogic-maven-plugin</artifactId>
+                <version>10.3.6.0</version>
+                <configuration>
+                    <!--Dev Server-->
+                    <adminurl>t3://${lmaoast.host}:${lmaoast.port}</adminurl>
+                    <user>${lmaoast.user}</user>
+                    <password>${lmaoast.pass}</password>
+                    <targets>${lmaoast.apporders.target}</targets>
+                    <!--<remote>true</remote>-->
+                    <!--Dev Server-->
+                    <!--Local Configuration-->
+                    <!--<adminurl>t3://localhost:7001</adminurl>-->
+                    <!--<user>weblogic</user>-->
+                    <!--<password>weblogic123!</password>-->
+                    <!--<targets>myserver</targets>-->
+                    <remote>true</remote>
+                    <!--Local Configuration-->
+                    <upload>true</upload>
+                    <verbose>true</verbose>
+                    <action>deploy</action>
+                    <!--<source>${project.build.directory}/${project.build.finalName}.${project.packaging}</source>-->
+                    <source>${project.build.directory}/${project.build.finalName}.${project.packaging}</source>
+                    <name>${project.build.finalName}</name>
+                </configuration>
+
+                <executions>
+                    <execution>
+                        <id>wl-deploy</id>
+                        <phase>install</phase>
+                        <goals>
+                            <goal>deploy</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+
+</project>

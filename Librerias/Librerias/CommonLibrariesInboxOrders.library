@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<JLibraryNode nselem="JLibraryNode" class="oracle.jdeveloper.library.JLibraryNode" deployedByDefault="false" xmlns="http://xmlns.oracle.com/jdeveloper/110000jlibrarynode">
+   <classPath>
+      <entries>
+         <Item path="../CommonLibrariesInboxOrders/BPELWorkflow.jar" jar-entry=""/>
+         <Item path="../CommonLibrariesInboxOrders/oc4jclient.jar" jar-entry=""/>
+         <Item path="../CommonLibrariesInboxOrders/optic.jar" jar-entry=""/>
+         <Item path="../CommonLibrariesInboxOrders/orabpel-common.jar" jar-entry=""/>
+         <Item path="../CommonLibrariesInboxOrders/orabpel.jar" jar-entry=""/>
+         <Item path="../CommonLibrariesInboxOrders/xml.jar" jar-entry=""/>
+         <Item path="../CommonLibrariesInboxOrders/xmlparserv2.jar" jar-entry=""/>
+      </entries>
+   </classPath>
+   <docPath>
+      <entries class="[Ljava.net.URL;"/>
+   </docPath>
+   <locked>false</locked>
+   <name>CommonLibrariesInboxOrders</name>
+   <sourcePath>
+      <entries class="[Ljava.net.URL;"/>
+   </sourcePath>
+</JLibraryNode>

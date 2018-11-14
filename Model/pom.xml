@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.nextel</groupId>
+        <artifactId>orders-ee</artifactId>
+        <version>1.0.0-BUILD-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>orders-ejb</artifactId>
+    <packaging>ejb</packaging>
+    <version>1.0.0-BUILD-SNAPSHOT</version>
+
+    <properties>
+        <project.build.sourceEncoding>ISO-8859-1</project.build.sourceEncoding>
+    </properties>
+
+    <build>
+        <finalName>apporderejb</finalName>
+
+        <sourceDirectory>src</sourceDirectory>
+        <resources>
+            <resource>
+                <filtering>true</filtering>
+                <directory>${project.basedir}/src/META-INF</directory>
+                <includes>
+                    <include>*.xml</include>
+                </includes>
+                <targetPath>META-INF</targetPath>
+            </resource>
+        </resources>
+        <filters>
+            <filter>${javaConfig}/${env}.properties</filter>
+        </filters>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-ejb-plugin</artifactId>
+                    <version>2.2</version>
+                    <configuration>
+                        <ejbVersion>3.0</ejbVersion>
+                    </configuration>
+                </plugin>
+            </plugins>
+
+        </pluginManagement>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>javax.ejb</groupId>
+            <artifactId>ejb-api</artifactId>
+            <version>3.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>2.5</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.oracle</groupId>
+            <artifactId>ojdbc14</artifactId>
+            <version>10.2.0.1.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>2.6</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.xmlbeans</groupId>
+            <artifactId>xmlbeans</artifactId>
+            <version>2.3.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-beanutils</groupId>
+            <artifactId>commons-beanutils</artifactId>
+            <version>1.7.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>pe.com.nextel</groupId>
+            <artifactId>createcustomer</artifactId>
+            <version>1.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>wsp</groupId>
+            <artifactId>addresswrite</artifactId>
+            <version>1.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>wsp</groupId>
+            <artifactId>addressesread</artifactId>
+            <version>1.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>wsp</groupId>
+            <artifactId>billingaccountwrite</artifactId>
+            <version>1.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>wsp</groupId>
+            <artifactId>customerread</artifactId>
+            <version>1.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>wsp</groupId>
+            <artifactId>equipmentnew</artifactId>
+            <version>1.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-collections</groupId>
+            <artifactId>commons-collections</artifactId>
+            <version>3.2.1</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>pe.com.nextel.portability.proxy</groupId>
+            <artifactId>wsp_createmessage</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>pe.com.entel.normalizardireccion.proxy</groupId>
+            <artifactId>ws_normalizardireccion</artifactId>
+            <version>1.3-SNAPSHOT</version>
+            <!--<scope>provided</scope>-->
+        </dependency>
+
+        <dependency>
+           <groupId>pe.com.entel</groupId>
+           <artifactId>wsp_evaluation_question</artifactId>
+           <version>1.1</version>
+           <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>pe.com.nextel.gestionbolsasroaming</groupId>
+            <artifactId>wsp_gestionbolsasroaming</artifactId>
+            <version>1.6</version>
+        </dependency>
+
+		<dependency>
+           <groupId>pe.com.entel</groupId>
+            <artifactId>wsp_community_associations</artifactId>
+           <version>1.0</version>
+           <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>pe.com.entel</groupId>
+            <artifactId>wsp_community_associations</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>pe.com.entel.gestiondocumentosdigitales.proxy</groupId>
+            <artifactId>GestionDocumentosDigitalesProxyClient</artifactId>
+            <version>1.0</version>
+            <!--<scope>provided</scope>-->
+        </dependency>
+        <dependency>
+            <groupId>pe.com.entel</groupId>
+            <artifactId>wsp_documentmanage</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>pe.com.entel</groupId>
+            <artifactId>wsp_document</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>pe.com.entel</groupId>
+            <artifactId>wsp_contractmanage</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>pe.com.nextel.prorrated.proxy</groupId>
+            <artifactId>wsp_calculateprorrated</artifactId>
+            <version>1.1</version>
+        </dependency>
+        
+         <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.2.4</version>
+            <scope>provided</scope>
+        </dependency>
+		
+		<dependency>
+            <groupId>pe.com.entel.integracion.contractfs</groupId>
+            <artifactId>wsp_contractfs</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>pe.com.entel.integracion.customeraccountfs</groupId>
+            <artifactId>wsp_customeraccountfs</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+    </dependencies>
+
+</project>

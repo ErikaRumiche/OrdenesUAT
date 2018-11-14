@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='ISO-8859-1' ?>
+<DataControlConfigs xmlns="http://xmlns.oracle.com/adfm/configuration"
+                    id="DataControls" version="11.1.1.61.92"
+                    Package="pe/com/nextel/bean">
+   <JavaBeanDataControl SupportsFindMode="false" SupportsTransactions="false"
+                        Definition="pe.com.nextel.ejb.SEJBBillingAccountBean"
+                        BeanClass="pe.com.nextel.ejb.SEJBBillingAccountBean"
+                        xmlns="http://xmlns.oracle.com/adfm/datacontrol"
+                        id="SEJBBillingAccountBeanDataControl"
+                        FactoryClass="oracle.adf.model.generic.DataControlFactoryImpl">
+      <Parameters/>
+   </JavaBeanDataControl>
+</DataControlConfigs>

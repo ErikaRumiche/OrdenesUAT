@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='ISO-8859-1' ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" id="BillingContactBean"
+          version="11.1.1.61.92"
+          BeanClass="pe.com.nextel.bean.BillingContactBean" isJavaBased="true">
+   <Attribute Name="nplname" IsUpdateable="2" AttrLoad="Each"
+              IsQueriable="false" IsVisible="true" IsPersistent="false"
+              IsUnique="false" IsNotNull="false" PrecisionRule="true"
+              DiscrColumn="false" SourceName="nplname" Type="java.lang.String"
+              xmlns="http://xmlns.oracle.com/adfm/beanmodel"/>
+   <Attribute Name="npphonearea" IsUpdateable="2" AttrLoad="Each"
+              IsQueriable="false" IsVisible="true" IsPersistent="false"
+              IsUnique="false" IsNotNull="false" PrecisionRule="true"
+              DiscrColumn="false" SourceName="npphonearea"
+              Type="java.lang.String"
+              xmlns="http://xmlns.oracle.com/adfm/beanmodel"/>
+   <Attribute Name="npbillaccnewid" IsUpdateable="2" AttrLoad="Each"
+              IsQueriable="false" IsVisible="true" IsPersistent="false"
+              IsUnique="false" IsNotNull="false" PrecisionRule="true"
+              DiscrColumn="false" SourceName="npbillaccnewid" Type="long"
+              xmlns="http://xmlns.oracle.com/adfm/beanmodel"/>
+   <Attribute Name="npaddress1" IsUpdateable="2" AttrLoad="Each"
+              IsQueriable="false" IsVisible="true" IsPersistent="false"
+              IsUnique="false" IsNotNull="false" PrecisionRule="true"
+              DiscrColumn="false" SourceName="npaddress1"
+              Type="java.lang.String"
+              xmlns="http://xmlns.oracle.com/adfm/beanmodel"/>
+   <Attribute Name="npcity" IsUpdateable="2" AttrLoad="Each" IsQueriable="false"
+              IsVisible="true" IsPersistent="false" IsUnique="false"
+              IsNotNull="false" PrecisionRule="true" DiscrColumn="false"
+              SourceName="npcity" Type="java.lang.String"
+              xmlns="http://xmlns.oracle.com/adfm/beanmodel"/>
+   <Attribute Name="npdepartment" IsUpdateable="2" AttrLoad="Each"
+              IsQueriable="false" IsVisible="true" IsPersistent="false"
+              IsUnique="false" IsNotNull="false" PrecisionRule="true"
+              DiscrColumn="false" SourceName="npdepartment"
+              Type="java.lang.String"
+              xmlns="http://xmlns.oracle.com/adfm/beanmodel"/>
+   <Attribute Name="npzipcode" IsUpdateable="2" AttrLoad="Each"
+              IsQueriable="false" IsVisible="true" IsPersistent="false"
+              IsUnique="false" IsNotNull="false" PrecisionRule="true"
+              DiscrColumn="false" SourceName="npzipcode" Type="java.lang.String"
+              xmlns="http://xmlns.oracle.com/adfm/beanmodel"/>
+   <Attribute Name="npaddress2" IsUpdateable="2" AttrLoad="Each"
+              IsQueriable="false" IsVisible="true" IsPersistent="false"
+              IsUnique="false" IsNotNull="false" PrecisionRule="true"
+              DiscrColumn="false" SourceName="npaddress2"
+              Type="java.lang.String"
+              xmlns="http://xmlns.oracle.com/adfm/beanmodel"/>
+   <Attribute Name="npjobtitle" IsUpdateable="2" AttrLoad="Each"
+              IsQueriable="false" IsVisible="true" IsPersistent="false"
+              IsUnique="false" IsNotNull="false" PrecisionRule="true"
+              DiscrColumn="false" SourceName="npjobtitle"
+              Type="java.lang.String"
+              xmlns="http://xmlns.oracle.com/adfm/beanmodel"/>
+   <Attribute Name="npstate" IsUpdateable="2" AttrLoad="Each"
+              IsQueriable="false" IsVisible="true" IsPersistent="false"
+              IsUnique="false" IsNotNull="false" PrecisionRule="true"
+              DiscrColumn="false" SourceName="npstate" Type="java.lang.String"
+              xmlns="http://xmlns.oracle.com/adfm/beanmodel"/>
+   <Attribute Name="npcreatedby" IsUpdateable="2" AttrLoad="Each"
+              IsQueriable="false" IsVisible="true" IsPersistent="false"
+              IsUnique="false" IsNotNull="false" PrecisionRule="true"
+              DiscrColumn="false" SourceName="npcreatedby"
+              Type="java.lang.String"
+              xmlns="http://xmlns.oracle.com/adfm/beanmodel"/>
+   <Attribute Name="npTypeContact" IsUpdateable="2" AttrLoad="Each"
+              IsQueriable="false" IsVisible="true" IsPersistent="false"
+              IsUnique="false" IsNotNull="false" PrecisionRule="true"
+              DiscrColumn="false" SourceName="npTypeContact"
+              Type="java.lang.String"
+              xmlns="http://xmlns.oracle.com/adfm/beanmodel"/>
+   <Attribute Name="npTitle" IsUpdateable="2" AttrLoad="Each"
+              IsQueriable="false" IsVisible="true" IsPersistent="false"
+              IsUnique="false" IsNotNull="false" PrecisionRule="true"
+              DiscrColumn="false" SourceName="npTitle" Type="java.lang.String"
+              xmlns="http://xmlns.oracle.com/adfm/beanmodel"/>
+   <Attribute Name="npphone" IsUpdateable="2" AttrLoad="Each"
+              IsQueriable="false" IsVisible="true" IsPersistent="false"
+              IsUnique="false" IsNotNull="false" PrecisionRule="true"
+              DiscrColumn="false" SourceName="npphone" Type="java.lang.String"
+              xmlns="http://xmlns.oracle.com/adfm/beanmodel"/>
+   <Attribute Name="npfname" IsUpdateable="2" AttrLoad="Each"
+              IsQueriable="false" IsVisible="true" IsPersistent="false"
+              IsUnique="false" IsNotNull="false" PrecisionRule="true"
+              DiscrColumn="false" SourceName="npfname" Type="java.lang.String"
+              xmlns="http://xmlns.oracle.com/adfm/beanmodel"/>
+</JavaBean>

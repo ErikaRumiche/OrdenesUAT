@@ -1,0 +1,1325 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<jpr:project xmlns:jpr="http://xmlns.oracle.com/ide/project">
+   <value n="CachedConfigTable" v=""/>
+   <hash n="component-versions">
+      <value n="oracle.adfdt.controller.adfc.source.migration.AdfControllerSchemaMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.adfdt.controller.common.migrator.ProjectMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.adfdt.controller.jsf2.diagram.migrate.JsfNodeMigratorHelper" v="11.1.1.1.0"/>
+      <value n="oracle.adfdt.controller.struts.addin.db.ADFStrutsProjectMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.adfdt.controller.struts.addin.StrutsProjectMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.adfdtinternal.dvt.datapresdt.migration.DVTDataMapMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.adfdtinternal.model.ide.migration.ProjectMigrator" v="11.1.1.1.0.11.1.1"/>
+      <value n="oracle.adfdtinternal.model.ide.security.wizard.FormPageMigrator" v="11.1.1.0.0"/>
+      <value n="oracle.adfdtinternal.model.ide.security.wizard.JpsFilterMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.adfdtinternal.model.ide.xmled.migration.ADFNodeMigrator" v="11.1.1.1.0.5"/>
+      <value n="oracle.adfdtinternal.model.ide.xmled.migration.PageDefinitionParameterValueMigrator" v="11.1.1.1.0.5"/>
+      <value n="oracle.adfdtinternal.model.ide.xmled.migration.WebXmlMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.adfdtinternal.view.common.migration.wizards.MigrationHelper" v="11.1.1.1.0.3"/>
+      <value n="oracle.adfdtinternal.view.rich.binding.migration.JarResourceMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.adfdtinternal.view.rich.migration.ComponentIdNodeMigratorHelper" v="11.1.1.1.0.01"/>
+      <value n="oracle.adfdtinternal.view.rich.migration.LibraryVersionMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.bm.commonIde.ProjectUpgrader" v="11.1.1.1.0"/>
+      <value n="oracle.bm.migration.project.MigratorRegistryProjectUpgradeAdapter" v="11.1.1.1.0"/>
+      <value n="oracle.ide.model.Project" v="10.1.2.0.0;11.1.1.1.0"/>
+      <value n="oracle.ide.model.ResourcePathsMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.jbo.dt.jclient.migrator.JCProjectMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.jbo.dt.jdevx.deployment.JbdProjectMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.jbo.dt.jdevx.ui.appnav.APProjectMigrator" v="11.1.1.0.1.5"/>
+      <value n="oracle.jbo.dt.migrate.ResourceBundlePathMigrator" v="11.1.1.1.0.5"/>
+      <value n="oracle.jbo.dt.migration.ServiceInterfaceMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.jdeveloper.ejb.EjbMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.jdeveloper.library.ProjectLibraryMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.jdeveloper.model.OutputDirectoryMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.jdevimpl.deploy.DeploymentProfilesMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.jdevimpl.deploy.jps.JpsDataMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.jdevimpl.jsp.JspMigrator" v="11.1.1"/>
+      <value n="oracle.jdevimpl.offlinedb.migration.OfflineDBProjectMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.jdevimpl.offlinedb.migration.OfflineTransferMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.jdevimpl.resourcebundle.XliffAddin$XliffMigratorHelper" v="11.1.1.1.0"/>
+      <value n="oracle.jdevimpl.webapp.jsp.libraries.JspLibraryMigrator" v="11.1.1.1.4"/>
+      <value n="oracle.jdevimpl.webapp.WebAppContentSetNodeMigratorHelper" v="11.1.1"/>
+      <value n="oracle.jdevimpl.webapp.WebAppNodeMigratorHelper" v="11.1.1.1.0"/>
+      <value n="oracle.jdevimpl.webservices.WebServicesMigratorHelper" v="11.1.1.1.0"/>
+      <value n="oracle.jdevimpl.xml.wl.WeblogicMigratorHelper" v="11.1.1.1.0"/>
+      <value n="oracle.modeler.bmmigrate.management.Migration" v="11.1.1.1.0"/>
+      <value n="oracle.tip.tools.ide.bpel.v1.designer.addin.migrator.BPELProjectMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.tip.tools.ide.fabric.addin.SCAProjectMigrator" v="11.1.1.1.0.06"/>
+      <value n="oracle.tip.tools.ide.workflow.addin.TaskFormMigratorAddin" v="11.1.1.1.0"/>
+      <value n="oracle.tip.tools.ide.workflow.addin.WorkflowProjectMigrator" v="11.1.1.1.0.10"/>
+      <value n="oracle.toplink.workbench.addin.migration.PersistenceProjectMigrator" v="11.1.1.1.1"/>
+      <value n="oracle.toplink.workbench.addin.migration.TopLinkProjectMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.webcenter.internal.dt.migration.WebCenterProjectMigrator" v="11.1.1.4.0.101019.0800"/>
+   </hash>
+   <list n="contentSets">
+      <string v="oracle.jdeveloper.model.PathsConfiguration/javaContentSet"/>
+      <string v="oracle.ide.model.ResourcePaths/resourcesContentSet"/>
+      <string v="oracle.jdeveloper.model.J2eeSettings/webContentSet"/>
+      <string v="oracle.bm.commonIde.data.project.ModelerProjectSettings/modelersContentSet"/>
+      <string v="oracle.jdeveloper.offlinedb.model.OfflineDBProjectSettings/offlineDBContentSet"/>
+      <string v="oracle.toplink.workbench.addin/toplinkContentSet"/>
+      <string v="oracle.mds.internal.dt.ide.MDSLibraryCustCSProvider/mdsContentSet"/>
+      <string v="oracle.adfdtinternal.model.ide.settings.ADFMSettings/adfmContentSet"/>
+      <string v="oracle.tip.tools.ide.fabric.addin.SCAContentSetProvider/sca-content"/>
+   </list>
+   <value n="defaultPackage" v="pe.com.nextel.servlet"/>
+   <hash n="ejbModuleContainer">
+      <hash n="ejb21IdToEjbNameMap">
+         <value n="ejb:102c175d-013f-1000-8037-c0a82101f108" v="SEJBSession"/>
+         <value n="ejb:102c175d-013f-1000-8038-c0a82101f108" v="SEJBOrderNew"/>
+         <value n="ejb:102c175e-013f-1000-8039-c0a82101f108" v="SEJBCustomer"/>
+         <value n="ejb:102c175e-013f-1000-803a-c0a82101f108" v="SEJBGeneral"/>
+         <value n="ejb:102c175e-013f-1000-803b-c0a82101f108" v="SEJBOrderEdit"/>
+         <value n="ejb:102c175f-013f-1000-803c-c0a82101f108" v="SEJBBillingAccount"/>
+         <value n="ejb:102c175f-013f-1000-803d-c0a82101f108" v="SEJBRetail"/>
+         <value n="ejb:102c1760-013f-1000-803e-c0a82101f108" v="SEJBOrderSearch"/>
+         <value n="ejb:102c1760-013f-1000-803f-c0a82101f108" v="SEJBSite"/>
+         <value n="ejb:102c1761-013f-1000-8040-c0a82101f108" v="SEJBOrderTabs"/>
+         <value n="ejb:102c1761-013f-1000-8041-c0a82101f108" v="SEJBGuide"/>
+         <value n="ejb:102c1761-013f-1000-8042-c0a82101f108" v="SEJBAutomatizacion"/>
+         <value n="ejb:102c1762-013f-1000-8043-c0a82101f108" v="SEJBCreditEvaluation"/>
+         <value n="ejb:102c1762-013f-1000-8044-c0a82101f108" v="SEJBPortabilityOrder"/>
+         <value n="ejb:102c1763-013f-1000-8045-c0a82101f108" v="SEJBPortabilityGeneral"/>
+         <value n="ejb:102c1763-013f-1000-8046-c0a82101f108" v="SEJBMassiveOrder"/>
+         <value n="ejb:102c1764-013f-1000-8047-c0a82101f108" v="SEJBSalesData"/>
+         <value n="ejb:102c1764-013f-1000-8048-c0a82101f108" v="SEJBRepair"/>
+         <value n="ejb:123dbe7f-013f-1000-8025-c0a821017c56" v="SEJBSession"/>
+         <value n="ejb:123dbe85-013f-1000-8026-c0a821017c56" v="SEJBOrderNew"/>
+         <value n="ejb:123dbe85-013f-1000-8027-c0a821017c56" v="SEJBCustomer"/>
+         <value n="ejb:123dbe86-013f-1000-8028-c0a821017c56" v="SEJBGeneral"/>
+         <value n="ejb:123dbe86-013f-1000-8029-c0a821017c56" v="SEJBOrderEdit"/>
+         <value n="ejb:123dbe87-013f-1000-802a-c0a821017c56" v="SEJBBillingAccount"/>
+         <value n="ejb:123dbe87-013f-1000-802b-c0a821017c56" v="SEJBRetail"/>
+         <value n="ejb:123dbe89-013f-1000-802c-c0a821017c56" v="SEJBOrderSearch"/>
+         <value n="ejb:123dbe89-013f-1000-802d-c0a821017c56" v="SEJBSite"/>
+         <value n="ejb:123dbe89-013f-1000-802e-c0a821017c56" v="SEJBOrderTabs"/>
+         <value n="ejb:123dbe8a-013f-1000-802f-c0a821017c56" v="SEJBGuide"/>
+         <value n="ejb:123dbe8a-013f-1000-8030-c0a821017c56" v="SEJBAutomatizacion"/>
+         <value n="ejb:123dbe8b-013f-1000-8031-c0a821017c56" v="SEJBCreditEvaluation"/>
+         <value n="ejb:123dbe8b-013f-1000-8032-c0a821017c56" v="SEJBPortabilityOrder"/>
+         <value n="ejb:123dbe8c-013f-1000-8033-c0a821017c56" v="SEJBPortabilityGeneral"/>
+         <value n="ejb:123dbe8d-013f-1000-8034-c0a821017c56" v="SEJBMassiveOrder"/>
+         <value n="ejb:123dbe8e-013f-1000-8035-c0a821017c56" v="SEJBSalesData"/>
+         <value n="ejb:123dbe8e-013f-1000-8036-c0a821017c56" v="SEJBRepair"/>
+         <value n="ejb:164ba37a-013f-1000-8253-c0a821017c56" v="SEJBSession"/>
+         <value n="ejb:164ba384-013f-1000-8254-c0a821017c56" v="SEJBOrderNew"/>
+         <value n="ejb:164ba388-013f-1000-8255-c0a821017c56" v="SEJBCustomer"/>
+         <value n="ejb:164ba38d-013f-1000-8256-c0a821017c56" v="SEJBGeneral"/>
+         <value n="ejb:164ba392-013f-1000-8257-c0a821017c56" v="SEJBOrderEdit"/>
+         <value n="ejb:164ba397-013f-1000-8258-c0a821017c56" v="SEJBBillingAccount"/>
+         <value n="ejb:164ba39c-013f-1000-8259-c0a821017c56" v="SEJBRetail"/>
+         <value n="ejb:164ba3a0-013f-1000-825a-c0a821017c56" v="SEJBOrderSearch"/>
+         <value n="ejb:164ba3a5-013f-1000-825b-c0a821017c56" v="SEJBSite"/>
+         <value n="ejb:164ba3aa-013f-1000-825c-c0a821017c56" v="SEJBOrderTabs"/>
+         <value n="ejb:164ba3af-013f-1000-825d-c0a821017c56" v="SEJBGuide"/>
+         <value n="ejb:164ba3b4-013f-1000-825e-c0a821017c56" v="SEJBAutomatizacion"/>
+         <value n="ejb:164ba3b9-013f-1000-825f-c0a821017c56" v="SEJBCreditEvaluation"/>
+         <value n="ejb:164ba3be-013f-1000-8260-c0a821017c56" v="SEJBPortabilityOrder"/>
+         <value n="ejb:164ba3c3-013f-1000-8261-c0a821017c56" v="SEJBPortabilityGeneral"/>
+         <value n="ejb:164ba3c8-013f-1000-8262-c0a821017c56" v="SEJBMassiveOrder"/>
+         <value n="ejb:164ba3cd-013f-1000-8263-c0a821017c56" v="SEJBSalesData"/>
+         <value n="ejb:164ba3d1-013f-1000-8264-c0a821017c56" v="SEJBRepair"/>
+         <value n="ejb:69d04232-013d-1000-8001-c0a82101136a" v="SEJBSession"/>
+         <value n="ejb:69d04247-013d-1000-8002-c0a82101136a" v="SEJBOrderNew"/>
+         <value n="ejb:69d0424c-013d-1000-8003-c0a82101136a" v="SEJBCustomer"/>
+         <value n="ejb:69d04251-013d-1000-8004-c0a82101136a" v="SEJBGeneral"/>
+         <value n="ejb:69d04257-013d-1000-8005-c0a82101136a" v="SEJBOrderEdit"/>
+         <value n="ejb:69d0425c-013d-1000-8006-c0a82101136a" v="SEJBBillingAccount"/>
+         <value n="ejb:69d04263-013d-1000-8007-c0a82101136a" v="SEJBRetail"/>
+         <value n="ejb:69d0426a-013d-1000-8008-c0a82101136a" v="SEJBOrderSearch"/>
+         <value n="ejb:69d0426f-013d-1000-8009-c0a82101136a" v="SEJBSite"/>
+         <value n="ejb:69d04275-013d-1000-800a-c0a82101136a" v="SEJBOrderTabs"/>
+         <value n="ejb:69d0427b-013d-1000-800b-c0a82101136a" v="SEJBGuide"/>
+         <value n="ejb:69d0428e-013d-1000-800c-c0a82101136a" v="SEJBAutomatizacion"/>
+         <value n="ejb:69d04294-013d-1000-800d-c0a82101136a" v="SEJBCreditEvaluation"/>
+         <value n="ejb:69d0429a-013d-1000-800e-c0a82101136a" v="SEJBPortabilityOrder"/>
+         <value n="ejb:69d042a0-013d-1000-800f-c0a82101136a" v="SEJBPortabilityGeneral"/>
+         <value n="ejb:69d042a6-013d-1000-8010-c0a82101136a" v="SEJBMassiveOrder"/>
+         <value n="ejb:69d042ac-013d-1000-8011-c0a82101136a" v="SEJBSalesData"/>
+         <value n="ejb:69d042b1-013d-1000-8012-c0a82101136a" v="SEJBRepair"/>
+         <value n="ejb:69dc2615-013d-1000-8013-c0a82101136a" v="SEJBSession"/>
+         <value n="ejb:69dc261f-013d-1000-8014-c0a82101136a" v="SEJBOrderNew"/>
+         <value n="ejb:69dc2625-013d-1000-8015-c0a82101136a" v="SEJBCustomer"/>
+         <value n="ejb:69dc262b-013d-1000-8016-c0a82101136a" v="SEJBGeneral"/>
+         <value n="ejb:69dc2631-013d-1000-8017-c0a82101136a" v="SEJBOrderEdit"/>
+         <value n="ejb:69dc2636-013d-1000-8018-c0a82101136a" v="SEJBBillingAccount"/>
+         <value n="ejb:69dc263c-013d-1000-8019-c0a82101136a" v="SEJBRetail"/>
+         <value n="ejb:69dc2641-013d-1000-801a-c0a82101136a" v="SEJBOrderSearch"/>
+         <value n="ejb:69dc2646-013d-1000-801b-c0a82101136a" v="SEJBSite"/>
+         <value n="ejb:69dc264b-013d-1000-801c-c0a82101136a" v="SEJBOrderTabs"/>
+         <value n="ejb:69dc2650-013d-1000-801d-c0a82101136a" v="SEJBGuide"/>
+         <value n="ejb:69dc2655-013d-1000-801e-c0a82101136a" v="SEJBAutomatizacion"/>
+         <value n="ejb:69dc265b-013d-1000-801f-c0a82101136a" v="SEJBCreditEvaluation"/>
+         <value n="ejb:69dc2661-013d-1000-8020-c0a82101136a" v="SEJBPortabilityOrder"/>
+         <value n="ejb:69dc2667-013d-1000-8021-c0a82101136a" v="SEJBPortabilityGeneral"/>
+         <value n="ejb:69dc266d-013d-1000-8022-c0a82101136a" v="SEJBMassiveOrder"/>
+         <value n="ejb:69dc2672-013d-1000-8023-c0a82101136a" v="SEJBSalesData"/>
+         <value n="ejb:69dc2677-013d-1000-8024-c0a82101136a" v="SEJBRepair"/>
+         <value n="ejb:69ddedc2-013d-1000-8025-c0a82101136a" v="SEJBSession"/>
+         <value n="ejb:69ddedd0-013d-1000-8026-c0a82101136a" v="SEJBOrderNew"/>
+         <value n="ejb:69ddedd4-013d-1000-8027-c0a82101136a" v="SEJBCustomer"/>
+         <value n="ejb:69ddedd8-013d-1000-8028-c0a82101136a" v="SEJBGeneral"/>
+         <value n="ejb:69ddeddc-013d-1000-8029-c0a82101136a" v="SEJBOrderEdit"/>
+         <value n="ejb:69ddeddf-013d-1000-802a-c0a82101136a" v="SEJBBillingAccount"/>
+         <value n="ejb:69ddede3-013d-1000-802b-c0a82101136a" v="SEJBRetail"/>
+         <value n="ejb:69ddede7-013d-1000-802c-c0a82101136a" v="SEJBOrderSearch"/>
+         <value n="ejb:69ddedeb-013d-1000-802d-c0a82101136a" v="SEJBSite"/>
+         <value n="ejb:69ddedef-013d-1000-802e-c0a82101136a" v="SEJBOrderTabs"/>
+         <value n="ejb:69ddedf3-013d-1000-802f-c0a82101136a" v="SEJBGuide"/>
+         <value n="ejb:69ddedf6-013d-1000-8030-c0a82101136a" v="SEJBAutomatizacion"/>
+         <value n="ejb:69ddedfa-013d-1000-8031-c0a82101136a" v="SEJBCreditEvaluation"/>
+         <value n="ejb:69ddedfe-013d-1000-8032-c0a82101136a" v="SEJBPortabilityOrder"/>
+         <value n="ejb:69ddee02-013d-1000-8033-c0a82101136a" v="SEJBPortabilityGeneral"/>
+         <value n="ejb:69ddee05-013d-1000-8034-c0a82101136a" v="SEJBMassiveOrder"/>
+         <value n="ejb:69ddee09-013d-1000-8035-c0a82101136a" v="SEJBSalesData"/>
+         <value n="ejb:69ddee0d-013d-1000-8036-c0a82101136a" v="SEJBRepair"/>
+         <value n="ejb:69de666c-013d-1000-8049-c0a82101136a" v="SEJBSession"/>
+         <value n="ejb:69de6671-013d-1000-804a-c0a82101136a" v="SEJBOrderNew"/>
+         <value n="ejb:69de6676-013d-1000-804b-c0a82101136a" v="SEJBCustomer"/>
+         <value n="ejb:69de667a-013d-1000-804c-c0a82101136a" v="SEJBGeneral"/>
+         <value n="ejb:69de667e-013d-1000-804d-c0a82101136a" v="SEJBOrderEdit"/>
+         <value n="ejb:69de6683-013d-1000-804e-c0a82101136a" v="SEJBBillingAccount"/>
+         <value n="ejb:69de6688-013d-1000-804f-c0a82101136a" v="SEJBRetail"/>
+         <value n="ejb:69de668d-013d-1000-8050-c0a82101136a" v="SEJBOrderSearch"/>
+         <value n="ejb:69de6692-013d-1000-8051-c0a82101136a" v="SEJBSite"/>
+         <value n="ejb:69de6697-013d-1000-8052-c0a82101136a" v="SEJBOrderTabs"/>
+         <value n="ejb:69de669b-013d-1000-8053-c0a82101136a" v="SEJBGuide"/>
+         <value n="ejb:69de66a0-013d-1000-8054-c0a82101136a" v="SEJBAutomatizacion"/>
+         <value n="ejb:69de66a5-013d-1000-8055-c0a82101136a" v="SEJBCreditEvaluation"/>
+         <value n="ejb:69de66aa-013d-1000-8056-c0a82101136a" v="SEJBPortabilityOrder"/>
+         <value n="ejb:69de66ae-013d-1000-8057-c0a82101136a" v="SEJBPortabilityGeneral"/>
+         <value n="ejb:69de66b2-013d-1000-8058-c0a82101136a" v="SEJBMassiveOrder"/>
+         <value n="ejb:69de66b7-013d-1000-8059-c0a82101136a" v="SEJBSalesData"/>
+         <value n="ejb:69de66bc-013d-1000-805a-c0a82101136a" v="SEJBRepair"/>
+         <value n="ejb:69deeb4e-013d-1000-805b-c0a82101136a" v="SEJBSession"/>
+         <value n="ejb:69deeb53-013d-1000-805c-c0a82101136a" v="SEJBOrderNew"/>
+         <value n="ejb:69deeb58-013d-1000-805d-c0a82101136a" v="SEJBCustomer"/>
+         <value n="ejb:69deeb5e-013d-1000-805e-c0a82101136a" v="SEJBGeneral"/>
+         <value n="ejb:69deeb64-013d-1000-805f-c0a82101136a" v="SEJBOrderEdit"/>
+         <value n="ejb:69deeb68-013d-1000-8060-c0a82101136a" v="SEJBBillingAccount"/>
+         <value n="ejb:69deeb6c-013d-1000-8061-c0a82101136a" v="SEJBRetail"/>
+         <value n="ejb:69deeb70-013d-1000-8062-c0a82101136a" v="SEJBOrderSearch"/>
+         <value n="ejb:69deeb74-013d-1000-8063-c0a82101136a" v="SEJBSite"/>
+         <value n="ejb:69deeb78-013d-1000-8064-c0a82101136a" v="SEJBOrderTabs"/>
+         <value n="ejb:69deeb7c-013d-1000-8065-c0a82101136a" v="SEJBGuide"/>
+         <value n="ejb:69deeb83-013d-1000-8066-c0a82101136a" v="SEJBAutomatizacion"/>
+         <value n="ejb:69deeb8b-013d-1000-8067-c0a82101136a" v="SEJBCreditEvaluation"/>
+         <value n="ejb:69deeb92-013d-1000-8068-c0a82101136a" v="SEJBPortabilityOrder"/>
+         <value n="ejb:69deeb99-013d-1000-8069-c0a82101136a" v="SEJBPortabilityGeneral"/>
+         <value n="ejb:69deeba2-013d-1000-806a-c0a82101136a" v="SEJBMassiveOrder"/>
+         <value n="ejb:69deeba7-013d-1000-806b-c0a82101136a" v="SEJBSalesData"/>
+         <value n="ejb:69deebae-013d-1000-806c-c0a82101136a" v="SEJBRepair"/>
+         <value n="ejb:69e2fc59-013d-1000-806d-c0a82101136a" v="SEJBSession"/>
+         <value n="ejb:69e2fc5f-013d-1000-806e-c0a82101136a" v="SEJBOrderNew"/>
+         <value n="ejb:69e2fc65-013d-1000-806f-c0a82101136a" v="SEJBCustomer"/>
+         <value n="ejb:69e2fc6c-013d-1000-8070-c0a82101136a" v="SEJBGeneral"/>
+         <value n="ejb:69e2fc71-013d-1000-8071-c0a82101136a" v="SEJBOrderEdit"/>
+         <value n="ejb:69e2fc77-013d-1000-8072-c0a82101136a" v="SEJBBillingAccount"/>
+         <value n="ejb:69e2fc7c-013d-1000-8073-c0a82101136a" v="SEJBRetail"/>
+         <value n="ejb:69e2fc81-013d-1000-8074-c0a82101136a" v="SEJBOrderSearch"/>
+         <value n="ejb:69e2fc86-013d-1000-8075-c0a82101136a" v="SEJBSite"/>
+         <value n="ejb:69e2fc8c-013d-1000-8076-c0a82101136a" v="SEJBOrderTabs"/>
+         <value n="ejb:69e2fc91-013d-1000-8077-c0a82101136a" v="SEJBGuide"/>
+         <value n="ejb:69e2fc96-013d-1000-8078-c0a82101136a" v="SEJBAutomatizacion"/>
+         <value n="ejb:69e2fc9b-013d-1000-8079-c0a82101136a" v="SEJBCreditEvaluation"/>
+         <value n="ejb:69e2fca0-013d-1000-807a-c0a82101136a" v="SEJBPortabilityOrder"/>
+         <value n="ejb:69e2fca5-013d-1000-807b-c0a82101136a" v="SEJBPortabilityGeneral"/>
+         <value n="ejb:69e2fcaa-013d-1000-807c-c0a82101136a" v="SEJBMassiveOrder"/>
+         <value n="ejb:69e2fcb1-013d-1000-807d-c0a82101136a" v="SEJBSalesData"/>
+         <value n="ejb:69e2fcb6-013d-1000-807e-c0a82101136a" v="SEJBRepair"/>
+         <value n="ejb:6a00f32e-013d-1000-8001-c0a8210163d7" v="SEJBSession"/>
+         <value n="ejb:6a00f347-013d-1000-8002-c0a8210163d7" v="SEJBOrderNew"/>
+         <value n="ejb:6a00f347-013d-1000-8003-c0a8210163d7" v="SEJBCustomer"/>
+         <value n="ejb:6a00f348-013d-1000-8004-c0a8210163d7" v="SEJBGeneral"/>
+         <value n="ejb:6a00f348-013d-1000-8005-c0a8210163d7" v="SEJBOrderEdit"/>
+         <value n="ejb:6a00f348-013d-1000-8006-c0a8210163d7" v="SEJBBillingAccount"/>
+         <value n="ejb:6a00f349-013d-1000-8007-c0a8210163d7" v="SEJBRetail"/>
+         <value n="ejb:6a00f34a-013d-1000-8008-c0a8210163d7" v="SEJBOrderSearch"/>
+         <value n="ejb:6a00f34b-013d-1000-8009-c0a8210163d7" v="SEJBSite"/>
+         <value n="ejb:6a00f34c-013d-1000-800a-c0a8210163d7" v="SEJBOrderTabs"/>
+         <value n="ejb:6a00f34c-013d-1000-800b-c0a8210163d7" v="SEJBGuide"/>
+         <value n="ejb:6a00f34d-013d-1000-800c-c0a8210163d7" v="SEJBAutomatizacion"/>
+         <value n="ejb:6a00f34e-013d-1000-800d-c0a8210163d7" v="SEJBCreditEvaluation"/>
+         <value n="ejb:6a00f34f-013d-1000-800e-c0a8210163d7" v="SEJBPortabilityOrder"/>
+         <value n="ejb:6a00f34f-013d-1000-800f-c0a8210163d7" v="SEJBPortabilityGeneral"/>
+         <value n="ejb:6a00f350-013d-1000-8010-c0a8210163d7" v="SEJBMassiveOrder"/>
+         <value n="ejb:6a00f351-013d-1000-8011-c0a8210163d7" v="SEJBSalesData"/>
+         <value n="ejb:6a00f351-013d-1000-8012-c0a8210163d7" v="SEJBRepair"/>
+         <value n="ejb:6a02466a-013d-1000-8013-c0a8210163d7" v="SEJBSession"/>
+         <value n="ejb:6a024671-013d-1000-8014-c0a8210163d7" v="SEJBOrderNew"/>
+         <value n="ejb:6a024681-013d-1000-8015-c0a8210163d7" v="SEJBCustomer"/>
+         <value n="ejb:6a024689-013d-1000-8016-c0a8210163d7" v="SEJBGeneral"/>
+         <value n="ejb:6a024690-013d-1000-8017-c0a8210163d7" v="SEJBOrderEdit"/>
+         <value n="ejb:6a024696-013d-1000-8018-c0a8210163d7" v="SEJBBillingAccount"/>
+         <value n="ejb:6a02469d-013d-1000-8019-c0a8210163d7" v="SEJBRetail"/>
+         <value n="ejb:6a0246a2-013d-1000-801a-c0a8210163d7" v="SEJBOrderSearch"/>
+         <value n="ejb:6a0246a8-013d-1000-801b-c0a8210163d7" v="SEJBSite"/>
+         <value n="ejb:6a0246ae-013d-1000-801c-c0a8210163d7" v="SEJBOrderTabs"/>
+         <value n="ejb:6a0246b4-013d-1000-801d-c0a8210163d7" v="SEJBGuide"/>
+         <value n="ejb:6a0246ba-013d-1000-801e-c0a8210163d7" v="SEJBAutomatizacion"/>
+         <value n="ejb:6a0246c0-013d-1000-801f-c0a8210163d7" v="SEJBCreditEvaluation"/>
+         <value n="ejb:6a0246c6-013d-1000-8020-c0a8210163d7" v="SEJBPortabilityOrder"/>
+         <value n="ejb:6a0246ce-013d-1000-8021-c0a8210163d7" v="SEJBPortabilityGeneral"/>
+         <value n="ejb:6a0246d4-013d-1000-8022-c0a8210163d7" v="SEJBMassiveOrder"/>
+         <value n="ejb:6a0246da-013d-1000-8023-c0a8210163d7" v="SEJBSalesData"/>
+         <value n="ejb:6a0246df-013d-1000-8024-c0a8210163d7" v="SEJBRepair"/>
+         <value n="ejb:6a029fac-013d-1000-8025-c0a8210163d7" v="SEJBSession"/>
+         <value n="ejb:6a029fb5-013d-1000-8026-c0a8210163d7" v="SEJBOrderNew"/>
+         <value n="ejb:6a029fbb-013d-1000-8027-c0a8210163d7" v="SEJBCustomer"/>
+         <value n="ejb:6a029fc1-013d-1000-8028-c0a8210163d7" v="SEJBGeneral"/>
+         <value n="ejb:6a029fc7-013d-1000-8029-c0a8210163d7" v="SEJBOrderEdit"/>
+         <value n="ejb:6a029fce-013d-1000-802a-c0a8210163d7" v="SEJBBillingAccount"/>
+         <value n="ejb:6a029fd3-013d-1000-802b-c0a8210163d7" v="SEJBRetail"/>
+         <value n="ejb:6a029fd9-013d-1000-802c-c0a8210163d7" v="SEJBOrderSearch"/>
+         <value n="ejb:6a029fde-013d-1000-802d-c0a8210163d7" v="SEJBSite"/>
+         <value n="ejb:6a029fe3-013d-1000-802e-c0a8210163d7" v="SEJBOrderTabs"/>
+         <value n="ejb:6a029fe9-013d-1000-802f-c0a8210163d7" v="SEJBGuide"/>
+         <value n="ejb:6a029fef-013d-1000-8030-c0a8210163d7" v="SEJBAutomatizacion"/>
+         <value n="ejb:6a029ff4-013d-1000-8031-c0a8210163d7" v="SEJBCreditEvaluation"/>
+         <value n="ejb:6a029ffa-013d-1000-8032-c0a8210163d7" v="SEJBPortabilityOrder"/>
+         <value n="ejb:6a029fff-013d-1000-8033-c0a8210163d7" v="SEJBPortabilityGeneral"/>
+         <value n="ejb:6a02a007-013d-1000-8034-c0a8210163d7" v="SEJBMassiveOrder"/>
+         <value n="ejb:6a02a00d-013d-1000-8035-c0a8210163d7" v="SEJBSalesData"/>
+         <value n="ejb:6a02a013-013d-1000-8036-c0a8210163d7" v="SEJBRepair"/>
+         <value n="ejb:803e0cf5-013d-1000-8001-ac158c47b2f2" v="SEJBSession"/>
+         <value n="ejb:803e0d58-013d-1000-8002-ac158c47b2f2" v="SEJBOrderNew"/>
+         <value n="ejb:803e0d5b-013d-1000-8003-ac158c47b2f2" v="SEJBCustomer"/>
+         <value n="ejb:803e0d5f-013d-1000-8004-ac158c47b2f2" v="SEJBGeneral"/>
+         <value n="ejb:803e0d62-013d-1000-8005-ac158c47b2f2" v="SEJBOrderEdit"/>
+         <value n="ejb:803e0d66-013d-1000-8006-ac158c47b2f2" v="SEJBBillingAccount"/>
+         <value n="ejb:803e0d6a-013d-1000-8007-ac158c47b2f2" v="SEJBRetail"/>
+         <value n="ejb:803e0d6e-013d-1000-8008-ac158c47b2f2" v="SEJBOrderSearch"/>
+         <value n="ejb:803e0d72-013d-1000-8009-ac158c47b2f2" v="SEJBSite"/>
+         <value n="ejb:803e0d76-013d-1000-800a-ac158c47b2f2" v="SEJBOrderTabs"/>
+         <value n="ejb:803e0d83-013d-1000-800b-ac158c47b2f2" v="SEJBGuide"/>
+         <value n="ejb:803e0d87-013d-1000-800c-ac158c47b2f2" v="SEJBAutomatizacion"/>
+         <value n="ejb:803e0d8a-013d-1000-800d-ac158c47b2f2" v="SEJBCreditEvaluation"/>
+         <value n="ejb:803e0d8d-013d-1000-800e-ac158c47b2f2" v="SEJBPortabilityOrder"/>
+         <value n="ejb:803e0d91-013d-1000-800f-ac158c47b2f2" v="SEJBPortabilityGeneral"/>
+         <value n="ejb:803e0d95-013d-1000-8010-ac158c47b2f2" v="SEJBMassiveOrder"/>
+         <value n="ejb:803e0d98-013d-1000-8011-ac158c47b2f2" v="SEJBSalesData"/>
+         <value n="ejb:803e0d9b-013d-1000-8012-ac158c47b2f2" v="SEJBRepair"/>
+         <value n="ejb:96c89277-014d-1000-81f9-c0a8e2011ff0" v="SEJBSession"/>
+         <value n="ejb:96c8927f-014d-1000-81fa-c0a8e2011ff0" v="SEJBOrderNew"/>
+         <value n="ejb:96c89281-014d-1000-81fb-c0a8e2011ff0" v="SEJBCustomer"/>
+         <value n="ejb:96c89283-014d-1000-81fc-c0a8e2011ff0" v="SEJBGeneral"/>
+         <value n="ejb:96c89284-014d-1000-81fd-c0a8e2011ff0" v="SEJBOrderEdit"/>
+         <value n="ejb:96c89286-014d-1000-81fe-c0a8e2011ff0" v="SEJBBillingAccount"/>
+         <value n="ejb:96c89288-014d-1000-81ff-c0a8e2011ff0" v="SEJBRetail"/>
+         <value n="ejb:96c89289-014d-1000-8200-c0a8e2011ff0" v="SEJBOrderSearch"/>
+         <value n="ejb:96c8928b-014d-1000-8201-c0a8e2011ff0" v="SEJBSite"/>
+         <value n="ejb:96c8928d-014d-1000-8202-c0a8e2011ff0" v="SEJBOrderTabs"/>
+         <value n="ejb:96c8928e-014d-1000-8203-c0a8e2011ff0" v="SEJBGuide"/>
+         <value n="ejb:96c89290-014d-1000-8204-c0a8e2011ff0" v="SEJBAutomatizacion"/>
+         <value n="ejb:96c89292-014d-1000-8205-c0a8e2011ff0" v="SEJBCreditEvaluation"/>
+         <value n="ejb:96c89294-014d-1000-8206-c0a8e2011ff0" v="SEJBPortabilityOrder"/>
+         <value n="ejb:96c89296-014d-1000-8207-c0a8e2011ff0" v="SEJBPortabilityGeneral"/>
+         <value n="ejb:96c89297-014d-1000-8208-c0a8e2011ff0" v="SEJBMassiveOrder"/>
+         <value n="ejb:96c89299-014d-1000-8209-c0a8e2011ff0" v="SEJBSalesData"/>
+         <value n="ejb:96c8929b-014d-1000-820a-c0a8e2011ff0" v="SEJBRepair"/>
+         <value n="ejb:97e9f370-014d-1000-84c9-c0a8e2011ff0" v="SEJBSession"/>
+         <value n="ejb:97e9f377-014d-1000-84ca-c0a8e2011ff0" v="SEJBOrderNew"/>
+         <value n="ejb:97e9f377-014d-1000-84cb-c0a8e2011ff0" v="SEJBCustomer"/>
+         <value n="ejb:97e9f377-014d-1000-84cc-c0a8e2011ff0" v="SEJBGeneral"/>
+         <value n="ejb:97e9f378-014d-1000-84cd-c0a8e2011ff0" v="SEJBOrderEdit"/>
+         <value n="ejb:97e9f378-014d-1000-84ce-c0a8e2011ff0" v="SEJBBillingAccount"/>
+         <value n="ejb:97e9f378-014d-1000-84cf-c0a8e2011ff0" v="SEJBRetail"/>
+         <value n="ejb:97e9f378-014d-1000-84d0-c0a8e2011ff0" v="SEJBOrderSearch"/>
+         <value n="ejb:97e9f378-014d-1000-84d1-c0a8e2011ff0" v="SEJBSite"/>
+         <value n="ejb:97e9f378-014d-1000-84d2-c0a8e2011ff0" v="SEJBOrderTabs"/>
+         <value n="ejb:97e9f378-014d-1000-84d3-c0a8e2011ff0" v="SEJBGuide"/>
+         <value n="ejb:97e9f379-014d-1000-84d4-c0a8e2011ff0" v="SEJBAutomatizacion"/>
+         <value n="ejb:97e9f379-014d-1000-84d5-c0a8e2011ff0" v="SEJBCreditEvaluation"/>
+         <value n="ejb:97e9f379-014d-1000-84d6-c0a8e2011ff0" v="SEJBPortabilityOrder"/>
+         <value n="ejb:97e9f379-014d-1000-84d7-c0a8e2011ff0" v="SEJBPortabilityGeneral"/>
+         <value n="ejb:97e9f379-014d-1000-84d8-c0a8e2011ff0" v="SEJBMassiveOrder"/>
+         <value n="ejb:97e9f379-014d-1000-84d9-c0a8e2011ff0" v="SEJBSalesData"/>
+         <value n="ejb:97e9f37a-014d-1000-84da-c0a8e2011ff0" v="SEJBRepair"/>
+         <value n="ejb:97fbd664-014d-1000-8013-c0a8e2017f1f" v="SEJBSession"/>
+         <value n="ejb:97fbd668-014d-1000-8014-c0a8e2017f1f" v="SEJBOrderNew"/>
+         <value n="ejb:97fbd668-014d-1000-8015-c0a8e2017f1f" v="SEJBCustomer"/>
+         <value n="ejb:97fbd668-014d-1000-8016-c0a8e2017f1f" v="SEJBGeneral"/>
+         <value n="ejb:97fbd668-014d-1000-8017-c0a8e2017f1f" v="SEJBOrderEdit"/>
+         <value n="ejb:97fbd668-014d-1000-8018-c0a8e2017f1f" v="SEJBBillingAccount"/>
+         <value n="ejb:97fbd669-014d-1000-8019-c0a8e2017f1f" v="SEJBRetail"/>
+         <value n="ejb:97fbd669-014d-1000-801a-c0a8e2017f1f" v="SEJBOrderSearch"/>
+         <value n="ejb:97fbd669-014d-1000-801b-c0a8e2017f1f" v="SEJBSite"/>
+         <value n="ejb:97fbd669-014d-1000-801c-c0a8e2017f1f" v="SEJBOrderTabs"/>
+         <value n="ejb:97fbd669-014d-1000-801d-c0a8e2017f1f" v="SEJBGuide"/>
+         <value n="ejb:97fbd669-014d-1000-801e-c0a8e2017f1f" v="SEJBAutomatizacion"/>
+         <value n="ejb:97fbd66a-014d-1000-801f-c0a8e2017f1f" v="SEJBCreditEvaluation"/>
+         <value n="ejb:97fbd66a-014d-1000-8020-c0a8e2017f1f" v="SEJBPortabilityOrder"/>
+         <value n="ejb:97fbd66a-014d-1000-8021-c0a8e2017f1f" v="SEJBPortabilityGeneral"/>
+         <value n="ejb:97fbd66a-014d-1000-8022-c0a8e2017f1f" v="SEJBMassiveOrder"/>
+         <value n="ejb:97fbd66a-014d-1000-8023-c0a8e2017f1f" v="SEJBSalesData"/>
+         <value n="ejb:97fbd66a-014d-1000-8024-c0a8e2017f1f" v="SEJBRepair"/>
+         <value n="ejb:a500a34d-013f-1000-8001-a9fe6b533483" v="SEJBSession"/>
+         <value n="ejb:a500a356-013f-1000-8002-a9fe6b533483" v="SEJBOrderNew"/>
+         <value n="ejb:a500a356-013f-1000-8003-a9fe6b533483" v="SEJBCustomer"/>
+         <value n="ejb:a500a357-013f-1000-8004-a9fe6b533483" v="SEJBGeneral"/>
+         <value n="ejb:a500a357-013f-1000-8005-a9fe6b533483" v="SEJBOrderEdit"/>
+         <value n="ejb:a500a358-013f-1000-8006-a9fe6b533483" v="SEJBBillingAccount"/>
+         <value n="ejb:a500a358-013f-1000-8007-a9fe6b533483" v="SEJBRetail"/>
+         <value n="ejb:a500a359-013f-1000-8008-a9fe6b533483" v="SEJBOrderSearch"/>
+         <value n="ejb:a500a35a-013f-1000-8009-a9fe6b533483" v="SEJBSite"/>
+         <value n="ejb:a500a35a-013f-1000-800a-a9fe6b533483" v="SEJBOrderTabs"/>
+         <value n="ejb:a500a35b-013f-1000-800b-a9fe6b533483" v="SEJBGuide"/>
+         <value n="ejb:a500a35b-013f-1000-800c-a9fe6b533483" v="SEJBAutomatizacion"/>
+         <value n="ejb:a500a35c-013f-1000-800d-a9fe6b533483" v="SEJBCreditEvaluation"/>
+         <value n="ejb:a500a35c-013f-1000-800e-a9fe6b533483" v="SEJBPortabilityOrder"/>
+         <value n="ejb:a500a35c-013f-1000-800f-a9fe6b533483" v="SEJBPortabilityGeneral"/>
+         <value n="ejb:a500a35d-013f-1000-8010-a9fe6b533483" v="SEJBMassiveOrder"/>
+         <value n="ejb:a500a35e-013f-1000-8011-a9fe6b533483" v="SEJBSalesData"/>
+         <value n="ejb:a500a35e-013f-1000-8012-a9fe6b533483" v="SEJBRepair"/>
+         <value n="ejb:a69716a4-013c-1000-8001-ac15096066ee" v="SEJBSession"/>
+         <value n="ejb:a69716a9-013c-1000-8002-ac15096066ee" v="SEJBOrderNew"/>
+         <value n="ejb:a69716ab-013c-1000-8003-ac15096066ee" v="SEJBCustomer"/>
+         <value n="ejb:a69716ad-013c-1000-8004-ac15096066ee" v="SEJBGeneral"/>
+         <value n="ejb:a69716ae-013c-1000-8005-ac15096066ee" v="SEJBOrderEdit"/>
+         <value n="ejb:a69716b0-013c-1000-8006-ac15096066ee" v="SEJBBillingAccount"/>
+         <value n="ejb:a69716b2-013c-1000-8007-ac15096066ee" v="SEJBRetail"/>
+         <value n="ejb:a69716b6-013c-1000-8008-ac15096066ee" v="SEJBOrderSearch"/>
+         <value n="ejb:a69716b8-013c-1000-8009-ac15096066ee" v="SEJBSite"/>
+         <value n="ejb:a69716ba-013c-1000-800a-ac15096066ee" v="SEJBOrderTabs"/>
+         <value n="ejb:a69716bc-013c-1000-800b-ac15096066ee" v="SEJBGuide"/>
+         <value n="ejb:a69716be-013c-1000-800c-ac15096066ee" v="SEJBAutomatizacion"/>
+         <value n="ejb:a69716c0-013c-1000-800d-ac15096066ee" v="SEJBCreditEvaluation"/>
+         <value n="ejb:a69716c2-013c-1000-800e-ac15096066ee" v="SEJBPortabilityOrder"/>
+         <value n="ejb:a69716c4-013c-1000-800f-ac15096066ee" v="SEJBPortabilityGeneral"/>
+         <value n="ejb:a69716c7-013c-1000-8010-ac15096066ee" v="SEJBMassiveOrder"/>
+         <value n="ejb:a69716c9-013c-1000-8011-ac15096066ee" v="SEJBSalesData"/>
+         <value n="ejb:a69716cb-013c-1000-8012-ac15096066ee" v="SEJBRepair"/>
+         <value n="ejb:a6a07dc6-013c-1000-8013-ac15096066ee" v="SEJBSession"/>
+         <value n="ejb:a6a07dce-013c-1000-8014-ac15096066ee" v="SEJBOrderNew"/>
+         <value n="ejb:a6a07dd1-013c-1000-8015-ac15096066ee" v="SEJBCustomer"/>
+         <value n="ejb:a6a07dd5-013c-1000-8016-ac15096066ee" v="SEJBGeneral"/>
+         <value n="ejb:a6a07dd9-013c-1000-8017-ac15096066ee" v="SEJBOrderEdit"/>
+         <value n="ejb:a6a07ddc-013c-1000-8018-ac15096066ee" v="SEJBBillingAccount"/>
+         <value n="ejb:a6a07ddf-013c-1000-8019-ac15096066ee" v="SEJBRetail"/>
+         <value n="ejb:a6a07de2-013c-1000-801a-ac15096066ee" v="SEJBOrderSearch"/>
+         <value n="ejb:a6a07de5-013c-1000-801b-ac15096066ee" v="SEJBSite"/>
+         <value n="ejb:a6a07de7-013c-1000-801c-ac15096066ee" v="SEJBOrderTabs"/>
+         <value n="ejb:a6a07dea-013c-1000-801d-ac15096066ee" v="SEJBGuide"/>
+         <value n="ejb:a6a07ded-013c-1000-801e-ac15096066ee" v="SEJBAutomatizacion"/>
+         <value n="ejb:a6a07def-013c-1000-801f-ac15096066ee" v="SEJBCreditEvaluation"/>
+         <value n="ejb:a6a07df1-013c-1000-8020-ac15096066ee" v="SEJBPortabilityOrder"/>
+         <value n="ejb:a6a07df4-013c-1000-8021-ac15096066ee" v="SEJBPortabilityGeneral"/>
+         <value n="ejb:a6a07df7-013c-1000-8022-ac15096066ee" v="SEJBMassiveOrder"/>
+         <value n="ejb:a6a07dfa-013c-1000-8023-ac15096066ee" v="SEJBSalesData"/>
+         <value n="ejb:a6a07dfc-013c-1000-8024-ac15096066ee" v="SEJBRepair"/>
+         <value n="ejb:a6b36dbc-013c-1000-8025-ac15096066ee" v="SEJBSession"/>
+         <value n="ejb:a6b36dbf-013c-1000-8026-ac15096066ee" v="SEJBOrderNew"/>
+         <value n="ejb:a6b36dbf-013c-1000-8027-ac15096066ee" v="SEJBCustomer"/>
+         <value n="ejb:a6b36dc0-013c-1000-8028-ac15096066ee" v="SEJBGeneral"/>
+         <value n="ejb:a6b36dc0-013c-1000-8029-ac15096066ee" v="SEJBOrderEdit"/>
+         <value n="ejb:a6b36dc0-013c-1000-802a-ac15096066ee" v="SEJBBillingAccount"/>
+         <value n="ejb:a6b36dc0-013c-1000-802b-ac15096066ee" v="SEJBRetail"/>
+         <value n="ejb:a6b36dc1-013c-1000-802c-ac15096066ee" v="SEJBOrderSearch"/>
+         <value n="ejb:a6b36dc1-013c-1000-802d-ac15096066ee" v="SEJBSite"/>
+         <value n="ejb:a6b36dc2-013c-1000-802e-ac15096066ee" v="SEJBOrderTabs"/>
+         <value n="ejb:a6b36dc2-013c-1000-802f-ac15096066ee" v="SEJBGuide"/>
+         <value n="ejb:a6b36dc2-013c-1000-8030-ac15096066ee" v="SEJBAutomatizacion"/>
+         <value n="ejb:a6b36dc2-013c-1000-8031-ac15096066ee" v="SEJBCreditEvaluation"/>
+         <value n="ejb:a6b36dc3-013c-1000-8032-ac15096066ee" v="SEJBPortabilityOrder"/>
+         <value n="ejb:a6b36dc3-013c-1000-8033-ac15096066ee" v="SEJBPortabilityGeneral"/>
+         <value n="ejb:a6b36dc3-013c-1000-8034-ac15096066ee" v="SEJBMassiveOrder"/>
+         <value n="ejb:a6b36dc4-013c-1000-8035-ac15096066ee" v="SEJBSalesData"/>
+         <value n="ejb:a6b36dc4-013c-1000-8036-ac15096066ee" v="SEJBRepair"/>
+         <value n="ejb:a6e85c9a-013f-1000-8051-a9fe6b533483" v="SEJBSession"/>
+         <value n="ejb:a6e85c9b-013f-1000-8052-a9fe6b533483" v="SEJBOrderNew"/>
+         <value n="ejb:a6e85c9b-013f-1000-8053-a9fe6b533483" v="SEJBCustomer"/>
+         <value n="ejb:a6e85c9b-013f-1000-8054-a9fe6b533483" v="SEJBGeneral"/>
+         <value n="ejb:a6e85c9c-013f-1000-8055-a9fe6b533483" v="SEJBOrderEdit"/>
+         <value n="ejb:a6e85c9c-013f-1000-8056-a9fe6b533483" v="SEJBBillingAccount"/>
+         <value n="ejb:a6e85c9c-013f-1000-8057-a9fe6b533483" v="SEJBRetail"/>
+         <value n="ejb:a6e85c9d-013f-1000-8058-a9fe6b533483" v="SEJBOrderSearch"/>
+         <value n="ejb:a6e85c9d-013f-1000-8059-a9fe6b533483" v="SEJBSite"/>
+         <value n="ejb:a6e85c9d-013f-1000-805a-a9fe6b533483" v="SEJBOrderTabs"/>
+         <value n="ejb:a6e85c9e-013f-1000-805b-a9fe6b533483" v="SEJBGuide"/>
+         <value n="ejb:a6e85c9e-013f-1000-805c-a9fe6b533483" v="SEJBAutomatizacion"/>
+         <value n="ejb:a6e85c9e-013f-1000-805d-a9fe6b533483" v="SEJBCreditEvaluation"/>
+         <value n="ejb:a6e85c9f-013f-1000-805e-a9fe6b533483" v="SEJBPortabilityOrder"/>
+         <value n="ejb:a6e85c9f-013f-1000-805f-a9fe6b533483" v="SEJBPortabilityGeneral"/>
+         <value n="ejb:a6e85ca0-013f-1000-8060-a9fe6b533483" v="SEJBMassiveOrder"/>
+         <value n="ejb:a6e85ca0-013f-1000-8061-a9fe6b533483" v="SEJBSalesData"/>
+         <value n="ejb:a6e85ca0-013f-1000-8062-a9fe6b533483" v="SEJBRepair"/>
+         <value n="ejb:a87c38a6-013c-1000-8037-ac150960b9d4" v="SEJBSession"/>
+         <value n="ejb:a87c38ac-013c-1000-8038-ac150960b9d4" v="SEJBOrderNew"/>
+         <value n="ejb:a87c38ae-013c-1000-8039-ac150960b9d4" v="SEJBCustomer"/>
+         <value n="ejb:a87c38af-013c-1000-803a-ac150960b9d4" v="SEJBGeneral"/>
+         <value n="ejb:a87c38b1-013c-1000-803b-ac150960b9d4" v="SEJBOrderEdit"/>
+         <value n="ejb:a87c38b2-013c-1000-803c-ac150960b9d4" v="SEJBBillingAccount"/>
+         <value n="ejb:a87c38b4-013c-1000-803d-ac150960b9d4" v="SEJBRetail"/>
+         <value n="ejb:a87c38b6-013c-1000-803e-ac150960b9d4" v="SEJBOrderSearch"/>
+         <value n="ejb:a87c38b7-013c-1000-803f-ac150960b9d4" v="SEJBSite"/>
+         <value n="ejb:a87c38b9-013c-1000-8040-ac150960b9d4" v="SEJBOrderTabs"/>
+         <value n="ejb:a87c38ba-013c-1000-8041-ac150960b9d4" v="SEJBGuide"/>
+         <value n="ejb:a87c38bc-013c-1000-8042-ac150960b9d4" v="SEJBAutomatizacion"/>
+         <value n="ejb:a87c38bd-013c-1000-8043-ac150960b9d4" v="SEJBCreditEvaluation"/>
+         <value n="ejb:a87c38bf-013c-1000-8044-ac150960b9d4" v="SEJBPortabilityOrder"/>
+         <value n="ejb:a87c38c2-013c-1000-8045-ac150960b9d4" v="SEJBPortabilityGeneral"/>
+         <value n="ejb:a87c38c4-013c-1000-8046-ac150960b9d4" v="SEJBMassiveOrder"/>
+         <value n="ejb:a87c38c6-013c-1000-8047-ac150960b9d4" v="SEJBSalesData"/>
+         <value n="ejb:a87c38c8-013c-1000-8048-ac150960b9d4" v="SEJBRepair"/>
+         <value n="ejb:a87c5239-013c-1000-8049-ac150960b9d4" v="SEJBSession"/>
+         <value n="ejb:a87c523b-013c-1000-804a-ac150960b9d4" v="SEJBOrderNew"/>
+         <value n="ejb:a87c523c-013c-1000-804b-ac150960b9d4" v="SEJBCustomer"/>
+         <value n="ejb:a87c523e-013c-1000-804c-ac150960b9d4" v="SEJBGeneral"/>
+         <value n="ejb:a87c5242-013c-1000-804d-ac150960b9d4" v="SEJBOrderEdit"/>
+         <value n="ejb:a87c5244-013c-1000-804e-ac150960b9d4" v="SEJBBillingAccount"/>
+         <value n="ejb:a87c5245-013c-1000-804f-ac150960b9d4" v="SEJBRetail"/>
+         <value n="ejb:a87c5247-013c-1000-8050-ac150960b9d4" v="SEJBOrderSearch"/>
+         <value n="ejb:a87c5248-013c-1000-8051-ac150960b9d4" v="SEJBSite"/>
+         <value n="ejb:a87c524a-013c-1000-8052-ac150960b9d4" v="SEJBOrderTabs"/>
+         <value n="ejb:a87c524c-013c-1000-8053-ac150960b9d4" v="SEJBGuide"/>
+         <value n="ejb:a87c524d-013c-1000-8054-ac150960b9d4" v="SEJBAutomatizacion"/>
+         <value n="ejb:a87c524f-013c-1000-8055-ac150960b9d4" v="SEJBCreditEvaluation"/>
+         <value n="ejb:a87c5251-013c-1000-8056-ac150960b9d4" v="SEJBPortabilityOrder"/>
+         <value n="ejb:a87c5253-013c-1000-8057-ac150960b9d4" v="SEJBPortabilityGeneral"/>
+         <value n="ejb:a87c5255-013c-1000-8058-ac150960b9d4" v="SEJBMassiveOrder"/>
+         <value n="ejb:a87c5257-013c-1000-8059-ac150960b9d4" v="SEJBSalesData"/>
+         <value n="ejb:a87c5259-013c-1000-805a-ac150960b9d4" v="SEJBRepair"/>
+         <value n="ejb:ab6d40b7-013f-1000-8013-a9fe6b536113" v="SEJBSession"/>
+         <value n="ejb:ab6d40b8-013f-1000-8014-a9fe6b536113" v="SEJBOrderNew"/>
+         <value n="ejb:ab6d40b8-013f-1000-8015-a9fe6b536113" v="SEJBCustomer"/>
+         <value n="ejb:ab6d40b9-013f-1000-8016-a9fe6b536113" v="SEJBGeneral"/>
+         <value n="ejb:ab6d40b9-013f-1000-8017-a9fe6b536113" v="SEJBOrderEdit"/>
+         <value n="ejb:ab6d40b9-013f-1000-8018-a9fe6b536113" v="SEJBBillingAccount"/>
+         <value n="ejb:ab6d40ba-013f-1000-8019-a9fe6b536113" v="SEJBRetail"/>
+         <value n="ejb:ab6d40ba-013f-1000-801a-a9fe6b536113" v="SEJBOrderSearch"/>
+         <value n="ejb:ab6d40bb-013f-1000-801b-a9fe6b536113" v="SEJBSite"/>
+         <value n="ejb:ab6d40bb-013f-1000-801c-a9fe6b536113" v="SEJBOrderTabs"/>
+         <value n="ejb:ab6d40bb-013f-1000-801d-a9fe6b536113" v="SEJBGuide"/>
+         <value n="ejb:ab6d40bc-013f-1000-801e-a9fe6b536113" v="SEJBAutomatizacion"/>
+         <value n="ejb:ab6d40bc-013f-1000-801f-a9fe6b536113" v="SEJBCreditEvaluation"/>
+         <value n="ejb:ab6d40bc-013f-1000-8020-a9fe6b536113" v="SEJBPortabilityOrder"/>
+         <value n="ejb:ab6d40bd-013f-1000-8021-a9fe6b536113" v="SEJBPortabilityGeneral"/>
+         <value n="ejb:ab6d40bd-013f-1000-8022-a9fe6b536113" v="SEJBMassiveOrder"/>
+         <value n="ejb:ab6d40be-013f-1000-8023-a9fe6b536113" v="SEJBSalesData"/>
+         <value n="ejb:ab6d40be-013f-1000-8024-a9fe6b536113" v="SEJBRepair"/>
+         <value n="ejb:acf6b130-013d-1000-8025-ac158caa1116" v="SEJBSession"/>
+         <value n="ejb:acf6b147-013d-1000-8026-ac158caa1116" v="SEJBOrderNew"/>
+         <value n="ejb:acf6b149-013d-1000-8027-ac158caa1116" v="SEJBCustomer"/>
+         <value n="ejb:acf6b14b-013d-1000-8028-ac158caa1116" v="SEJBGeneral"/>
+         <value n="ejb:acf6b14c-013d-1000-8029-ac158caa1116" v="SEJBOrderEdit"/>
+         <value n="ejb:acf6b14e-013d-1000-802a-ac158caa1116" v="SEJBBillingAccount"/>
+         <value n="ejb:acf6b14f-013d-1000-802b-ac158caa1116" v="SEJBRetail"/>
+         <value n="ejb:acf6b150-013d-1000-802c-ac158caa1116" v="SEJBOrderSearch"/>
+         <value n="ejb:acf6b152-013d-1000-802d-ac158caa1116" v="SEJBSite"/>
+         <value n="ejb:acf6b153-013d-1000-802e-ac158caa1116" v="SEJBOrderTabs"/>
+         <value n="ejb:acf6b154-013d-1000-802f-ac158caa1116" v="SEJBGuide"/>
+         <value n="ejb:acf6b156-013d-1000-8030-ac158caa1116" v="SEJBAutomatizacion"/>
+         <value n="ejb:acf6b157-013d-1000-8031-ac158caa1116" v="SEJBCreditEvaluation"/>
+         <value n="ejb:acf6b158-013d-1000-8032-ac158caa1116" v="SEJBPortabilityOrder"/>
+         <value n="ejb:acf6b15a-013d-1000-8033-ac158caa1116" v="SEJBPortabilityGeneral"/>
+         <value n="ejb:acf6b15b-013d-1000-8034-ac158caa1116" v="SEJBMassiveOrder"/>
+         <value n="ejb:acf6b15c-013d-1000-8035-ac158caa1116" v="SEJBSalesData"/>
+         <value n="ejb:acf6b15e-013d-1000-8036-ac158caa1116" v="SEJBRepair"/>
+         <value n="ejb:b67ea675-0143-1000-8001-ac158c7dfad1" v="SEJBSession"/>
+         <value n="ejb:b67ea6ff-0143-1000-8002-ac158c7dfad1" v="SEJBOrderNew"/>
+         <value n="ejb:b67ea701-0143-1000-8003-ac158c7dfad1" v="SEJBCustomer"/>
+         <value n="ejb:b67ea703-0143-1000-8004-ac158c7dfad1" v="SEJBGeneral"/>
+         <value n="ejb:b67ea706-0143-1000-8005-ac158c7dfad1" v="SEJBOrderEdit"/>
+         <value n="ejb:b67ea708-0143-1000-8006-ac158c7dfad1" v="SEJBBillingAccount"/>
+         <value n="ejb:b67ea70b-0143-1000-8007-ac158c7dfad1" v="SEJBRetail"/>
+         <value n="ejb:b67ea70d-0143-1000-8008-ac158c7dfad1" v="SEJBOrderSearch"/>
+         <value n="ejb:b67ea710-0143-1000-8009-ac158c7dfad1" v="SEJBSite"/>
+         <value n="ejb:b67ea712-0143-1000-800a-ac158c7dfad1" v="SEJBOrderTabs"/>
+         <value n="ejb:b67ea714-0143-1000-800b-ac158c7dfad1" v="SEJBGuide"/>
+         <value n="ejb:b67ea717-0143-1000-800c-ac158c7dfad1" v="SEJBAutomatizacion"/>
+         <value n="ejb:b67ea719-0143-1000-800d-ac158c7dfad1" v="SEJBCreditEvaluation"/>
+         <value n="ejb:b67ea71b-0143-1000-800e-ac158c7dfad1" v="SEJBPortabilityOrder"/>
+         <value n="ejb:b67ea71e-0143-1000-800f-ac158c7dfad1" v="SEJBPortabilityGeneral"/>
+         <value n="ejb:b67ea721-0143-1000-8010-ac158c7dfad1" v="SEJBMassiveOrder"/>
+         <value n="ejb:b67ea723-0143-1000-8011-ac158c7dfad1" v="SEJBSalesData"/>
+         <value n="ejb:b67ea725-0143-1000-8012-ac158c7dfad1" v="SEJBRepair"/>
+         <value n="ejb:b6815a20-0143-1000-8025-ac158c7dfad1" v="SEJBSession"/>
+         <value n="ejb:b6815a24-0143-1000-8026-ac158c7dfad1" v="SEJBOrderNew"/>
+         <value n="ejb:b6815a28-0143-1000-8027-ac158c7dfad1" v="SEJBCustomer"/>
+         <value n="ejb:b6815a2c-0143-1000-8028-ac158c7dfad1" v="SEJBGeneral"/>
+         <value n="ejb:b6815a30-0143-1000-8029-ac158c7dfad1" v="SEJBOrderEdit"/>
+         <value n="ejb:b6815a33-0143-1000-802a-ac158c7dfad1" v="SEJBBillingAccount"/>
+         <value n="ejb:b6815a35-0143-1000-802b-ac158c7dfad1" v="SEJBRetail"/>
+         <value n="ejb:b6815a37-0143-1000-802c-ac158c7dfad1" v="SEJBOrderSearch"/>
+         <value n="ejb:b6815a39-0143-1000-802d-ac158c7dfad1" v="SEJBSite"/>
+         <value n="ejb:b6815a3b-0143-1000-802e-ac158c7dfad1" v="SEJBOrderTabs"/>
+         <value n="ejb:b6815a3d-0143-1000-802f-ac158c7dfad1" v="SEJBGuide"/>
+         <value n="ejb:b6815a40-0143-1000-8030-ac158c7dfad1" v="SEJBAutomatizacion"/>
+         <value n="ejb:b6815a42-0143-1000-8031-ac158c7dfad1" v="SEJBCreditEvaluation"/>
+         <value n="ejb:b6815a44-0143-1000-8032-ac158c7dfad1" v="SEJBPortabilityOrder"/>
+         <value n="ejb:b6815a46-0143-1000-8033-ac158c7dfad1" v="SEJBPortabilityGeneral"/>
+         <value n="ejb:b6815a48-0143-1000-8034-ac158c7dfad1" v="SEJBMassiveOrder"/>
+         <value n="ejb:b6815a4a-0143-1000-8035-ac158c7dfad1" v="SEJBSalesData"/>
+         <value n="ejb:b6815a4c-0143-1000-8036-ac158c7dfad1" v="SEJBRepair"/>
+         <value n="ejb:bb14826a-014d-1000-8091-c0a8e201b112" v="SEJBSession"/>
+         <value n="ejb:bb14826c-014d-1000-8092-c0a8e201b112" v="SEJBOrderNew"/>
+         <value n="ejb:bb14826c-014d-1000-8093-c0a8e201b112" v="SEJBCustomer"/>
+         <value n="ejb:bb14826c-014d-1000-8094-c0a8e201b112" v="SEJBGeneral"/>
+         <value n="ejb:bb14826d-014d-1000-8095-c0a8e201b112" v="SEJBOrderEdit"/>
+         <value n="ejb:bb14826d-014d-1000-8096-c0a8e201b112" v="SEJBBillingAccount"/>
+         <value n="ejb:bb14826d-014d-1000-8097-c0a8e201b112" v="SEJBRetail"/>
+         <value n="ejb:bb14826d-014d-1000-8098-c0a8e201b112" v="SEJBOrderSearch"/>
+         <value n="ejb:bb14826e-014d-1000-8099-c0a8e201b112" v="SEJBSite"/>
+         <value n="ejb:bb14826e-014d-1000-809a-c0a8e201b112" v="SEJBOrderTabs"/>
+         <value n="ejb:bb14826e-014d-1000-809b-c0a8e201b112" v="SEJBGuide"/>
+         <value n="ejb:bb14826e-014d-1000-809c-c0a8e201b112" v="SEJBAutomatizacion"/>
+         <value n="ejb:bb14826e-014d-1000-809d-c0a8e201b112" v="SEJBCreditEvaluation"/>
+         <value n="ejb:bb14826e-014d-1000-809e-c0a8e201b112" v="SEJBPortabilityOrder"/>
+         <value n="ejb:bb14826f-014d-1000-809f-c0a8e201b112" v="SEJBPortabilityGeneral"/>
+         <value n="ejb:bb14826f-014d-1000-80a0-c0a8e201b112" v="SEJBMassiveOrder"/>
+         <value n="ejb:bb14826f-014d-1000-80a1-c0a8e201b112" v="SEJBSalesData"/>
+         <value n="ejb:bb14826f-014d-1000-80a2-c0a8e201b112" v="SEJBRepair"/>
+         <value n="ejb:bbbc3d23-014d-1000-8121-c0a8e201b112" v="SEJBSession"/>
+         <value n="ejb:bbbc3d25-014d-1000-8122-c0a8e201b112" v="SEJBOrderNew"/>
+         <value n="ejb:bbbc3d25-014d-1000-8123-c0a8e201b112" v="SEJBCustomer"/>
+         <value n="ejb:bbbc3d25-014d-1000-8124-c0a8e201b112" v="SEJBGeneral"/>
+         <value n="ejb:bbbc3d26-014d-1000-8125-c0a8e201b112" v="SEJBOrderEdit"/>
+         <value n="ejb:bbbc3d26-014d-1000-8126-c0a8e201b112" v="SEJBBillingAccount"/>
+         <value n="ejb:bbbc3d26-014d-1000-8127-c0a8e201b112" v="SEJBRetail"/>
+         <value n="ejb:bbbc3d26-014d-1000-8128-c0a8e201b112" v="SEJBOrderSearch"/>
+         <value n="ejb:bbbc3d26-014d-1000-8129-c0a8e201b112" v="SEJBSite"/>
+         <value n="ejb:bbbc3d26-014d-1000-812a-c0a8e201b112" v="SEJBOrderTabs"/>
+         <value n="ejb:bbbc3d27-014d-1000-812b-c0a8e201b112" v="SEJBGuide"/>
+         <value n="ejb:bbbc3d27-014d-1000-812c-c0a8e201b112" v="SEJBAutomatizacion"/>
+         <value n="ejb:bbbc3d27-014d-1000-812d-c0a8e201b112" v="SEJBCreditEvaluation"/>
+         <value n="ejb:bbbc3d27-014d-1000-812e-c0a8e201b112" v="SEJBPortabilityOrder"/>
+         <value n="ejb:bbbc3d27-014d-1000-812f-c0a8e201b112" v="SEJBPortabilityGeneral"/>
+         <value n="ejb:bbbc3d27-014d-1000-8130-c0a8e201b112" v="SEJBMassiveOrder"/>
+         <value n="ejb:bbbc3d28-014d-1000-8131-c0a8e201b112" v="SEJBSalesData"/>
+         <value n="ejb:bbbc3d28-014d-1000-8132-c0a8e201b112" v="SEJBRepair"/>
+         <value n="ejb:bc03f08e-014d-1000-8013-c0a8e20115e1" v="SEJBSession"/>
+         <value n="ejb:bc03f093-014d-1000-8014-c0a8e20115e1" v="SEJBOrderNew"/>
+         <value n="ejb:bc03f093-014d-1000-8015-c0a8e20115e1" v="SEJBCustomer"/>
+         <value n="ejb:bc03f093-014d-1000-8016-c0a8e20115e1" v="SEJBGeneral"/>
+         <value n="ejb:bc03f093-014d-1000-8017-c0a8e20115e1" v="SEJBOrderEdit"/>
+         <value n="ejb:bc03f094-014d-1000-8018-c0a8e20115e1" v="SEJBBillingAccount"/>
+         <value n="ejb:bc03f094-014d-1000-8019-c0a8e20115e1" v="SEJBRetail"/>
+         <value n="ejb:bc03f094-014d-1000-801a-c0a8e20115e1" v="SEJBOrderSearch"/>
+         <value n="ejb:bc03f094-014d-1000-801b-c0a8e20115e1" v="SEJBSite"/>
+         <value n="ejb:bc03f094-014d-1000-801c-c0a8e20115e1" v="SEJBOrderTabs"/>
+         <value n="ejb:bc03f094-014d-1000-801d-c0a8e20115e1" v="SEJBGuide"/>
+         <value n="ejb:bc03f095-014d-1000-801e-c0a8e20115e1" v="SEJBAutomatizacion"/>
+         <value n="ejb:bc03f095-014d-1000-801f-c0a8e20115e1" v="SEJBCreditEvaluation"/>
+         <value n="ejb:bc03f095-014d-1000-8020-c0a8e20115e1" v="SEJBPortabilityOrder"/>
+         <value n="ejb:bc03f095-014d-1000-8021-c0a8e20115e1" v="SEJBPortabilityGeneral"/>
+         <value n="ejb:bc03f095-014d-1000-8022-c0a8e20115e1" v="SEJBMassiveOrder"/>
+         <value n="ejb:bc03f095-014d-1000-8023-c0a8e20115e1" v="SEJBSalesData"/>
+         <value n="ejb:bc03f096-014d-1000-8024-c0a8e20115e1" v="SEJBRepair"/>
+         <value n="ejb:bf1015fc-014d-1000-8013-c0a8e201c2f3" v="SEJBSession"/>
+         <value n="ejb:bf101600-014d-1000-8014-c0a8e201c2f3" v="SEJBOrderNew"/>
+         <value n="ejb:bf101600-014d-1000-8015-c0a8e201c2f3" v="SEJBCustomer"/>
+         <value n="ejb:bf101601-014d-1000-8016-c0a8e201c2f3" v="SEJBGeneral"/>
+         <value n="ejb:bf101601-014d-1000-8017-c0a8e201c2f3" v="SEJBOrderEdit"/>
+         <value n="ejb:bf101601-014d-1000-8018-c0a8e201c2f3" v="SEJBBillingAccount"/>
+         <value n="ejb:bf101601-014d-1000-8019-c0a8e201c2f3" v="SEJBRetail"/>
+         <value n="ejb:bf101601-014d-1000-801a-c0a8e201c2f3" v="SEJBOrderSearch"/>
+         <value n="ejb:bf101601-014d-1000-801b-c0a8e201c2f3" v="SEJBSite"/>
+         <value n="ejb:bf101602-014d-1000-801c-c0a8e201c2f3" v="SEJBOrderTabs"/>
+         <value n="ejb:bf101602-014d-1000-801d-c0a8e201c2f3" v="SEJBGuide"/>
+         <value n="ejb:bf101602-014d-1000-801e-c0a8e201c2f3" v="SEJBAutomatizacion"/>
+         <value n="ejb:bf101602-014d-1000-801f-c0a8e201c2f3" v="SEJBCreditEvaluation"/>
+         <value n="ejb:bf101602-014d-1000-8020-c0a8e201c2f3" v="SEJBPortabilityOrder"/>
+         <value n="ejb:bf101603-014d-1000-8021-c0a8e201c2f3" v="SEJBPortabilityGeneral"/>
+         <value n="ejb:bf101603-014d-1000-8022-c0a8e201c2f3" v="SEJBMassiveOrder"/>
+         <value n="ejb:bf101603-014d-1000-8023-c0a8e201c2f3" v="SEJBSalesData"/>
+         <value n="ejb:bf101603-014d-1000-8024-c0a8e201c2f3" v="SEJBRepair"/>
+         <value n="ejb:c446b41d-014d-1000-8013-c0a8e2016d8a" v="SEJBSession"/>
+         <value n="ejb:c446b422-014d-1000-8014-c0a8e2016d8a" v="SEJBOrderNew"/>
+         <value n="ejb:c446b422-014d-1000-8015-c0a8e2016d8a" v="SEJBCustomer"/>
+         <value n="ejb:c446b423-014d-1000-8016-c0a8e2016d8a" v="SEJBGeneral"/>
+         <value n="ejb:c446b423-014d-1000-8017-c0a8e2016d8a" v="SEJBOrderEdit"/>
+         <value n="ejb:c446b423-014d-1000-8018-c0a8e2016d8a" v="SEJBBillingAccount"/>
+         <value n="ejb:c446b423-014d-1000-8019-c0a8e2016d8a" v="SEJBRetail"/>
+         <value n="ejb:c446b423-014d-1000-801a-c0a8e2016d8a" v="SEJBOrderSearch"/>
+         <value n="ejb:c446b423-014d-1000-801b-c0a8e2016d8a" v="SEJBSite"/>
+         <value n="ejb:c446b424-014d-1000-801c-c0a8e2016d8a" v="SEJBOrderTabs"/>
+         <value n="ejb:c446b424-014d-1000-801d-c0a8e2016d8a" v="SEJBGuide"/>
+         <value n="ejb:c446b424-014d-1000-801e-c0a8e2016d8a" v="SEJBAutomatizacion"/>
+         <value n="ejb:c446b424-014d-1000-801f-c0a8e2016d8a" v="SEJBCreditEvaluation"/>
+         <value n="ejb:c446b424-014d-1000-8020-c0a8e2016d8a" v="SEJBPortabilityOrder"/>
+         <value n="ejb:c446b424-014d-1000-8021-c0a8e2016d8a" v="SEJBPortabilityGeneral"/>
+         <value n="ejb:c446b425-014d-1000-8022-c0a8e2016d8a" v="SEJBMassiveOrder"/>
+         <value n="ejb:c446b425-014d-1000-8023-c0a8e2016d8a" v="SEJBSalesData"/>
+         <value n="ejb:c446b425-014d-1000-8024-c0a8e2016d8a" v="SEJBRepair"/>
+         <value n="ejb:c466d680-014d-1000-8013-c0a8e201e927" v="SEJBSession"/>
+         <value n="ejb:c466d685-014d-1000-8014-c0a8e201e927" v="SEJBOrderNew"/>
+         <value n="ejb:c466d685-014d-1000-8015-c0a8e201e927" v="SEJBCustomer"/>
+         <value n="ejb:c466d685-014d-1000-8016-c0a8e201e927" v="SEJBGeneral"/>
+         <value n="ejb:c466d685-014d-1000-8017-c0a8e201e927" v="SEJBOrderEdit"/>
+         <value n="ejb:c466d685-014d-1000-8018-c0a8e201e927" v="SEJBBillingAccount"/>
+         <value n="ejb:c466d685-014d-1000-8019-c0a8e201e927" v="SEJBRetail"/>
+         <value n="ejb:c466d686-014d-1000-801a-c0a8e201e927" v="SEJBOrderSearch"/>
+         <value n="ejb:c466d686-014d-1000-801b-c0a8e201e927" v="SEJBSite"/>
+         <value n="ejb:c466d686-014d-1000-801c-c0a8e201e927" v="SEJBOrderTabs"/>
+         <value n="ejb:c466d686-014d-1000-801d-c0a8e201e927" v="SEJBGuide"/>
+         <value n="ejb:c466d686-014d-1000-801e-c0a8e201e927" v="SEJBAutomatizacion"/>
+         <value n="ejb:c466d687-014d-1000-801f-c0a8e201e927" v="SEJBCreditEvaluation"/>
+         <value n="ejb:c466d687-014d-1000-8020-c0a8e201e927" v="SEJBPortabilityOrder"/>
+         <value n="ejb:c466d687-014d-1000-8021-c0a8e201e927" v="SEJBPortabilityGeneral"/>
+         <value n="ejb:c466d687-014d-1000-8022-c0a8e201e927" v="SEJBMassiveOrder"/>
+         <value n="ejb:c466d687-014d-1000-8023-c0a8e201e927" v="SEJBSalesData"/>
+         <value n="ejb:c466d687-014d-1000-8024-c0a8e201e927" v="SEJBRepair"/>
+         <value n="ejb:c469fffe-014d-1000-8013-c0a8e2013457" v="SEJBSession"/>
+         <value n="ejb:c46a0003-014d-1000-8014-c0a8e2013457" v="SEJBOrderNew"/>
+         <value n="ejb:c46a0003-014d-1000-8015-c0a8e2013457" v="SEJBCustomer"/>
+         <value n="ejb:c46a0003-014d-1000-8016-c0a8e2013457" v="SEJBGeneral"/>
+         <value n="ejb:c46a0003-014d-1000-8017-c0a8e2013457" v="SEJBOrderEdit"/>
+         <value n="ejb:c46a0003-014d-1000-8018-c0a8e2013457" v="SEJBBillingAccount"/>
+         <value n="ejb:c46a0004-014d-1000-8019-c0a8e2013457" v="SEJBRetail"/>
+         <value n="ejb:c46a0004-014d-1000-801a-c0a8e2013457" v="SEJBOrderSearch"/>
+         <value n="ejb:c46a0004-014d-1000-801b-c0a8e2013457" v="SEJBSite"/>
+         <value n="ejb:c46a0004-014d-1000-801c-c0a8e2013457" v="SEJBOrderTabs"/>
+         <value n="ejb:c46a0004-014d-1000-801d-c0a8e2013457" v="SEJBGuide"/>
+         <value n="ejb:c46a0004-014d-1000-801e-c0a8e2013457" v="SEJBAutomatizacion"/>
+         <value n="ejb:c46a0005-014d-1000-801f-c0a8e2013457" v="SEJBCreditEvaluation"/>
+         <value n="ejb:c46a0005-014d-1000-8020-c0a8e2013457" v="SEJBPortabilityOrder"/>
+         <value n="ejb:c46a0005-014d-1000-8021-c0a8e2013457" v="SEJBPortabilityGeneral"/>
+         <value n="ejb:c46a0005-014d-1000-8022-c0a8e2013457" v="SEJBMassiveOrder"/>
+         <value n="ejb:c46a0005-014d-1000-8023-c0a8e2013457" v="SEJBSalesData"/>
+         <value n="ejb:c46a0005-014d-1000-8024-c0a8e2013457" v="SEJBRepair"/>
+         <value n="ejb:c97fcf2e-013c-1000-8025-ac168652b904" v="SEJBSession"/>
+         <value n="ejb:c97fcf36-013c-1000-8026-ac168652b904" v="SEJBOrderNew"/>
+         <value n="ejb:c97fcf39-013c-1000-8027-ac168652b904" v="SEJBCustomer"/>
+         <value n="ejb:c97fcf3c-013c-1000-8028-ac168652b904" v="SEJBGeneral"/>
+         <value n="ejb:c97fcf3e-013c-1000-8029-ac168652b904" v="SEJBOrderEdit"/>
+         <value n="ejb:c97fcf41-013c-1000-802a-ac168652b904" v="SEJBBillingAccount"/>
+         <value n="ejb:c97fcf44-013c-1000-802b-ac168652b904" v="SEJBRetail"/>
+         <value n="ejb:c97fcf47-013c-1000-802c-ac168652b904" v="SEJBOrderSearch"/>
+         <value n="ejb:c97fcf4a-013c-1000-802d-ac168652b904" v="SEJBSite"/>
+         <value n="ejb:c97fcf4d-013c-1000-802e-ac168652b904" v="SEJBOrderTabs"/>
+         <value n="ejb:c97fcf4e-013c-1000-802f-ac168652b904" v="SEJBGuide"/>
+         <value n="ejb:c97fcf50-013c-1000-8030-ac168652b904" v="SEJBAutomatizacion"/>
+         <value n="ejb:c97fcf51-013c-1000-8031-ac168652b904" v="SEJBCreditEvaluation"/>
+         <value n="ejb:c97fcf53-013c-1000-8032-ac168652b904" v="SEJBPortabilityOrder"/>
+         <value n="ejb:c97fcf54-013c-1000-8033-ac168652b904" v="SEJBPortabilityGeneral"/>
+         <value n="ejb:c97fcf56-013c-1000-8034-ac168652b904" v="SEJBMassiveOrder"/>
+         <value n="ejb:c97fcf57-013c-1000-8035-ac168652b904" v="SEJBSalesData"/>
+         <value n="ejb:c97fcf59-013c-1000-8036-ac168652b904" v="SEJBRepair"/>
+         <value n="ejb:c97ffa3b-013c-1000-8037-ac168652b904" v="SEJBSession"/>
+         <value n="ejb:c97ffa3f-013c-1000-8038-ac168652b904" v="SEJBOrderNew"/>
+         <value n="ejb:c97ffa42-013c-1000-8039-ac168652b904" v="SEJBCustomer"/>
+         <value n="ejb:c97ffa45-013c-1000-803a-ac168652b904" v="SEJBGeneral"/>
+         <value n="ejb:c97ffa47-013c-1000-803b-ac168652b904" v="SEJBOrderEdit"/>
+         <value n="ejb:c97ffa4a-013c-1000-803c-ac168652b904" v="SEJBBillingAccount"/>
+         <value n="ejb:c97ffa4d-013c-1000-803d-ac168652b904" v="SEJBRetail"/>
+         <value n="ejb:c97ffa50-013c-1000-803e-ac168652b904" v="SEJBOrderSearch"/>
+         <value n="ejb:c97ffa51-013c-1000-803f-ac168652b904" v="SEJBSite"/>
+         <value n="ejb:c97ffa53-013c-1000-8040-ac168652b904" v="SEJBOrderTabs"/>
+         <value n="ejb:c97ffa54-013c-1000-8041-ac168652b904" v="SEJBGuide"/>
+         <value n="ejb:c97ffa56-013c-1000-8042-ac168652b904" v="SEJBAutomatizacion"/>
+         <value n="ejb:c97ffa58-013c-1000-8043-ac168652b904" v="SEJBCreditEvaluation"/>
+         <value n="ejb:c97ffa59-013c-1000-8044-ac168652b904" v="SEJBPortabilityOrder"/>
+         <value n="ejb:c97ffa5a-013c-1000-8045-ac168652b904" v="SEJBPortabilityGeneral"/>
+         <value n="ejb:c97ffa5c-013c-1000-8046-ac168652b904" v="SEJBMassiveOrder"/>
+         <value n="ejb:c97ffa5d-013c-1000-8047-ac168652b904" v="SEJBSalesData"/>
+         <value n="ejb:c97ffa5f-013c-1000-8048-ac168652b904" v="SEJBRepair"/>
+         <value n="ejb:d3bc6549-014d-1000-8013-c0a8e201df7c" v="SEJBSession"/>
+         <value n="ejb:d3bc654e-014d-1000-8014-c0a8e201df7c" v="SEJBOrderNew"/>
+         <value n="ejb:d3bc654e-014d-1000-8015-c0a8e201df7c" v="SEJBCustomer"/>
+         <value n="ejb:d3bc654e-014d-1000-8016-c0a8e201df7c" v="SEJBGeneral"/>
+         <value n="ejb:d3bc654f-014d-1000-8017-c0a8e201df7c" v="SEJBOrderEdit"/>
+         <value n="ejb:d3bc654f-014d-1000-8018-c0a8e201df7c" v="SEJBBillingAccount"/>
+         <value n="ejb:d3bc654f-014d-1000-8019-c0a8e201df7c" v="SEJBRetail"/>
+         <value n="ejb:d3bc654f-014d-1000-801a-c0a8e201df7c" v="SEJBOrderSearch"/>
+         <value n="ejb:d3bc654f-014d-1000-801b-c0a8e201df7c" v="SEJBSite"/>
+         <value n="ejb:d3bc654f-014d-1000-801c-c0a8e201df7c" v="SEJBOrderTabs"/>
+         <value n="ejb:d3bc6550-014d-1000-801d-c0a8e201df7c" v="SEJBGuide"/>
+         <value n="ejb:d3bc6550-014d-1000-801e-c0a8e201df7c" v="SEJBAutomatizacion"/>
+         <value n="ejb:d3bc6550-014d-1000-801f-c0a8e201df7c" v="SEJBCreditEvaluation"/>
+         <value n="ejb:d3bc6550-014d-1000-8020-c0a8e201df7c" v="SEJBPortabilityOrder"/>
+         <value n="ejb:d3bc6550-014d-1000-8021-c0a8e201df7c" v="SEJBPortabilityGeneral"/>
+         <value n="ejb:d3bc6550-014d-1000-8022-c0a8e201df7c" v="SEJBMassiveOrder"/>
+         <value n="ejb:d3bc6551-014d-1000-8023-c0a8e201df7c" v="SEJBSalesData"/>
+         <value n="ejb:d3bc6551-014d-1000-8024-c0a8e201df7c" v="SEJBRepair"/>
+         <value n="ejb:dbbbe512-013c-1000-8077-ac158c474940" v="SEJBSession"/>
+         <value n="ejb:dbbbe518-013c-1000-8078-ac158c474940" v="SEJBOrderNew"/>
+         <value n="ejb:dbbbe51a-013c-1000-8079-ac158c474940" v="SEJBCustomer"/>
+         <value n="ejb:dbbbe51c-013c-1000-807a-ac158c474940" v="SEJBGeneral"/>
+         <value n="ejb:dbbbe51e-013c-1000-807b-ac158c474940" v="SEJBOrderEdit"/>
+         <value n="ejb:dbbbe51f-013c-1000-807c-ac158c474940" v="SEJBBillingAccount"/>
+         <value n="ejb:dbbbe521-013c-1000-807d-ac158c474940" v="SEJBRetail"/>
+         <value n="ejb:dbbbe522-013c-1000-807e-ac158c474940" v="SEJBOrderSearch"/>
+         <value n="ejb:dbbbe523-013c-1000-807f-ac158c474940" v="SEJBSite"/>
+         <value n="ejb:dbbbe524-013c-1000-8080-ac158c474940" v="SEJBOrderTabs"/>
+         <value n="ejb:dbbbe526-013c-1000-8081-ac158c474940" v="SEJBGuide"/>
+         <value n="ejb:dbbbe527-013c-1000-8082-ac158c474940" v="SEJBAutomatizacion"/>
+         <value n="ejb:dbbbe529-013c-1000-8083-ac158c474940" v="SEJBCreditEvaluation"/>
+         <value n="ejb:dbbbe52b-013c-1000-8084-ac158c474940" v="SEJBPortabilityOrder"/>
+         <value n="ejb:dbbbe52c-013c-1000-8085-ac158c474940" v="SEJBPortabilityGeneral"/>
+         <value n="ejb:dbbbe52d-013c-1000-8086-ac158c474940" v="SEJBMassiveOrder"/>
+         <value n="ejb:dbbbe52f-013c-1000-8087-ac158c474940" v="SEJBSalesData"/>
+         <value n="ejb:dbbbe530-013c-1000-8088-ac158c474940" v="SEJBRepair"/>
+         <value n="ejb:de2a7d14-013c-1000-8013-c0a80121a261" v="SEJBSession"/>
+         <value n="ejb:de2a7d1a-013c-1000-8014-c0a80121a261" v="SEJBOrderNew"/>
+         <value n="ejb:de2a7d1b-013c-1000-8015-c0a80121a261" v="SEJBCustomer"/>
+         <value n="ejb:de2a7d1b-013c-1000-8016-c0a80121a261" v="SEJBGeneral"/>
+         <value n="ejb:de2a7d1b-013c-1000-8017-c0a80121a261" v="SEJBOrderEdit"/>
+         <value n="ejb:de2a7d1c-013c-1000-8018-c0a80121a261" v="SEJBBillingAccount"/>
+         <value n="ejb:de2a7d1c-013c-1000-8019-c0a80121a261" v="SEJBRetail"/>
+         <value n="ejb:de2a7d1c-013c-1000-801a-c0a80121a261" v="SEJBOrderSearch"/>
+         <value n="ejb:de2a7d1d-013c-1000-801b-c0a80121a261" v="SEJBSite"/>
+         <value n="ejb:de2a7d1d-013c-1000-801c-c0a80121a261" v="SEJBOrderTabs"/>
+         <value n="ejb:de2a7d1d-013c-1000-801d-c0a80121a261" v="SEJBGuide"/>
+         <value n="ejb:de2a7d1e-013c-1000-801e-c0a80121a261" v="SEJBAutomatizacion"/>
+         <value n="ejb:de2a7d1e-013c-1000-801f-c0a80121a261" v="SEJBCreditEvaluation"/>
+         <value n="ejb:de2a7d1e-013c-1000-8020-c0a80121a261" v="SEJBPortabilityOrder"/>
+         <value n="ejb:de2a7d1f-013c-1000-8021-c0a80121a261" v="SEJBPortabilityGeneral"/>
+         <value n="ejb:de2a7d1f-013c-1000-8022-c0a80121a261" v="SEJBMassiveOrder"/>
+         <value n="ejb:de2a7d1f-013c-1000-8023-c0a80121a261" v="SEJBSalesData"/>
+         <value n="ejb:de2a7d20-013c-1000-8024-c0a80121a261" v="SEJBRepair"/>
+         <value n="ejb:dfb64110-014d-1000-8091-c0a8e2014c0a" v="SEJBSession"/>
+         <value n="ejb:dfb64114-014d-1000-8092-c0a8e2014c0a" v="SEJBOrderNew"/>
+         <value n="ejb:dfb64114-014d-1000-8093-c0a8e2014c0a" v="SEJBCustomer"/>
+         <value n="ejb:dfb64114-014d-1000-8094-c0a8e2014c0a" v="SEJBGeneral"/>
+         <value n="ejb:dfb64114-014d-1000-8095-c0a8e2014c0a" v="SEJBOrderEdit"/>
+         <value n="ejb:dfb64114-014d-1000-8096-c0a8e2014c0a" v="SEJBBillingAccount"/>
+         <value n="ejb:dfb64115-014d-1000-8097-c0a8e2014c0a" v="SEJBRetail"/>
+         <value n="ejb:dfb64115-014d-1000-8098-c0a8e2014c0a" v="SEJBOrderSearch"/>
+         <value n="ejb:dfb64115-014d-1000-8099-c0a8e2014c0a" v="SEJBSite"/>
+         <value n="ejb:dfb64115-014d-1000-809a-c0a8e2014c0a" v="SEJBOrderTabs"/>
+         <value n="ejb:dfb64115-014d-1000-809b-c0a8e2014c0a" v="SEJBGuide"/>
+         <value n="ejb:dfb64115-014d-1000-809c-c0a8e2014c0a" v="SEJBAutomatizacion"/>
+         <value n="ejb:dfb64116-014d-1000-809d-c0a8e2014c0a" v="SEJBCreditEvaluation"/>
+         <value n="ejb:dfb64116-014d-1000-809e-c0a8e2014c0a" v="SEJBPortabilityOrder"/>
+         <value n="ejb:dfb64116-014d-1000-809f-c0a8e2014c0a" v="SEJBPortabilityGeneral"/>
+         <value n="ejb:dfb64116-014d-1000-80a0-c0a8e2014c0a" v="SEJBMassiveOrder"/>
+         <value n="ejb:dfb64116-014d-1000-80a1-c0a8e2014c0a" v="SEJBSalesData"/>
+         <value n="ejb:dfb64116-014d-1000-80a2-c0a8e2014c0a" v="SEJBRepair"/>
+         <value n="ejb:e0df20dd-013c-1000-80a3-c0a80121a261" v="SEJBSession"/>
+         <value n="ejb:e0df20fa-013c-1000-80a4-c0a80121a261" v="SEJBOrderNew"/>
+         <value n="ejb:e0df20fc-013c-1000-80a5-c0a80121a261" v="SEJBCustomer"/>
+         <value n="ejb:e0df20ff-013c-1000-80a6-c0a80121a261" v="SEJBGeneral"/>
+         <value n="ejb:e0df2101-013c-1000-80a7-c0a80121a261" v="SEJBOrderEdit"/>
+         <value n="ejb:e0df2103-013c-1000-80a8-c0a80121a261" v="SEJBBillingAccount"/>
+         <value n="ejb:e0df2105-013c-1000-80a9-c0a80121a261" v="SEJBRetail"/>
+         <value n="ejb:e0df2108-013c-1000-80aa-c0a80121a261" v="SEJBOrderSearch"/>
+         <value n="ejb:e0df210a-013c-1000-80ab-c0a80121a261" v="SEJBSite"/>
+         <value n="ejb:e0df210d-013c-1000-80ac-c0a80121a261" v="SEJBOrderTabs"/>
+         <value n="ejb:e0df210f-013c-1000-80ad-c0a80121a261" v="SEJBGuide"/>
+         <value n="ejb:e0df2111-013c-1000-80ae-c0a80121a261" v="SEJBAutomatizacion"/>
+         <value n="ejb:e0df2113-013c-1000-80af-c0a80121a261" v="SEJBCreditEvaluation"/>
+         <value n="ejb:e0df2115-013c-1000-80b0-c0a80121a261" v="SEJBPortabilityOrder"/>
+         <value n="ejb:e0df2117-013c-1000-80b1-c0a80121a261" v="SEJBPortabilityGeneral"/>
+         <value n="ejb:e0df211a-013c-1000-80b2-c0a80121a261" v="SEJBMassiveOrder"/>
+         <value n="ejb:e0df211c-013c-1000-80b3-c0a80121a261" v="SEJBSalesData"/>
+         <value n="ejb:e0df211f-013c-1000-80b4-c0a80121a261" v="SEJBRepair"/>
+         <value n="ejb:e0df3025-013c-1000-80b5-c0a80121a261" v="SEJBSession"/>
+         <value n="ejb:e0df3028-013c-1000-80b6-c0a80121a261" v="SEJBOrderNew"/>
+         <value n="ejb:e0df3029-013c-1000-80b7-c0a80121a261" v="SEJBCustomer"/>
+         <value n="ejb:e0df302b-013c-1000-80b8-c0a80121a261" v="SEJBGeneral"/>
+         <value n="ejb:e0df302c-013c-1000-80b9-c0a80121a261" v="SEJBOrderEdit"/>
+         <value n="ejb:e0df302e-013c-1000-80ba-c0a80121a261" v="SEJBBillingAccount"/>
+         <value n="ejb:e0df302f-013c-1000-80bb-c0a80121a261" v="SEJBRetail"/>
+         <value n="ejb:e0df3031-013c-1000-80bc-c0a80121a261" v="SEJBOrderSearch"/>
+         <value n="ejb:e0df3032-013c-1000-80bd-c0a80121a261" v="SEJBSite"/>
+         <value n="ejb:e0df3034-013c-1000-80be-c0a80121a261" v="SEJBOrderTabs"/>
+         <value n="ejb:e0df3035-013c-1000-80bf-c0a80121a261" v="SEJBGuide"/>
+         <value n="ejb:e0df3037-013c-1000-80c0-c0a80121a261" v="SEJBAutomatizacion"/>
+         <value n="ejb:e0df3039-013c-1000-80c1-c0a80121a261" v="SEJBCreditEvaluation"/>
+         <value n="ejb:e0df303b-013c-1000-80c2-c0a80121a261" v="SEJBPortabilityOrder"/>
+         <value n="ejb:e0df303e-013c-1000-80c3-c0a80121a261" v="SEJBPortabilityGeneral"/>
+         <value n="ejb:e0df303f-013c-1000-80c4-c0a80121a261" v="SEJBMassiveOrder"/>
+         <value n="ejb:e0df3041-013c-1000-80c5-c0a80121a261" v="SEJBSalesData"/>
+         <value n="ejb:e0df3043-013c-1000-80c6-c0a80121a261" v="SEJBRepair"/>
+         <value n="ejb:e0eb03c1-013c-1000-80c7-c0a80121a261" v="SEJBSession"/>
+         <value n="ejb:e0eb03df-013c-1000-80c8-c0a80121a261" v="SEJBOrderNew"/>
+         <value n="ejb:e0eb03e2-013c-1000-80c9-c0a80121a261" v="SEJBCustomer"/>
+         <value n="ejb:e0eb03e4-013c-1000-80ca-c0a80121a261" v="SEJBGeneral"/>
+         <value n="ejb:e0eb03e6-013c-1000-80cb-c0a80121a261" v="SEJBOrderEdit"/>
+         <value n="ejb:e0eb03e8-013c-1000-80cc-c0a80121a261" v="SEJBBillingAccount"/>
+         <value n="ejb:e0eb03ea-013c-1000-80cd-c0a80121a261" v="SEJBRetail"/>
+         <value n="ejb:e0eb03ec-013c-1000-80ce-c0a80121a261" v="SEJBOrderSearch"/>
+         <value n="ejb:e0eb03ed-013c-1000-80cf-c0a80121a261" v="SEJBSite"/>
+         <value n="ejb:e0eb03ef-013c-1000-80d0-c0a80121a261" v="SEJBOrderTabs"/>
+         <value n="ejb:e0eb03f0-013c-1000-80d1-c0a80121a261" v="SEJBGuide"/>
+         <value n="ejb:e0eb03f2-013c-1000-80d2-c0a80121a261" v="SEJBAutomatizacion"/>
+         <value n="ejb:e0eb03f3-013c-1000-80d3-c0a80121a261" v="SEJBCreditEvaluation"/>
+         <value n="ejb:e0eb03f5-013c-1000-80d4-c0a80121a261" v="SEJBPortabilityOrder"/>
+         <value n="ejb:e0eb03f7-013c-1000-80d5-c0a80121a261" v="SEJBPortabilityGeneral"/>
+         <value n="ejb:e0eb03f9-013c-1000-80d6-c0a80121a261" v="SEJBMassiveOrder"/>
+         <value n="ejb:e0eb03fb-013c-1000-80d7-c0a80121a261" v="SEJBSalesData"/>
+         <value n="ejb:e0eb03fc-013c-1000-80d8-c0a80121a261" v="SEJBRepair"/>
+         <value n="ejb:e1052a11-013c-1000-810f-c0a80121a261" v="SEJBSession"/>
+         <value n="ejb:e1052a2d-013c-1000-8110-c0a80121a261" v="SEJBOrderNew"/>
+         <value n="ejb:e1052a2d-013c-1000-8111-c0a80121a261" v="SEJBCustomer"/>
+         <value n="ejb:e1052a2d-013c-1000-8112-c0a80121a261" v="SEJBGeneral"/>
+         <value n="ejb:e1052a2d-013c-1000-8113-c0a80121a261" v="SEJBOrderEdit"/>
+         <value n="ejb:e1052a2d-013c-1000-8114-c0a80121a261" v="SEJBBillingAccount"/>
+         <value n="ejb:e1052a2e-013c-1000-8115-c0a80121a261" v="SEJBRetail"/>
+         <value n="ejb:e1052a2e-013c-1000-8116-c0a80121a261" v="SEJBOrderSearch"/>
+         <value n="ejb:e1052a2e-013c-1000-8117-c0a80121a261" v="SEJBSite"/>
+         <value n="ejb:e1052a2e-013c-1000-8118-c0a80121a261" v="SEJBOrderTabs"/>
+         <value n="ejb:e1052a2e-013c-1000-8119-c0a80121a261" v="SEJBGuide"/>
+         <value n="ejb:e1052a2f-013c-1000-811a-c0a80121a261" v="SEJBAutomatizacion"/>
+         <value n="ejb:e1052a2f-013c-1000-811b-c0a80121a261" v="SEJBCreditEvaluation"/>
+         <value n="ejb:e1052a2f-013c-1000-811c-c0a80121a261" v="SEJBPortabilityOrder"/>
+         <value n="ejb:e1052a2f-013c-1000-811d-c0a80121a261" v="SEJBPortabilityGeneral"/>
+         <value n="ejb:e1052a30-013c-1000-811e-c0a80121a261" v="SEJBMassiveOrder"/>
+         <value n="ejb:e1052a30-013c-1000-811f-c0a80121a261" v="SEJBSalesData"/>
+         <value n="ejb:e1052a30-013c-1000-8120-c0a80121a261" v="SEJBRepair"/>
+         <value n="ejb:e10dd02d-013c-1000-819f-c0a80121a261" v="SEJBSession"/>
+         <value n="ejb:e10dd04e-013c-1000-81a0-c0a80121a261" v="SEJBOrderNew"/>
+         <value n="ejb:e10dd051-013c-1000-81a1-c0a80121a261" v="SEJBCustomer"/>
+         <value n="ejb:e10dd052-013c-1000-81a2-c0a80121a261" v="SEJBGeneral"/>
+         <value n="ejb:e10dd054-013c-1000-81a3-c0a80121a261" v="SEJBOrderEdit"/>
+         <value n="ejb:e10dd057-013c-1000-81a4-c0a80121a261" v="SEJBBillingAccount"/>
+         <value n="ejb:e10dd059-013c-1000-81a5-c0a80121a261" v="SEJBRetail"/>
+         <value n="ejb:e10dd05b-013c-1000-81a6-c0a80121a261" v="SEJBOrderSearch"/>
+         <value n="ejb:e10dd05d-013c-1000-81a7-c0a80121a261" v="SEJBSite"/>
+         <value n="ejb:e10dd05f-013c-1000-81a8-c0a80121a261" v="SEJBOrderTabs"/>
+         <value n="ejb:e10dd061-013c-1000-81a9-c0a80121a261" v="SEJBGuide"/>
+         <value n="ejb:e10dd063-013c-1000-81aa-c0a80121a261" v="SEJBAutomatizacion"/>
+         <value n="ejb:e10dd065-013c-1000-81ab-c0a80121a261" v="SEJBCreditEvaluation"/>
+         <value n="ejb:e10dd067-013c-1000-81ac-c0a80121a261" v="SEJBPortabilityOrder"/>
+         <value n="ejb:e10dd069-013c-1000-81ad-c0a80121a261" v="SEJBPortabilityGeneral"/>
+         <value n="ejb:e10dd06b-013c-1000-81ae-c0a80121a261" v="SEJBMassiveOrder"/>
+         <value n="ejb:e10dd06d-013c-1000-81af-c0a80121a261" v="SEJBSalesData"/>
+         <value n="ejb:e10dd06f-013c-1000-81b0-c0a80121a261" v="SEJBRepair"/>
+         <value n="ejb:e30ece7b-014d-1000-8013-c0a8e201c272" v="SEJBSession"/>
+         <value n="ejb:e30ece7e-014d-1000-8014-c0a8e201c272" v="SEJBOrderNew"/>
+         <value n="ejb:e30ece7e-014d-1000-8015-c0a8e201c272" v="SEJBCustomer"/>
+         <value n="ejb:e30ece7f-014d-1000-8016-c0a8e201c272" v="SEJBGeneral"/>
+         <value n="ejb:e30ece7f-014d-1000-8017-c0a8e201c272" v="SEJBOrderEdit"/>
+         <value n="ejb:e30ece7f-014d-1000-8018-c0a8e201c272" v="SEJBBillingAccount"/>
+         <value n="ejb:e30ece7f-014d-1000-8019-c0a8e201c272" v="SEJBRetail"/>
+         <value n="ejb:e30ece7f-014d-1000-801a-c0a8e201c272" v="SEJBOrderSearch"/>
+         <value n="ejb:e30ece7f-014d-1000-801b-c0a8e201c272" v="SEJBSite"/>
+         <value n="ejb:e30ece80-014d-1000-801c-c0a8e201c272" v="SEJBOrderTabs"/>
+         <value n="ejb:e30ece80-014d-1000-801d-c0a8e201c272" v="SEJBGuide"/>
+         <value n="ejb:e30ece80-014d-1000-801e-c0a8e201c272" v="SEJBAutomatizacion"/>
+         <value n="ejb:e30ece80-014d-1000-801f-c0a8e201c272" v="SEJBCreditEvaluation"/>
+         <value n="ejb:e30ece80-014d-1000-8020-c0a8e201c272" v="SEJBPortabilityOrder"/>
+         <value n="ejb:e30ece81-014d-1000-8021-c0a8e201c272" v="SEJBPortabilityGeneral"/>
+         <value n="ejb:e30ece81-014d-1000-8022-c0a8e201c272" v="SEJBMassiveOrder"/>
+         <value n="ejb:e30ece81-014d-1000-8023-c0a8e201c272" v="SEJBSalesData"/>
+         <value n="ejb:e30ece81-014d-1000-8024-c0a8e201c272" v="SEJBRepair"/>
+         <value n="ejb:e39f2c1d-014d-1000-805b-c0a8e201c272" v="SEJBSession"/>
+         <value n="ejb:e39f2c21-014d-1000-805c-c0a8e201c272" v="SEJBOrderNew"/>
+         <value n="ejb:e39f2c22-014d-1000-805d-c0a8e201c272" v="SEJBCustomer"/>
+         <value n="ejb:e39f2c24-014d-1000-805e-c0a8e201c272" v="SEJBGeneral"/>
+         <value n="ejb:e39f2c27-014d-1000-805f-c0a8e201c272" v="SEJBOrderEdit"/>
+         <value n="ejb:e39f2c2a-014d-1000-8060-c0a8e201c272" v="SEJBBillingAccount"/>
+         <value n="ejb:e39f2c2e-014d-1000-8061-c0a8e201c272" v="SEJBRetail"/>
+         <value n="ejb:e39f2c30-014d-1000-8062-c0a8e201c272" v="SEJBOrderSearch"/>
+         <value n="ejb:e39f2c32-014d-1000-8063-c0a8e201c272" v="SEJBSite"/>
+         <value n="ejb:e39f2c34-014d-1000-8064-c0a8e201c272" v="SEJBOrderTabs"/>
+         <value n="ejb:e39f2c35-014d-1000-8065-c0a8e201c272" v="SEJBGuide"/>
+         <value n="ejb:e39f2c38-014d-1000-8066-c0a8e201c272" v="SEJBAutomatizacion"/>
+         <value n="ejb:e39f2c3a-014d-1000-8067-c0a8e201c272" v="SEJBCreditEvaluation"/>
+         <value n="ejb:e39f2c3c-014d-1000-8068-c0a8e201c272" v="SEJBPortabilityOrder"/>
+         <value n="ejb:e39f2c3e-014d-1000-8069-c0a8e201c272" v="SEJBPortabilityGeneral"/>
+         <value n="ejb:e39f2c40-014d-1000-806a-c0a8e201c272" v="SEJBMassiveOrder"/>
+         <value n="ejb:e39f2c42-014d-1000-806b-c0a8e201c272" v="SEJBSalesData"/>
+         <value n="ejb:e39f2c44-014d-1000-806c-c0a8e201c272" v="SEJBRepair"/>
+         <value n="ejb:f002f68f-013c-1000-8157-ac158c47403e" v="SEJBSession"/>
+         <value n="ejb:f002f69b-013c-1000-8158-ac158c47403e" v="SEJBOrderNew"/>
+         <value n="ejb:f002f69c-013c-1000-8159-ac158c47403e" v="SEJBCustomer"/>
+         <value n="ejb:f002f69e-013c-1000-815a-ac158c47403e" v="SEJBGeneral"/>
+         <value n="ejb:f002f69f-013c-1000-815b-ac158c47403e" v="SEJBOrderEdit"/>
+         <value n="ejb:f002f6a0-013c-1000-815c-ac158c47403e" v="SEJBBillingAccount"/>
+         <value n="ejb:f002f6a1-013c-1000-815d-ac158c47403e" v="SEJBRetail"/>
+         <value n="ejb:f002f6a3-013c-1000-815e-ac158c47403e" v="SEJBOrderSearch"/>
+         <value n="ejb:f002f6a4-013c-1000-815f-ac158c47403e" v="SEJBSite"/>
+         <value n="ejb:f002f6a6-013c-1000-8160-ac158c47403e" v="SEJBOrderTabs"/>
+         <value n="ejb:f002f6a7-013c-1000-8161-ac158c47403e" v="SEJBGuide"/>
+         <value n="ejb:f002f6a8-013c-1000-8162-ac158c47403e" v="SEJBAutomatizacion"/>
+         <value n="ejb:f002f6a9-013c-1000-8163-ac158c47403e" v="SEJBCreditEvaluation"/>
+         <value n="ejb:f002f6ab-013c-1000-8164-ac158c47403e" v="SEJBPortabilityOrder"/>
+         <value n="ejb:f002f6ac-013c-1000-8165-ac158c47403e" v="SEJBPortabilityGeneral"/>
+         <value n="ejb:f002f6ae-013c-1000-8166-ac158c47403e" v="SEJBMassiveOrder"/>
+         <value n="ejb:f002f6af-013c-1000-8167-ac158c47403e" v="SEJBSalesData"/>
+         <value n="ejb:f002f6b0-013c-1000-8168-ac158c47403e" v="SEJBRepair"/>
+         <value n="ejb:f37cfdea-013c-1000-8225-ac158c47403e" v="SEJBSession"/>
+         <value n="ejb:f37cfdf1-013c-1000-8226-ac158c47403e" v="SEJBOrderNew"/>
+         <value n="ejb:f37cfdf3-013c-1000-8227-ac158c47403e" v="SEJBCustomer"/>
+         <value n="ejb:f37cfdf6-013c-1000-8228-ac158c47403e" v="SEJBGeneral"/>
+         <value n="ejb:f37cfdf9-013c-1000-8229-ac158c47403e" v="SEJBOrderEdit"/>
+         <value n="ejb:f37cfdfb-013c-1000-822a-ac158c47403e" v="SEJBBillingAccount"/>
+         <value n="ejb:f37cfdfe-013c-1000-822b-ac158c47403e" v="SEJBRetail"/>
+         <value n="ejb:f37cfe01-013c-1000-822c-ac158c47403e" v="SEJBOrderSearch"/>
+         <value n="ejb:f37cfe04-013c-1000-822d-ac158c47403e" v="SEJBSite"/>
+         <value n="ejb:f37cfe06-013c-1000-822e-ac158c47403e" v="SEJBOrderTabs"/>
+         <value n="ejb:f37cfe09-013c-1000-822f-ac158c47403e" v="SEJBGuide"/>
+         <value n="ejb:f37cfe0c-013c-1000-8230-ac158c47403e" v="SEJBAutomatizacion"/>
+         <value n="ejb:f37cfe0f-013c-1000-8231-ac158c47403e" v="SEJBCreditEvaluation"/>
+         <value n="ejb:f37cfe11-013c-1000-8232-ac158c47403e" v="SEJBPortabilityOrder"/>
+         <value n="ejb:f37cfe14-013c-1000-8233-ac158c47403e" v="SEJBPortabilityGeneral"/>
+         <value n="ejb:f37cfe17-013c-1000-8234-ac158c47403e" v="SEJBMassiveOrder"/>
+         <value n="ejb:f37cfe1a-013c-1000-8235-ac158c47403e" v="SEJBSalesData"/>
+         <value n="ejb:f37cfe1c-013c-1000-8236-ac158c47403e" v="SEJBRepair"/>
+      </hash>
+      <url n="ejbJarNodeURL" path="../Model/src/META-INF/ejb-jar.xml"/>
+      <value n="ejbVersion" v="2.1"/>
+   </hash>
+   <hash n="JspCompilerOptions">
+      <value n="jspPreCompile" v="false"/>
+   </hash>
+   <hash n="oracle.bm.commonIde.data.project.ModelerProjectSettings">
+      <hash n="modelersContentSet">
+         <list n="pattern-filters">
+            <string v="+**"/>
+         </list>
+         <list n="url-path">
+            <url path="model/"/>
+         </list>
+      </hash>
+      <value n="modelersVersion" v="10.12"/>
+   </hash>
+   <hash n="oracle.ide.model.DependencyConfiguration">
+      <list n="dependencyList">
+         <hash>
+            <value n="class" v="oracle.jdeveloper.library.ProjectLibrary"/>
+            <url n="sourceOwnerURL" path="../AppOrderAll.jws"/>
+            <url n="sourceURL" path="../Model/Model.jpr"/>
+         </hash>
+      </list>
+   </hash>
+   <hash n="oracle.ide.model.ResourcePaths">
+      <hash n="resourcesContentSet">
+         <list n="pattern-filters">
+            <string v="+apporderweb.deploy"/>
+            <string v="-**"/>
+         </list>
+         <list n="url-path">
+            <url path="."/>
+         </list>
+      </hash>
+   </hash>
+   <hash n="oracle.ide.model.TechnologyScopeConfiguration">
+      <list n="technologyScope">
+         <string v="JSP"/>
+         <string v="HTML"/>
+         <string v="Java"/>
+         <string v="EJB"/>
+      </list>
+   </hash>
+   <hash n="oracle.jdeveloper.compiler.OjcConfiguration">
+      <value n="internalEncoding" v="Cp1252"/>
+      <value n="webIANAEncoding" v="default"/>
+   </hash>
+   <hash n="oracle.jdeveloper.deploy.dt.DeploymentProfiles">
+      <hash n="profileDefinitions">
+         <hash n="apporderweb">
+            <hash n="appletArchives"/>
+            <hash n="appletFiles">
+               <value n="autoInclude" v="true"/>
+               <list n="selectionFilters">
+                  <string v="oracle.jdevimpl.deploy.common.JavaSelectionFilter"/>
+               </list>
+            </hash>
+            <hash n="archiveOptions">
+               <value n="hasManifest" v="false"/>
+            </hash>
+            <value n="contextRoot" v="apporderwebBC"/>
+            <hash n="dependencies">
+               <list n="dependencyList">
+                  <hash>
+                     <value n="adapterClass" v="oracle.jdevimpl.deploy.common.DefaultProfileDependable"/>
+                     <url n="ownerURL" path="../Model/Model.jpr"/>
+                     <value n="profileName" v="apporderejb"/>
+                  </hash>
+               </list>
+            </hash>
+            <url n="earURL" path="deploy/apporderweb.ear"/>
+            <value n="enterpriseAppName" v="apporderweb"/>
+            <hash n="fileGroups">
+               <list n="groups">
+                  <hash>
+                     <list n="contributors">
+                        <hash>
+                           <value n="type" v="5"/>
+                        </hash>
+                     </list>
+                     <value n="displayName" v="Web Files"/>
+                     <hash n="filters">
+                        <list n="rules"/>
+                     </hash>
+                     <value n="internalName" v="web-files"/>
+                     <value n="type" v="1"/>
+                  </hash>
+                  <hash>
+                     <list n="contributors">
+                        <hash>
+                           <value n="type" v="2"/>
+                        </hash>
+                     </list>
+                     <value n="displayName" v="WEB-INF/classes"/>
+                     <hash n="filters">
+                        <list n="rules">
+                           <hash>
+                              <value n="pattern" v="pe/com/nextel/service/log4j.properties"/>
+                              <value n="type" v="1"/>
+                           </hash>
+                           <hash>
+                              <value n="pattern" v="projectorder/"/>
+                              <value n="type" v="1"/>
+                           </hash>
+                           <hash>
+                              <value n="pattern" v="build.xml"/>
+                              <value n="type" v="1"/>
+                           </hash>
+                           <hash>
+                              <value n="pattern" v="META-INF/adfm.xml"/>
+                              <value n="type" v="1"/>
+                           </hash>
+                           <hash>
+                              <value n="pattern" v="WEB-INF/temp/**"/>
+                              <value n="type" v="1"/>
+                           </hash>
+                           <hash>
+                              <value n="pattern" v="WEB-INF/classes/jsp_servlet/**"/>
+                              <value n="type" v="1"/>
+                           </hash>
+                           <hash>
+                              <value n="pattern" v=".wlsjsps/"/>
+                              <value n="type" v="1"/>
+                           </hash>
+                           <hash>
+                              <value n="pattern" v=".wlLibs/"/>
+                              <value n="type" v="1"/>
+                           </hash>
+                           <hash>
+                              <value n="pattern" v="**/.svn/"/>
+                              <value n="type" v="1"/>
+                           </hash>
+                           <hash>
+                              <value n="pattern" v="**/CVS/"/>
+                              <value n="type" v="1"/>
+                           </hash>
+                           <hash>
+                              <value n="pattern" v="**/.ade_path"/>
+                              <value n="type" v="1"/>
+                           </hash>
+                           <hash>
+                              <value n="pattern" v="**/.data/**"/>
+                              <value n="type" v="1"/>
+                           </hash>
+                           <hash>
+                              <value n="pattern" v="**.cdi"/>
+                              <value n="type" v="1"/>
+                           </hash>
+                           <hash>
+                              <value n="pattern" v="**.contrib"/>
+                              <value n="type" v="1"/>
+                           </hash>
+                           <hash>
+                              <value n="pattern" v="**.keep"/>
+                              <value n="type" v="1"/>
+                           </hash>
+                           <hash>
+                              <value n="pattern" v="**.rvi"/>
+                              <value n="type" v="1"/>
+                           </hash>
+                           <hash>
+                              <value n="pattern" v=".jsps/"/>
+                              <value n="type" v="1"/>
+                           </hash>
+                           <hash>
+                              <value n="pattern" v=".tags/"/>
+                              <value n="type" v="1"/>
+                           </hash>
+                           <hash>
+                              <value n="pattern" v=".dtags/"/>
+                              <value n="type" v="1"/>
+                           </hash>
+                           <hash>
+                              <value n="pattern" v="**/*.jht"/>
+                              <value n="type" v="1"/>
+                           </hash>
+                           <hash>
+                              <value n="pattern" v="**/*.jjt"/>
+                              <value n="type" v="1"/>
+                           </hash>
+                           <hash>
+                              <value n="pattern" v="**/*.jxt"/>
+                              <value n="type" v="1"/>
+                           </hash>
+                           <hash>
+                              <value n="pattern" v="**"/>
+                           </hash>
+                        </list>
+                     </hash>
+                     <value n="internalName" v="project-output"/>
+                     <value n="targetWithinJar" v="WEB-INF/classes"/>
+                     <value n="type" v="1"/>
+                  </hash>
+                  <hash>
+                     <value n="displayName" v="WEB-INF/lib"/>
+                     <hash n="filters">
+                        <list n="rules">
+                           <hash>
+                              <value n="pattern" v="orabpel.jar"/>
+                              <value n="type" v="1"/>
+                           </hash>
+                           <hash>
+                              <value n="pattern" v="xmlparserv2.jar"/>
+                              <value n="type" v="1"/>
+                           </hash>
+                           <hash>
+                              <value n="pattern" v="xml.jar"/>
+                              <value n="type" v="1"/>
+                           </hash>
+                           <hash>
+                              <value n="pattern" v="orabpel-common.jar"/>
+                              <value n="type" v="1"/>
+                           </hash>
+                           <hash>
+                              <value n="pattern" v="optic.jar"/>
+                              <value n="type" v="1"/>
+                           </hash>
+                           <hash>
+                              <value n="pattern" v="oc4jclient.jar"/>
+                              <value n="type" v="1"/>
+                           </hash>
+                           <hash>
+                              <value n="pattern" v="BPELWorkflow.jar"/>
+                              <value n="type" v="1"/>
+                           </hash>
+                           <hash>
+                              <value n="pattern" v="**"/>
+                           </hash>
+                        </list>
+                     </hash>
+                     <value n="internalName" v="libraries"/>
+                     <list n="selectedLibraries"/>
+                     <value n="targetWithinJar" v="WEB-INF/lib"/>
+                     <value n="type" v="3"/>
+                  </hash>
+               </list>
+            </hash>
+            <url n="jarURL" path="deploy/apporderweb.war"/>
+            <hash n="libraryDependencies">
+               <value n="IncludeLibrariesFromOtherContainers" v="true"/>
+            </hash>
+            <value n="profileClass" v="oracle.jdeveloper.deploy.war.WarProfile"/>
+            <value n="profileName" v="apporderweb"/>
+         </hash>
+      </hash>
+      <list n="profileList">
+         <string v="apporderweb"/>
+      </list>
+   </hash>
+   <hash n="oracle.jdeveloper.model.J2eeSettings">
+      <value n="j2eeWebAppName" v="apporderweb"/>
+      <value n="j2eeWebContextRoot" v="apporderweb"/>
+      <hash n="webContentSet">
+         <list n="pattern-filters">
+            <string v="-WEB-INF/lib/displaytag.properties"/>
+            <string v="+**"/>
+         </list>
+         <list n="url-path">
+            <url path="public_html/"/>
+         </list>
+      </hash>
+   </hash>
+   <hash n="oracle.jdeveloper.model.PathsConfiguration">
+      <hash n="javaContentSet">
+         <list n="pattern-filters">
+            <string v="-META-INF"/>
+            <string v="+**"/>
+         </list>
+         <list n="url-path">
+            <url path="src/"/>
+         </list>
+      </hash>
+   </hash>
+   <hash n="oracle.jdeveloper.offlinedb.model.OfflineDBProjectSettings">
+      <hash n="offlineDBContentSet">
+         <list n="pattern-filters">
+            <string v="+**"/>
+         </list>
+         <list n="url-path">
+            <url path="database/"/>
+         </list>
+      </hash>
+   </hash>
+   <hash n="oracle.jdeveloper.offlinedb.OfflineDBProjectSettings">
+      <hash n="offlineDBContentSet"/>
+   </hash>
+   <hash n="oracle.jdeveloper.runner.RunConfigurations">
+      <hash n="runConfigurationDefinitions">
+         <hash n="Default">
+            <value n="custom" v="false"/>
+            <value n="name" v="Default"/>
+            <url n="targetURL" path="public_html/login.jsp"/>
+         </hash>
+      </hash>
+      <list n="runConfigurationList">
+         <string v="Default"/>
+      </list>
+   </hash>
+   <hash n="oracle.jdevimpl.config.JProjectLibraries">
+      <list n="exportedReferences"/>
+      <hash n="internalDefinitions">
+         <list n="jdkDefinitions"/>
+         <list n="libraryDefinitions"/>
+      </hash>
+      <hash n="jdkReference">
+         <value n="id" v="1.4.2_06"/>
+         <value n="isJDK" v="true"/>
+         <value n="jdkVersion" v="1.4.2_06"/>
+      </hash>
+      <list n="libraryReferences">
+         <hash>
+            <value n="id" v="Servlet Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Java EE 1.5 API"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="JSP Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Portlet Development"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <url n="id" path="../Librerias/Librerias/CommonsLibraries.library"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <url n="id" path="../Librerias/Librerias/CommonLibrariesInboxOrders.library"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+      </list>
+   </hash>
+   <hash n="oracle.jdevimpl.config.JProjectPaths">
+      <url n="outputDirectory" path="classes/"/>
+   </hash>
+   <hash n="oracle.jdevimpl.webapp.jsp.libraries.model.ProjectTagLibraries">
+      <list n="tag-libraries">
+         <hash>
+            <value n="jspVersion" v="1.2"/>
+            <value n="name" v="Display *: Tag Library"/>
+            <value n="prefix" v="display"/>
+            <value n="runInEditor" v="false"/>
+            <value n="showInPalette" v="true"/>
+            <value n="tldURL" v="WEB-INF/displaytag-11.tld"/>
+            <value n="URI" v="http://displaytag.sf.net"/>
+            <value n="version" v="1.1"/>
+         </hash>
+         <hash>
+            <value n="jspVersion" v="1.2"/>
+            <value n="name" v="JSTL Core"/>
+            <value n="prefix" v="c"/>
+            <value n="runInEditor" v="false"/>
+            <value n="showInPalette" v="true"/>
+            <value n="tldURL" v="WEB-INF/c.tld"/>
+            <value n="URI" v="http://java.sun.com/jstl/core"/>
+            <value n="version" v="1.0"/>
+         </hash>
+      </list>
+   </hash>
+   <list n="recentlyUsedPackages">
+      <string v="pe.com.nextel.servlet"/>
+      <string v="pe.com.nextel.service"/>
+      <string v="pe.com.nextel"/>
+      <string v="projectorder"/>
+      <string v="view"/>
+   </list>
+   <hash n="ResourceBundleOptions">
+      <list n="RegisteredResourceBundles"/>
+   </hash>
+</jpr:project>
