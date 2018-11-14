@@ -1203,7 +1203,7 @@ public class OrderServlet extends GenericServlet{
         arrListado=(ArrayList)hshData.get("objListado");
 
         request.removeAttribute("arrListadoPayForm");
-        request.setAttribute("arrListadoPayForm",arrListado);
+        request.setAttribute("arrListadoPayForm", arrListado);
         logger.info("************************** FIN OrderServlet > loadPayForm**************************");
     }
 
@@ -1236,8 +1236,8 @@ public class OrderServlet extends GenericServlet{
         request.removeAttribute("strFlgEnabled");
         request.removeAttribute("strActivationDate");
 
-        request.setAttribute("strFlgEnabled",strFlgEnabled);
-        request.setAttribute("strActivationDate",strActivationDate);
+        request.setAttribute("strFlgEnabled", strFlgEnabled);
+        request.setAttribute("strActivationDate", strActivationDate);
         logger.info("************************** FIN OrderServlet > loadSpecificationDate**************************");
     }
 
@@ -1249,8 +1249,8 @@ public class OrderServlet extends GenericServlet{
         String strFlgEnabledEmail = "";
         //hdnSpecification  =   MiUtil.getString(request.getParameter("cmbSubCategoria"));
         //strHdnIUserId = MiUtil.getString(request.getParameter("hdnIUserId"));
-        System.out.println("jtorrescA strSpecification"+hdnSpecification);
-        System.out.println("jtorrescB strHdnIUserId"+strHdnIUserId);
+        System.out.println("jtorrescA strSpecification" + hdnSpecification);
+        System.out.println("jtorrescB strHdnIUserId" + strHdnIUserId);
         NewOrderService objNewOrderService = new NewOrderService();
         HashMap objHashMap = objNewOrderService.getFlagEmail(MiUtil.parseLong(hdnSpecification), MiUtil.parseLong(strHdnIUserId));
         if( objHashMap==null )
@@ -1261,7 +1261,7 @@ public class OrderServlet extends GenericServlet{
         strFlgEnabledEmail = (String)objHashMap.get("lngFlgEnabledEmail");
         //request.removeAttribute("strFlgEnabledEmail");
         //request.setAttribute("strFlgEnabledEmail", strFlgEnabledEmail);
-        System.out.println("FINNNN jtorerss"+strFlgEnabledEmail);
+        System.out.println("FINNNN jtorerss" + strFlgEnabledEmail);
         return strFlgEnabledEmail;
     }
     private void loadDispatchPlaceList(HttpServletRequest request,
@@ -1755,7 +1755,7 @@ public class OrderServlet extends GenericServlet{
         objHashMap.put("strSiteId", strSiteId);
         request.setAttribute("objHashMap",objHashMap);
         RequestDispatcher rd=request.getRequestDispatcher("PAGEEDIT/ResultValidateSalesExclusivity.jsp");
-        rd.forward(request,response);
+        rd.forward(request, response);
 
     }
 

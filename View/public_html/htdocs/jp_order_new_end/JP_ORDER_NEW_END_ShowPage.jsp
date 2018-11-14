@@ -35,9 +35,9 @@
   }
 
  String strRutaContext=request.getContextPath(); 
- String strURLOrderServlet =strRutaContext+"/editordersevlet"; 
+ String strURLOrderServlet =strRutaContext+"/editordersevlet";
  //PBI000000042016
- String strURLGeneralServlet =strRutaContext+"/generalServlet"; 
+ String strOrderServlet =strRutaContext+"/orderservlet";
   
   System.out.println("Sesi�n capturada despu�s del resuest : " + strSessionIdOrderEnd );
 	PortalSessionBean portalSessionBean4 = (PortalSessionBean)SessionService.getUserSession(strSessionIdOrderEnd);
@@ -358,6 +358,8 @@
             if(validarEspecResPago(subCategoria)){
                 var resPagoOpts = $("select[name=cmbResponsablePago] option");
                 var respPagoSelected = $("select[name=cmbResponsablePago]").val();
+                alert("resPagoOpts " + resPagoOpts);
+                alert("respPagoSelected " + respPagoSelected);
 
                 if(!validarNuevoResPago(ordenId)){
                     if ((resPagoOpts.length - 1) > 0 && respPagoSelected == "") {
@@ -372,9 +374,9 @@
    }
    
     function validarEspecResPago(especificacionId){
-        var url_server = '<%=strURLGeneralServlet%>';
+        var url_server = '<%=strURLOrderServlet%>';
         var dataString = "especificacionId="+ especificacionId;
-        var params = 'metodo=validarEspecResPago&'+dataString;
+        var params = 'myaction=validarEspecResPago&'+dataString;
         $.ajax({
             url: url_server,
             async: false,
@@ -382,7 +384,7 @@
             dataType: 'text/xml',
             data: params,
             success: function(data){
-                alert("validarEspecResPago "+ data);
+                alert("requestValidarEspecResPago "+ data);
                 if(data != "0"){
                     return true;
                 }
@@ -395,17 +397,17 @@
         return false;
     }
     function validarNuevoResPago(ordenId){
-        var url_server = '<%=strURLGeneralServlet%>';
+        var url_server = '<%=strURLOrderServlet%>';
         var dataString = "ordenId="+ ordenId;
-        var params = 'metodo=validarNuevoRespPago&'+dataString;
+        var params = 'myaction=validarNuevoRespPago&'+dataString;
         $.ajax({
             url: url_server,
             async: false,
             type: 'POST',
-            dataType: 'text',
+            dataType: 'text/xml',
             data: params,
             success: function(data){
-                alert("validarNuevoResPago "+ data);
+                alert("requestValidarNuevoRespPago "+ data);
                 if(data != "0"){
                     return true;
                 }
