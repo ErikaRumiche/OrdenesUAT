@@ -491,4 +491,22 @@ public class GeneralServlet extends HttpServlet
         response.getWriter().print(siteId);
     }
 
+    /*PBI000000042016*/
+    public void validarEspecResPago(HttpServletRequest request,
+                                     HttpServletResponse response) throws Exception {
+
+        String especificacionId = (String)request.getParameter("especificacionId");
+        GeneralService objGeneralService = new GeneralService();
+        HashMap mapEspecificacionResPago = objGeneralService.getTableList("SINC_RESP_SPEC", "a");
+        ArrayList <HashMap> arrEspecificacionResPago = (ArrayList <HashMap>)mapEspecificacionResPago.get("arrTableList");
+        int contador=0;
+        if (arrEspecificacionResPago!=null){
+            for(HashMap config: arrEspecificacionResPago){
+                if(especificacionId.equals(config.get("wv_npValue"))){
+                    contador++;
+                }
+            }
+        }
+        response.getWriter().print(contador);
+    }
 }

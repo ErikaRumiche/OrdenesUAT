@@ -60,9 +60,6 @@
         String plan_reg_exp_validation = objGeneralService.getValue("MIGRATION_PRE_POST","PLAN_REGEXP");
         System.out.println("[TDECONV003-3] msg_chk_migration_error = "+msg_chk_migration_error);
         System.out.println("[TDECONV003-3] plan_reg_exp_validation = "+plan_reg_exp_validation);
-        //PBI000000042016
-        HashMap mapEspecificacionResPago = objGeneralService.getTableList("SINC_RESP_SPEC", "a");
-        ArrayList <HashMap> arrEspecificacionResPago = (ArrayList <HashMap>)mapEspecificacionResPago.get("arrTableList");
 
 %>
 <table border="0" cellspacing="1" cellpadding="2" width="100%">
@@ -178,15 +175,6 @@
    var wn_unknwnSiteId        = "<%=strunknwnSiteId%>";
    var wv_siteOppId           = "<%=strSiteOppId%>";
    
-    //PBI000000042016
-    var arrEspecResPago = new Array();
-    <%
-    if(arrEspecificacionResPago != null && arrEspecificacionResPago.size()>0) {
-        for (int i = 0; i < arrEspecificacionResPago.size(); i++) {%>
-            arrEspecResPago.push("<%=arrEspecificacionResPago.get(i).get("wv_npValue")%>");
-    <%  }
-	}%>
-
    function fxValidateforSaving(){
      var v_form              = document.frmdatos;
     if(fxValidateNumSolicitud()){
@@ -378,16 +366,27 @@
        doSubmit('grabarOrden');
    }
    
-    //PBI000000042016
     function validarEspecResPago(especificacionId){
-        for (var i = 0; i < arrEspecResPago.length; i++){
-            if(arrEspecResPago[i] == especificacionId){
-                return true;
+        var url_server = '<%=strURLGeneralServlet%>';
+        var dataString = "especificacionId="+ especificacionId;
+        var params = 'metodo=validarEspecResPago&'+dataString;
+        $.ajax({
+            url: url_server,
+            type: 'GET',
+            dataType: 'text',
+            data: params,
+            success: function(data){
+                if(data != "0"){
+                    return true;
+                }
+            },
+            error:function(xhr, ajaxOptions, thrownError){
+                alert('Error inesperado: ' + xhr.responseText);
+                return false;
             }
-        }
+        });
         return false;
     }
-
     function validarNuevoResPago(ordenId){
         var url_server = '<%=strURLGeneralServlet%>';
         var dataString = "ordenId="+ ordenId;
@@ -403,21 +402,7 @@
                 }
             },
             error:function(xhr, ajaxOptions, thrownError){
-                if (xhr.status === 0) {
-                    alert('Not connect: Verify Network.');
-                } else if (xhr.status == 404) {
-                    alert('Requested page not found [404]');
-                } else if (xhr.status == 500) {
-                    alert('Internal Server Error [500].');
-                } else if (xhr.status === 'parsererror') {
-                    alert('Requested JSON parse failed.');
-                } else if (xhr.status === 'timeout') {
-                    alert('Time out error.');
-                } else if (xhr.status === 'abort') {
-                    alert('Ajax request aborted.');
-                } else {
-                    alert('Uncaught Error: ' + xhr.responseText);
-                }
+                alert('Error inesperado: ' + xhr.responseText);
                 return false;
             }
         });
